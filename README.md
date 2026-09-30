@@ -6,7 +6,16 @@ Static export of the site (originally built as a Claude Design canvas artifact) 
 Plain static HTML/CSS/JS, one file per page. `index.html` is the home page.
 
 ## Hosting
-Deployed via Firebase Hosting, connected to this GitHub repo for auto-deploy on push to `main`.
+Hosted on **Vercel**. The site is static, so no build step is needed. The `glo-website` Vercel project is linked to this repo:
+
+- A push to `main` deploys to production.
+- Every branch and PR gets its own preview URL.
+- `vercel.json` turns on clean URLs, so `/Memberships` serves `Memberships.html`.
+
+`firebase.json` and `.firebaserc` are left in place in case Firebase Hosting is used later (`firebase deploy --only hosting`).
+
+## Assets
+`assets/glo-logo.svg` (dark) and `assets/glo-logo-light.svg` (for the dark footer) are placeholder wordmarks. Replace them with the real logo files, keeping the same names.
 
 ## Local preview
 Any static file server works, e.g.:
