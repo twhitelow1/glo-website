@@ -6,10 +6,16 @@ Static export of the site (originally built as a Claude Design canvas artifact) 
 Plain static HTML/CSS/JS, one file per page. `index.html` is the home page.
 
 ## Hosting
-The site is static, so no build step is needed. Both hosts serve the repo root with clean URLs (`/Memberships` serves `Memberships.html`).
+Hosted on **Vercel**. The site is static, so no build step is needed. The `glo-website` Vercel project is linked to this repo:
 
-- **Vercel**: the `glo-website` project is linked to this repo. Every push to `main` deploys to production, and each PR gets a preview URL. Config: `vercel.json`, `.vercelignore`.
-- **Firebase Hosting** (project `glo-aesthetics-wellness-lounge`): GitHub Actions in `.github/workflows/` deploy `main` to the live channel and each PR to a preview channel. This needs the repo secret `FIREBASE_SERVICE_ACCOUNT_GLO_AESTHETICS_WELLNESS_LOUNGE`, which you can create by running `firebase init hosting:github` or by adding a service-account JSON key by hand.
+- A push to `main` deploys to production.
+- Every branch and PR gets its own preview URL.
+- `vercel.json` turns on clean URLs, so `/Memberships` serves `Memberships.html`.
+
+`firebase.json` and `.firebaserc` are left in place in case Firebase Hosting is used later (`firebase deploy --only hosting`).
+
+## Assets
+`assets/glo-logo.svg` (dark) and `assets/glo-logo-light.svg` (for the dark footer) are placeholder wordmarks. Replace them with the real logo files, keeping the same names.
 
 ## Local preview
 Any static file server works, e.g.:
