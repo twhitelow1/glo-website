@@ -15,7 +15,7 @@ Hosted on **Vercel**. The site is static, so no build step is needed. The `glo-w
 `firebase.json` and `.firebaserc` are left in place in case Firebase Hosting is used later (`firebase deploy --only hosting`).
 
 ## Assets
-`assets/glo-logo.svg` (dark) and `assets/glo-logo-light.svg` (for the dark footer) are placeholder wordmarks. Replace them with the real logo files, keeping the same names.
+Images from the original Claude Design project live in `assets/` (logo, home hero, Cherry financing images). Other photos load from the Higgsfield CDN.
 
 ## Local preview
 Any static file server works, e.g.:
