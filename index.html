@@ -1,4 +1,25 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style id="glo-split-hero-css">
+  .glo-split-hero{display:grid;grid-template-columns:1fr 1fr;min-height:680px;background:#F3F0EA;width:100%;}
+  .glo-split-text{display:flex;align-items:center;justify-content:flex-end;padding:100px 72px 124px 48px;}
+  .glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:100px 48px 124px 72px;}
+  .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
+  .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
+  .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  @media (max-width: 900px){
+    .glo-split-hero{grid-template-columns:1fr;min-height:0;}
+    .glo-split-media{order:-1 !important;min-height:380px;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:52px 28px 100px !important;}
+  }
+  @media (max-width: 600px){
+    .glo-split-media{min-height:300px;}
+    .glo-stats-strip{padding:22px 14px !important;margin-left:16px !important;margin-right:16px !important;}
+    .glo-stats-strip > div > span:first-child{font-size:19px !important;white-space:nowrap;}
+    .glo-stats-strip > div > span:last-child{font-size:10.5px !important;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{padding:44px 20px 96px !important;}
+  }
+</style>
+</head><body>
 <!doctype html>
 <html lang="en">
 <head>
@@ -306,28 +327,27 @@
   </div>
 
   <!-- ===================== HERO / START HERE ===================== -->
-  <div id="home" style="width:100%;position:relative;overflow:hidden;min-height:760px;display:flex;align-items:center;">
-    <div role="img" aria-label="Confident woman with radiant, glowing skin" style="position:absolute;inset:0;width:100%;height:100%;background-image:url('assets/hero.jpg');background-size:cover;background-repeat:no-repeat;background-position:left 15% top 20%;"></div>
-    <div style="position:absolute;inset:0;background:linear-gradient(255deg, rgba(34,31,27,0.94) 0%, rgba(34,31,27,0.84) 34%, rgba(34,31,27,0.52) 58%, rgba(34,31,27,0.14) 82%);"></div>
-
-    <div class="glo-hero-inner" style="position:relative;max-width:1440px;margin:0 auto;padding:150px 48px 130px;width:100%;display:flex;justify-content:flex-end;">
-      <div class="glo-hero-text" style="max-width:600px;text-align:right;">
-        <div class="glo-hero-eyebrow" style="display:flex;align-items:center;justify-content:flex-end;gap:14px;margin-bottom:26px;">
-          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;text-shadow:0 2px 10px rgba(0,0,0,0.5);">OCALA'S PREMIER AESTHETICS + WELLNESS LOUNGE</span>
+  <div class="glo-split-hero glo-split-hero--media-left" id="home">
+    <div class="glo-split-text"><div class="glo-split-text-inner">
+      <div class="glo-hero-text" style="max-width:600px;text-align:left;">
+        <div class="glo-hero-eyebrow" style="display:flex;align-items:center;justify-content:flex-start;gap:14px;margin-bottom:26px;">
           <div style="width:36px;height:1px;background:#B8894F;"></div>
+          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">OCALA'S PREMIER AESTHETICS + WELLNESS LOUNGE</span>
         </div>
-        <h1 class="glo-hero-h1" style="font-size:67px;line-height:1.1;font-weight:600;color:#FFFFFF;text-shadow:0 4px 28px rgba(0,0,0,0.55),0 1px 4px rgba(0,0,0,0.4);">Your Journey to<br><span style="font-style:italic;font-weight:600;color:#B8894F;">Radiance</span> Begins Here</h1>
-        <p style="max-width:520px;margin-top:26px;margin-left:auto;font-size:18.5px;line-height:1.75;color:#F3F0EA;font-weight:400;text-shadow:0 2px 12px rgba(0,0,0,0.5);">
+        <h1 class="glo-hero-h1" style="font-size:67px;line-height:1.1;font-weight:600;color:#221F1B;">Your Journey to<br><span style="font-style:italic;font-weight:600;color:#B8894F;">Radiance</span> Begins Here</h1>
+        <p style="max-width:520px;margin-top:26px;font-size:18.5px;line-height:1.75;color:#5C574E;font-weight:400;">
           Where science meets beauty. Evidence-based wellness and advanced aesthetics,
           personalized around your unique biology, lifestyle, and goals — for the woman
           who refuses to choose between the two.
         </p>
-        <div class="glo-hero-cta" style="display:flex;gap:18px;margin-top:42px;justify-content:flex-end;flex-wrap:wrap;">
-          <a href="#treatments" class="btn-outline-light" style="background:transparent;border:1px solid #F3F0EA;color:#F3F0EA;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Explore Treatments</a>
+        <div class="glo-hero-cta" style="display:flex;gap:18px;margin-top:42px;justify-content:flex-start;flex-wrap:wrap;">
+          <a href="#treatments" class="btn-outline-light" style="background:transparent;border:1px solid #221F1B;color:#221F1B;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Explore Treatments</a>
           <a href="#book" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
         </div>
       </div>
-    </div>
+    
+    </div></div>
+    <div class="glo-split-media" role="img" aria-label="Confident woman with radiant, glowing skin" style="background-image:url('assets/hero.jpg');background-position:left 15% top 20%;"></div>
   </div>
 
   <!-- ===================== STATS STRIP (overlaps hero) ===================== -->
