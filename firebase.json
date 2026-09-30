@@ -3,6 +3,7 @@
     "public": ".",
     "ignore": [
       "firebase.json",
+      "vercel.json",
       "**/.*",
       "**/node_modules/**",
       "README.md"
