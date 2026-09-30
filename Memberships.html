@@ -26,13 +26,13 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font-family:'Inter',sans-serif; background:#FAF9F6; -webkit-font-smoothing:antialiased; }
-  h1,h2,h3{font-family:'Jost',sans-serif;font-weight:400;margin:0;}
-  .mem-h1, .mem-h2, .mem-h3 { font-family:'Jost',sans-serif; }
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;margin:0;}
+  .mem-h1, .mem-h2, .mem-h3 { font-family:'Playfair Display',Georgia,serif; }
   .btn-outline{transition:background .2s ease, color .2s ease, transform .2s ease;}
   .btn-outline:hover{background:#221F1B;color:#FAF9F6;transform:translateY(-1px);}
   .card-hover{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
@@ -96,6 +96,14 @@
     .glo-stats-strip > div > span:last-child{font-size:10.5px !important;}
     .glo-split-text,.glo-split-hero--media-left .glo-split-text{padding:44px 20px 96px !important;}
   }
+</style>
+<style id="glo-type-css">
+  /* Type system: Playfair Display headings, Inter body, Montserrat for small uppercase labels, nav and buttons. */
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;}
+  body{font-variant-numeric:lining-nums;}
+  .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
+  a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
+  span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
 </style>
 </head>
 <body>

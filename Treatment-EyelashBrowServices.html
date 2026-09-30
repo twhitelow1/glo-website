@@ -51,13 +51,13 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   a{text-decoration:none;color:inherit;}
   * { box-sizing: border-box; }
   body { margin: 0; font-family:'Inter',sans-serif; background:#FAF9F6; }
-  .lb-h1, .lb-h2, .lb-h3 { font-family:'Jost',sans-serif; }
+  .lb-h1, .lb-h2, .lb-h3 { font-family:'Playfair Display',Georgia,serif; }
   .lb-container { max-width:1320px; margin:0 auto; padding:0 48px; }
   .lb-eyebrow { display:flex; align-items:center; gap:14px; }
   .lb-eyebrow-line { width:32px; height:1px; background:#B8894F; }
@@ -109,6 +109,14 @@
     .glo-stats-strip > div > span:last-child{font-size:10.5px !important;}
     .glo-split-text,.glo-split-hero--media-left .glo-split-text{padding:44px 20px 96px !important;}
   }
+</style>
+<style id="glo-type-css">
+  /* Type system: Playfair Display headings, Inter body, Montserrat for small uppercase labels, nav and buttons. */
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;}
+  body{font-variant-numeric:lining-nums;}
+  .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
+  a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
+  span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
 </style>
 </head>
 <body>
@@ -239,11 +247,11 @@
   <!-- ===================== STATS STRIP (overlaps hero) ===================== -->
   <div style="width:100%;position:relative;z-index:10;">
     <div style="max-width:720px;margin:-56px auto 0;background:#FAF9F6;border-radius:10px;box-shadow:0 30px 60px rgba(34,31,27,0.16);padding:28px 40px;display:flex;justify-content:space-around;">
-      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Jost',sans-serif;font-size:26px;color:#B8894F;">45&ndash;90 min</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">TIME</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Playfair Display',Georgia,serif;font-size:26px;color:#B8894F;">45&ndash;90 min</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">TIME</span></div>
       <div style="width:1px;background:#E6E1D6;"></div>
-      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Jost',sans-serif;font-size:26px;color:#B8894F;">None</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">DOWNTIME</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Playfair Display',Georgia,serif;font-size:26px;color:#B8894F;">None</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">DOWNTIME</span></div>
       <div style="width:1px;background:#E6E1D6;"></div>
-      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Jost',sans-serif;font-size:26px;color:#B8894F;">6&ndash;8 weeks</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">RESULTS LAST</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Playfair Display',Georgia,serif;font-size:26px;color:#B8894F;">6&ndash;8 weeks</span><span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">RESULTS LAST</span></div>
     </div>
   </div>
 
