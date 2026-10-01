@@ -5,7 +5,7 @@
   .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
   .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
   .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
-  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  .glo-split-hero .btn-outline-light:hover{background:#6B5435 !important;color:#FAF9F6 !important;}
   @media (max-width: 900px){
     .glo-split-hero{grid-template-columns:1fr;min-height:0;}
     .glo-split-media{order:-1 !important;min-height:380px;}
@@ -26,6 +26,17 @@
   .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
   a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
   span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
+</style>
+<style id="glo-dark-css">
+  /* Deep bronze sections (was near-black #221F1B). Lighten accents that sit on them so they keep contrast. */
+  .glo-dark [style*="color:#B8894F"]{color:#E8D3A8 !important;}
+  .glo-dark [style*="background:#B8894F"]:not(.btn-primary):not(.cat-btn){background:#E8D3A8 !important;}
+  .glo-dark [style*="color:#8A8377"],.glo-dark [style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark[style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark [style*="color:#5C574E"],.glo-dark [style*="color:#9C9184"],.glo-dark [style*="color:#B8B2A4"]{color:#EADFCC !important;}
+  .glo-dark .btn-primary,.glo-dark .cat-btn,.glo-dark a[style*="background:#B8894F"]{background:#E8D3A8 !important;color:#3A2D1E !important;}
+  .glo-dark .btn-primary:hover,.glo-dark .cat-btn:hover{background:#FAF9F6 !important;color:#3A2D1E !important;}
+  .glo-dark .footer-link:hover,.glo-dark .nav-link:hover{color:#E8D3A8 !important;}
 </style>
 </head><body>
 <!doctype html>
@@ -158,9 +169,9 @@
   .nav-link:hover{color:#B8894F;}
   .util-link:hover{opacity:0.72;}
   .btn-primary{transition:background .2s ease, box-shadow .2s ease, transform .2s ease;}
-  .btn-primary:hover{background:#221F1B;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
+  .btn-primary:hover{background:#6B5435;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
   .btn-outline{transition:background .2s ease, color .2s ease, transform .2s ease;}
-  .btn-outline:hover{background:#221F1B;color:#FAF9F6;transform:translateY(-1px);}
+  .btn-outline:hover{background:#6B5435;color:#FAF9F6;transform:translateY(-1px);}
   .btn-outline-light{transition:background .2s ease, color .2s ease;}
   .btn-outline-light:hover{background:#FAF9F6;color:#221F1B;}
   .card-hover{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
@@ -229,7 +240,7 @@
 <div style="width:100%;min-height:100vh;background:#FAF9F6;">
 
   <!-- ===================== TOP UTILITY BAR ===================== -->
-  <div style="width:100%;background:#221F1B;color:#D8D2C6;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#D8D2C6;">
     <div class="glo-topbar-inner" style="max-width:1440px;margin:0 auto;padding:10px 48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;letter-spacing:0.03em;">
       <div style="display:flex;align-items:center;gap:28px;">
         <a href="tel:+13525598034" class="util-link" style="display:flex;align-items:center;gap:8px;">
@@ -346,7 +357,7 @@
           where every plan starts with listening to you.
         </p>
         <div class="glo-hero-cta" style="display:flex;gap:18px;margin-top:42px;justify-content:flex-start;flex-wrap:wrap;">
-          <a href="#treatments" class="btn-outline-light" style="background:transparent;border:1px solid #221F1B;color:#221F1B;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Explore Treatments</a>
+          <a href="#treatments" class="btn-outline-light" style="background:transparent;border:1px solid #6B5435;color:#221F1B;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Explore Treatments</a>
           <a href="#book" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
         </div>
       </div>
@@ -430,7 +441,7 @@
           </div>
         </div>
 
-        <a href="#book" class="btn-outline" style="display:inline-block;margin-top:44px;background:transparent;border:1px solid #221F1B;color:#221F1B;padding:15px 34px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
+        <a href="#book" class="btn-outline" style="display:inline-block;margin-top:44px;background:transparent;border:1px solid #6B5435;color:#221F1B;padding:15px 34px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
       </div>
     </div>
   </div>
@@ -530,7 +541,7 @@
           </div>
         </div>
 
-        <div id="tx-wellness" class="card-hover" style="background:#221F1B;border:1px solid #221F1B;border-radius:8px;padding:34px 30px;">
+        <div id="tx-wellness" class="glo-dark card-hover"  style="background:#6B5435;border:1px solid #6B5435;border-radius:8px;padding:34px 30px;">
           <div style="width:44px;height:44px;border-radius:999px;background:rgba(184,137,79,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8894F" stroke-width="1.6"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0 0 10 0c0-3-2-6-5-9z"/></svg>
           </div>
@@ -555,7 +566,7 @@
   </div>
 
   <!-- ===================== FACIALS + MEMBERSHIP ===================== -->
-  <div id="facials" style="width:100%;background:#221F1B;color:#F3F0EA;">
+  <div id="facials" class="glo-dark" style="width:100%;background:#6B5435;color:#F3F0EA;">
     <div class="glo-container glo-row" style="max-width:1440px;margin:0 auto;padding:110px 48px;display:flex;gap:80px;align-items:flex-start;">
 
       <div class="glo-flex-half" style="flex:1;">
@@ -599,7 +610,7 @@
         <a href="#consult-skincare" class="btn-primary" style="display:inline-block;margin-top:36px;background:#B8894F;color:#221F1B;padding:15px 32px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Skincare Consultation</a>
       </div>
 
-      <div id="membership" class="glo-flex-half" style="flex:1;background:#2D251F;border:1px solid rgba(216,178,124,0.35);border-radius:10px;padding:48px 44px;">
+      <div id="membership" class="glo-flex-half" style="flex:1;background:#574429;border:1px solid rgba(232,211,168,0.35);border-radius:10px;padding:48px 44px;">
         <div style="display:inline-block;font-size:13px;letter-spacing:0.12em;color:#B8894F;background:rgba(184,137,79,0.16);padding:6px 14px;border-radius:2px;margin-bottom:24px;">FREE GIFT AT SIGN-UP</div>
         <h3 style="font-size:32px;color:#FAF9F6;margin-bottom:6px;">The GLO Club</h3>
         <div style="font-size:15.5px;color:#8A8377;margin-bottom:26px;">Consistent care. Exclusive benefits. Real results.</div>
@@ -742,11 +753,11 @@
             </g>
           </svg>
           <div style="position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;">
-            <div style="width:52px;height:52px;border-radius:999px 999px 999px 0;transform:rotate(45deg);background:#221F1B;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 20px rgba(34,31,27,0.3);">
+            <div class="glo-dark" style="width:52px;height:52px;border-radius:999px 999px 999px 0;transform:rotate(45deg);background:#6B5435;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 20px rgba(34,31,27,0.3);">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8894F" stroke-width="1.8" style="transform:rotate(-45deg);"><path d="M12 21s-7-4.35-9.5-8.5C.8 9 2 5.5 5.2 4.6 7.6 3.9 10 5 12 7c2-2 4.4-3.1 6.8-2.4C22 5.5 23.2 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg>
             </div>
           </div>
-          <div style="position:absolute;bottom:20px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;background:rgba(34,31,27,0.72);padding:12px 18px;border-radius:6px;">
+          <div style="position:absolute;bottom:20px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;background:rgba(107,84,53,0.88);padding:12px 18px;border-radius:6px;">
             <span style="font-size:14.5px;color:#FAF9F6;">1925 SW 18th Ct, Unit 109 · Ocala, FL 34471</span>
             <span style="font-size:14px;color:#B8894F;font-weight:500;white-space:nowrap;margin-left:12px;">Open in Google Maps →</span>
           </div>
@@ -771,7 +782,7 @@
   </div>
 
   <!-- ===================== FOOTER / CONTACT ===================== -->
-  <div id="contact" style="width:100%;background:#221F1B;color:#B8B0A4;">
+  <div id="contact" class="glo-dark" style="width:100%;background:#6B5435;color:#B8B0A4;">
     <div class="glo-container glo-footer-grid" style="max-width:1440px;margin:0 auto;padding:80px 48px 40px;display:grid;grid-template-columns:1.4fr 0.9fr 1fr 1.1fr;gap:48px;">
 
       <div>

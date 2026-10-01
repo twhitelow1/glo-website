@@ -30,9 +30,9 @@
   .nav-link{position:relative;transition:color .2s ease;}
   .nav-link:hover{color:#B8894F;}
   .btn-primary{transition:background .2s ease, box-shadow .2s ease, transform .2s ease;}
-  .btn-primary:hover{background:#221F1B;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
+  .btn-primary:hover{background:#6B5435;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
   .btn-outline{transition:background .2s ease, color .2s ease, transform .2s ease;}
-  .btn-outline:hover{background:#221F1B;color:#FAF9F6;transform:translateY(-1px);}
+  .btn-outline:hover{background:#6B5435;color:#FAF9F6;transform:translateY(-1px);}
   .card-hover{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
   .card-hover:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(34,31,27,0.10);border-color:#B8894F;}
   .faq-row{border-top:1px solid #E6E1D6;}
@@ -78,7 +78,7 @@
   .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
   .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
   .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
-  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  .glo-split-hero .btn-outline-light:hover{background:#6B5435 !important;color:#FAF9F6 !important;}
   @media (max-width: 900px){
     .glo-split-hero{grid-template-columns:1fr;min-height:0;}
     .glo-split-media{order:-1 !important;min-height:380px;}
@@ -107,13 +107,24 @@
 ]}
 </script>
 <style>@media (max-width:600px){.loc-facts{grid-template-columns:1fr !important;gap:16px !important;}}</style>
+<style id="glo-dark-css">
+  /* Deep bronze sections (was near-black #221F1B). Lighten accents that sit on them so they keep contrast. */
+  .glo-dark [style*="color:#B8894F"]{color:#E8D3A8 !important;}
+  .glo-dark [style*="background:#B8894F"]:not(.btn-primary):not(.cat-btn){background:#E8D3A8 !important;}
+  .glo-dark [style*="color:#8A8377"],.glo-dark [style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark[style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark [style*="color:#5C574E"],.glo-dark [style*="color:#9C9184"],.glo-dark [style*="color:#B8B2A4"]{color:#EADFCC !important;}
+  .glo-dark .btn-primary,.glo-dark .cat-btn,.glo-dark a[style*="background:#B8894F"]{background:#E8D3A8 !important;color:#3A2D1E !important;}
+  .glo-dark .btn-primary:hover,.glo-dark .cat-btn:hover{background:#FAF9F6 !important;color:#3A2D1E !important;}
+  .glo-dark .footer-link:hover,.glo-dark .nav-link:hover{color:#E8D3A8 !important;}
+</style>
 </head>
 <body>
 
 <div style="width:100%;min-height:100vh;background:#FAF9F6;">
 
   <!-- ===================== TOP UTILITY BAR ===================== -->
-  <div style="width:100%;background:#221F1B;color:#D8D2C6;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#D8D2C6;">
     <div class="glo-topbar-inner" style="max-width:1440px;margin:0 auto;padding:10px 48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;letter-spacing:0.03em;">
       <div style="display:flex;align-items:center;gap:28px;">
         <a href="tel:+13525598034" class="util-link" style="display:flex;align-items:center;gap:8px;">
@@ -235,7 +246,7 @@
       </p>
       <div style="display:flex;gap:18px;margin-top:38px;flex-wrap:wrap;">
         <a href="#ocala" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Ocala</a>
-        <a href="#palatka" class="btn-outline" style="border:1px solid #221F1B;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Palatka</a>
+        <a href="#palatka" class="btn-outline" style="border:1px solid #6B5435;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Palatka</a>
       </div>
     </div></div>
     <div class="glo-split-media" role="img" aria-label="Four friends of different ages relaxing together in a bright medspa lounge" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004608_2940c9f3-89bf-4257-a861-f02aa9a1279d.png');background-position:center 35%;"></div>
@@ -258,7 +269,7 @@
             </div>
             <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:auto;">
               <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book" target="_blank" rel="noopener" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book in Ocala</a>
-              <a href="Location-Ocala.html" class="btn-outline" style="border:1px solid #221F1B;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">View Location</a>
+              <a href="Location-Ocala.html" class="btn-outline" style="border:1px solid #6B5435;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">View Location</a>
               <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1925%20SW%2018th%20Ct%2C%20Unit%20109%2C%20Ocala%2C%20FL%2034471" target="_blank" rel="noopener" style="align-self:center;font-size:14px;color:#B8894F;font-weight:500;">Get Directions &rarr;</a>
             </div>
           </div>
@@ -277,7 +288,7 @@
             </div>
             <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:auto;">
               <a href="https://gloocala.janeapp.com/locations/palatka-location-glo-aesthetics-wellness-lounge/book" target="_blank" rel="noopener" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book in Palatka</a>
-              <a href="Location-Palatka.html" class="btn-outline" style="border:1px solid #221F1B;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">View Location</a>
+              <a href="Location-Palatka.html" class="btn-outline" style="border:1px solid #6B5435;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">View Location</a>
               <a href="https://www.google.com/maps/dir/?api=1&amp;destination=210%20St%20Johns%20Ave%2C%20Palatka%2C%20FL%2032177" target="_blank" rel="noopener" style="align-self:center;font-size:14px;color:#B8894F;font-weight:500;">Get Directions &rarr;</a>
             </div>
           </div>
@@ -301,7 +312,7 @@
   </div>
 
   <!-- ===================== FOOTER ===================== -->
-  <div style="width:100%;background:#221F1B;color:#B8B0A4;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#B8B0A4;">
     <div class="glo-container glo-row" style="max-width:1440px;margin:0 auto;padding:48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;gap:12px;">
       <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
         <img src="assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:38px;width:auto;display:block;object-fit:contain;">
