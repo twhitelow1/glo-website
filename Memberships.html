@@ -34,7 +34,7 @@
   h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;margin:0;}
   .mem-h1, .mem-h2, .mem-h3 { font-family:'Playfair Display',Georgia,serif; }
   .btn-outline{transition:background .2s ease, color .2s ease, transform .2s ease;}
-  .btn-outline:hover{background:#221F1B;color:#FAF9F6;transform:translateY(-1px);}
+  .btn-outline:hover{background:#6B5435;color:#FAF9F6;transform:translateY(-1px);}
   .card-hover{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
   .card-hover:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(34,31,27,0.10);border-color:#B8894F;}
   img{max-width:100%;}
@@ -42,11 +42,11 @@
   .mem-eyebrow { display:flex; align-items:center; gap:14px; }
   .mem-eyebrow-line { width:32px; height:1px; background:#B8894F; }
   .mem-card { background:#FFFFFF; border:1px solid #E6E1D6; border-radius:4px; padding:44px 34px; }
-  .mem-card-featured { background:#221F1B; border:1px solid #221F1B; }
+  .mem-card-featured { background:#6B5435; border:1px solid #6B5435; }
   .mem-btn { display:inline-block; padding:14px 32px; border-radius:2px; font-size:13px; letter-spacing:0.12em; font-weight:500; text-transform:uppercase; text-decoration:none; text-align:center; }
   .mem-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#E6E1D6; border:1px solid #E6E1D6; }
   .mem-tier { background:#FFFFFF; padding:48px 32px; }
-  .mem-tier-dark { background:#221F1B; color:#FAF9F6; }
+  .mem-tier-dark { background:#6B5435; color:#FAF9F6; }
   @media (max-width:900px) {
     .mem-grid3 { grid-template-columns:1fr; }
     .mem-container { padding:0 24px; }
@@ -55,7 +55,7 @@
   .nav-link{position:relative;transition:color .2s ease;}
   .nav-link:hover{color:#B8894F;}
   .btn-primary{transition:background .2s ease, box-shadow .2s ease, transform .2s ease;}
-  .btn-primary:hover{background:#221F1B;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
+  .btn-primary:hover{background:#6B5435;box-shadow:0 10px 24px rgba(184,137,79,0.35);transform:translateY(-1px);}
   .util-link:hover{opacity:0.72;}
   .has-dropdown{position:relative;padding-bottom:22px;margin-bottom:-22px;}
   .dropdown-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);opacity:0;visibility:hidden;transition:opacity .18s ease, transform .18s ease, visibility 0s linear .22s;pointer-events:none;}
@@ -83,7 +83,7 @@
   .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
   .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
   .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
-  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  .glo-split-hero .btn-outline-light:hover{background:#6B5435 !important;color:#FAF9F6 !important;}
   @media (max-width: 900px){
     .glo-split-hero{grid-template-columns:1fr;min-height:0;}
     .glo-split-media{order:-1 !important;min-height:380px;}
@@ -105,16 +105,40 @@
   a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
   span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
 </style>
+<style id="glo-dark-css">
+  /* Deep bronze sections (was near-black #221F1B). Lighten accents that sit on them so they keep contrast. */
+  .glo-dark [style*="color:#B8894F"]{color:#E8D3A8 !important;}
+  .glo-dark [style*="background:#B8894F"]:not(.btn-primary):not(.cat-btn){background:#E8D3A8 !important;}
+  .glo-dark [style*="color:#8A8377"],.glo-dark [style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark[style*="color:#B8B0A4"]{color:#EADFCC !important;}
+  .glo-dark [style*="color:#5C574E"],.glo-dark [style*="color:#9C9184"],.glo-dark [style*="color:#B8B2A4"]{color:#EADFCC !important;}
+  .glo-dark .btn-primary,.glo-dark .cat-btn,.glo-dark a[style*="background:#B8894F"]{background:#E8D3A8 !important;color:#3A2D1E !important;}
+  .glo-dark .btn-primary:hover,.glo-dark .cat-btn:hover{background:#FAF9F6 !important;color:#3A2D1E !important;}
+  .glo-dark .footer-link:hover,.glo-dark .nav-link:hover{color:#E8D3A8 !important;}
+</style>
+<style id="glo-crumbs-css">
+  /* Breadcrumb sits inside the hero's text panel, pinned to its top and aligned with the copy. */
+  .glo-split-text{position:relative;}
+  .glo-hero-crumbs{position:absolute;top:26px;left:max(48px, calc(100% - 72px - 600px));right:72px;font-size:13.5px;color:#8A8377;letter-spacing:0.01em;}
+  .glo-hero-crumbs a{color:#8A8377;}
+  .glo-hero-crumbs a:hover{color:#B8894F;}
+  .glo-hero-crumbs [aria-current]{color:#221F1B;}
+  @media (max-width: 900px){
+    .glo-split-text:has(.glo-hero-crumbs){flex-direction:column;align-items:stretch !important;}
+    .glo-hero-crumbs{position:static;margin:0 0 22px;}
+  }
+</style>
+<style id="glo-locdd-css">.dd-loc{transition:background .18s ease;}.dd-loc:hover{background:#EFE9E1;}.dd-loc:hover span:first-child{color:#B8894F !important;}</style>
 </head>
 <body>
 
   <!-- ===================== DRAFT BANNER ===================== -->
-  <div style="width:100%;background:#221F1B;color:#FAF9F6;text-align:center;padding:12px 20px;font-family:'Inter',sans-serif;font-size:13.5px;letter-spacing:0.03em;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#FAF9F6;text-align:center;padding:12px 20px;font-family:'Inter',sans-serif;font-size:13.5px;letter-spacing:0.03em;">
     DRAFT &mdash; membership prices are confirmed. Discount percentages, billing, and cancellation terms below are still placeholders pending confirmation.
   </div>
 
   <!-- ===================== TOP UTILITY BAR ===================== -->
-  <div style="width:100%;background:#221F1B;color:#D8D2C6;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#D8D2C6;">
     <div class="glo-topbar-inner" style="max-width:1440px;margin:0 auto;padding:10px 48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;letter-spacing:0.03em;">
       <div style="display:flex;align-items:center;gap:28px;">
         <a href="tel:+13525598034" class="util-link" style="display:flex;align-items:center;gap:8px;">
@@ -145,7 +169,7 @@
             Treatments
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
           </a>
-          <div class="dropdown-panel" style="background:#FAF9F6;border:1px solid #E6E1D6;border-radius:10px;box-shadow:0 26px 52px rgba(34,31,27,0.16);padding:34px 38px;display:grid;grid-template-columns:repeat(4,200px);gap:30px;z-index:50;">
+          <div class="dropdown-panel" style="background:#FAF9F6;border:1px solid #E6E1D6;border-radius:10px;box-shadow:0 26px 52px rgba(34,31,27,0.16);padding:34px 38px;display:grid;grid-template-columns:repeat(3,230px);gap:30px;z-index:50;">
 
             <div>
               <a href="Category-Injectables.html" class="dd-cat" style="display:block;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;color:#221F1B;font-weight:700;margin-bottom:14px;">Injectables</a>
@@ -159,13 +183,17 @@
             </div>
 
             <div>
-              <a href="Category-Skin.html" class="dd-cat" style="display:block;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;color:#221F1B;font-weight:700;margin-bottom:14px;">Skin</a>
+              <a href="Category-SkinServices.html" class="dd-cat" style="display:block;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;color:#221F1B;font-weight:700;margin-bottom:14px;">Skin Services</a>
               <div style="display:flex;flex-direction:column;gap:9px;">
-                <a href="Treatment-CustomFacialsPeels.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Facials &amp; Peels</a>
-                <a href="Treatment-Microneedling.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Microneedling</a>
                 <a href="Treatment-TetraCO2.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Laser Skin Revitalization</a>
+                <a href="Treatment-CoolPeel.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">CoolPeel</a>
+                <a href="Treatment-MotusLaserFacial.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Motus Laser Facial</a>
+                <a href="Treatment-LaserHairRemoval.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Laser Hair Removal</a>
                 <a href="Treatment-Everesse.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Skin Tightening</a>
                 <a href="Treatment-RadiantLift.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Radiant Lift</a>
+                <a href="Treatment-CustomFacialsPeels.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Custom Facials</a>
+                <a href="Treatment-CustomFacialsPeels.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Chemical Peels</a>
+                <a href="Treatment-Microneedling.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Microneedling</a>
               </div>
             </div>
 
@@ -179,20 +207,28 @@
               </div>
             </div>
 
-            <div>
-              <a href="Category-BeautyServices.html" class="dd-cat" style="display:block;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;color:#221F1B;font-weight:700;margin-bottom:14px;">Beauty Services</a>
-              <div style="display:flex;flex-direction:column;gap:9px;">
-                <a href="Treatment-LaserHairRemoval.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Hair Removal</a>
-                <a href="Treatment-EyelashBrowServices.html" style="font-size:17px;font-weight:600;color:#5C574E;line-height:1.4;">Eyelash &amp; Brow Services</a>
-              </div>
-            </div>
-
           </div>
         </div>
 
         <a href="Memberships.html" class="nav-link">Memberships</a>
         <a href="Financing.html" class="nav-link">Financing</a>
-        <a href="Location-Ocala.html" class="nav-link">Locations</a>
+        <div class="has-dropdown">
+          <a href="Locations.html" class="nav-link" style="display:flex;align-items:center;gap:5px;">
+            Locations
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel" style="background:#FAF9F6;border:1px solid #E6E1D6;border-radius:10px;box-shadow:0 26px 52px rgba(34,31,27,0.16);padding:18px;display:flex;flex-direction:column;gap:4px;min-width:280px;z-index:50;">
+            <a href="Location-Ocala.html" class="dd-loc" style="display:block;padding:12px 14px;border-radius:8px;">
+              <span style="display:block;font-size:17px;font-weight:700;color:#221F1B;line-height:1.3;">Ocala, FL</span>
+              <span style="display:block;font-size:14px;font-weight:400;color:#8A8377;line-height:1.5;margin-top:2px;">1925 SW 18th Ct, Unit 109</span>
+            </a>
+            <a href="Location-Palatka.html" class="dd-loc" style="display:block;padding:12px 14px;border-radius:8px;">
+              <span style="display:block;font-size:17px;font-weight:700;color:#221F1B;line-height:1.3;">Palatka, FL</span>
+              <span style="display:block;font-size:14px;font-weight:400;color:#8A8377;line-height:1.5;margin-top:2px;">210 St Johns Ave</span>
+            </a>
+            <a href="Locations.html" class="dd-cat" style="display:block;margin-top:6px;padding:12px 14px 4px;border-top:1px solid #E6E1D6;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;color:#B8894F;">All Locations &rarr;</a>
+          </div>
+        </div>
         <a href="index.html#contact" class="nav-link">Contact</a>
       </div>
       <a href="index.html#book" class="glo-nav-links btn-primary" style="background:#B8894F;color:#FAF9F6;padding:12px 26px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
@@ -212,7 +248,9 @@
         <a href="index.html#treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">All Treatments</a>
         <a href="Memberships.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Memberships</a>
         <a href="Financing.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Financing</a>
-        <a href="Location-Ocala.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Locations</a>
+        <a href="Locations.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Locations</a>
+        <a href="Location-Ocala.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:11px 0 11px 18px;font-size:16px;font-weight:600;color:#5C574E;border-bottom:1px solid #E6E1D6;">Ocala, FL</a>
+        <a href="Location-Palatka.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:11px 0 11px 18px;font-size:16px;font-weight:600;color:#5C574E;border-bottom:1px solid #E6E1D6;">Palatka, FL</a>
         <a href="index.html#contact" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Contact</a>
         <a href="tel:+13525598034" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;color:#B8894F;border-bottom:1px solid #E6E1D6;">Call 352-559-8034</a>
         <a href="index.html#book" class="btn-primary" onclick="toggleMobileMenu()" style="display:block;text-align:center;margin-top:20px;background:#B8894F;color:#FAF9F6;padding:15px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
@@ -220,15 +258,11 @@
     </div>
   </div>
 
-  <!-- ===================== BREADCRUMB ===================== -->
-  <div class="mem-container" style="padding:22px 48px 0;font-size:13.5px;color:#8A8377;">
-    <a href="index.html" style="color:#8A8377;text-decoration:none;">Home</a> &nbsp;/&nbsp;
-    <span style="color:#221F1B;">Membership Programs</span>
-  </div>
-
   <!-- ===================== HERO ===================== -->
   <div class="glo-split-hero">
-    <div class="glo-split-text"><div class="glo-split-text-inner">
+    <div class="glo-split-text"><nav class="glo-hero-crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp;
+    <span aria-current="page">Membership Programs</span></nav>
+      <div class="glo-split-text-inner">
       <div class="mem-eyebrow" style="justify-content:flex-start;margin-bottom:20px;">
         <div class="mem-eyebrow-line" style="background:#B8894F;"></div>
         <span style="font-size:12.5px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">MEMBERSHIP PROGRAMS</span>
@@ -273,7 +307,7 @@
           <li>Member-only booking window</li>
           <li>No enrollment fee &mdash; confirm</li>
         </ul>
-        <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #221F1B;color:#221F1B;display:block;">Learn More</a>
+        <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #6B5435;color:#221F1B;display:block;">Learn More</a>
       </div>
 
       <div class="mem-tier mem-tier-dark">
@@ -305,7 +339,7 @@
           <li>Quarterly bonus treatment (e.g. LED or RF add-on)</li>
           <li>First-priority booking window</li>
         </ul>
-        <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #221F1B;color:#221F1B;display:block;">Learn More</a>
+        <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #6B5435;color:#221F1B;display:block;">Learn More</a>
       </div>
 
     </div>
@@ -335,7 +369,7 @@
             <li>Monthly provider check-in</li>
             <li>Nutrition guidance included</li>
           </ul>
-          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #221F1B;color:#221F1B;display:block;">Learn More</a>
+          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #6B5435;color:#221F1B;display:block;">Learn More</a>
         </div>
         <div class="mem-tier" style="background:#FFFFFF;">
           <div style="font-size:12px;letter-spacing:0.2em;color:#B8894F;font-weight:500;margin-bottom:10px;">COMPREHENSIVE</div>
@@ -348,7 +382,7 @@
             <li>Full metabolic lab panel included</li>
             <li>Body composition tracking</li>
           </ul>
-          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #221F1B;color:#221F1B;display:block;">Learn More</a>
+          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #6B5435;color:#221F1B;display:block;">Learn More</a>
         </div>
         <div class="mem-tier" style="background:#FFFFFF;">
           <div style="font-size:12px;letter-spacing:0.2em;color:#B8894F;font-weight:500;margin-bottom:10px;">MAINTENANCE</div>
@@ -361,7 +395,7 @@
             <li>Quarterly provider check-in</li>
             <li>Priority scheduling</li>
           </ul>
-          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #221F1B;color:#221F1B;display:block;">Learn More</a>
+          <a href="index.html#contact" class="mem-btn" style="background:transparent;border:1px solid #6B5435;color:#221F1B;display:block;">Learn More</a>
         </div>
       </div>
 
@@ -399,7 +433,7 @@
   </div>
 
   <!-- ===================== FINAL CTA ===================== -->
-  <div style="width:100%;background:#221F1B;padding:90px 48px;text-align:center;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;padding:90px 48px;text-align:center;">
     <h2 class="mem-h2" style="font-size:32px;color:#FAF9F6;font-weight:400;margin:0 0 18px;">Ready to join?</h2>
     <p style="font-size:15.5px;color:#B8B2A4;font-weight:300;max-width:520px;margin:0 auto 34px;">Book a consultation and we'll help you choose the right membership for your skin and goals.</p>
     <a href="index.html#book" class="mem-btn" style="background:#B8894F;color:#FAF9F6;">Book a Consultation</a>
@@ -417,7 +451,7 @@
   </div>
 
   <!-- ===================== FOOTER ===================== -->
-  <div style="width:100%;background:#221F1B;color:#B8B0A4;">
+  <div class="glo-dark" style="width:100%;background:#6B5435;color:#B8B0A4;">
     <div class="mem-container" style="max-width:1440px;margin:0 auto;padding:48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;gap:12px;">
       <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
         <img src="assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:38px;width:auto;display:block;object-fit:contain;">

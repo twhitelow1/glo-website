@@ -1,5 +1,37 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/Treatment-EyelashBrowServices",
+      "destination": "/#treatments",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-EyelashBrowServices.html",
+      "destination": "/#treatments",
+      "permanent": true
+    },
+    {
+      "source": "/Category-BeautyServices",
+      "destination": "/Category-SkinServices",
+      "permanent": true
+    },
+    {
+      "source": "/Category-BeautyServices.html",
+      "destination": "/Category-SkinServices",
+      "permanent": true
+    },
+    {
+      "source": "/Category-Skin",
+      "destination": "/Category-SkinServices",
+      "permanent": true
+    },
+    {
+      "source": "/Category-Skin.html",
+      "destination": "/Category-SkinServices",
+      "permanent": true
+    }
+  ]
 }
