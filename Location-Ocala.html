@@ -93,11 +93,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap">
 <style>
   body{margin:0;background:#FAF9F6;font-family:'Inter',sans-serif;color:#221F1B;-webkit-font-smoothing:antialiased;}
   *{box-sizing:border-box;}
-  h1,h2,h3{font-family:'Jost',sans-serif;font-weight:400;margin:0;}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;margin:0;}
   a{text-decoration:none;color:inherit;}
   .nav-link{position:relative;transition:color .2s ease;}
   .nav-link:hover{color:#B8894F;}
@@ -143,6 +143,35 @@
   }
 </style>
 
+<style id="glo-split-hero-css">
+  .glo-split-hero{display:grid;grid-template-columns:1fr 1fr;min-height:680px;background:#F3F0EA;width:100%;}
+  .glo-split-text{display:flex;align-items:center;justify-content:flex-end;padding:100px 72px 124px 48px;}
+  .glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:100px 48px 124px 72px;}
+  .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
+  .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
+  .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  @media (max-width: 900px){
+    .glo-split-hero{grid-template-columns:1fr;min-height:0;}
+    .glo-split-media{order:-1 !important;min-height:380px;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:52px 28px 100px !important;}
+  }
+  @media (max-width: 600px){
+    .glo-split-media{min-height:300px;}
+    .glo-stats-strip{padding:22px 14px !important;margin-left:16px !important;margin-right:16px !important;}
+    .glo-stats-strip > div > span:first-child{font-size:19px !important;white-space:nowrap;}
+    .glo-stats-strip > div > span:last-child{font-size:10.5px !important;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{padding:44px 20px 96px !important;}
+  }
+</style>
+<style id="glo-type-css">
+  /* Type system: Playfair Display headings, Inter body, Montserrat for small uppercase labels, nav and buttons. */
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;}
+  body{font-variant-numeric:lining-nums;}
+  .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
+  a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
+  span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
+</style>
 </head>
 <body>
 
@@ -167,7 +196,7 @@
   </div>
 
   <!-- ===================== MAIN NAV BAR ===================== -->
-  <div style="width:100%;background:#FAF9F6;border-bottom:1px solid #E6E1D6;position:sticky;top:0;z-index:40;">
+  <div style="width:100%;background:#EFE9E1;border-bottom:1px solid #E0D6C8;position:sticky;top:0;z-index:40;">
     <div class="glo-navbar-inner" style="max-width:1440px;margin:0 auto;padding:8px 48px;display:flex;justify-content:space-between;align-items:center;">
       <a href="index.html#home" style="display:flex;align-items:center;">
         <img class="glo-logo" src="assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:104px;width:auto;display:block;flex:none;object-fit:contain;">
@@ -242,7 +271,7 @@
     </div>
 
     <div data-cond="mobileMenuOpen" style="display:none;">
-      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#FAF9F6;border-top:1px solid #E6E1D6;padding:20px 48px 30px;flex-direction:column;gap:2px;">
+      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#EFE9E1;border-top:1px solid #E0D6C8;padding:20px 48px 30px;flex-direction:column;gap:2px;">
         <a href="index.html#about" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">About</a>
         <a href="index.html#treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">All Treatments</a>
         <a href="Memberships.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Memberships</a>
@@ -263,9 +292,8 @@
   </div>
 
   <!-- ===================== HERO ===================== -->
-  <div style="width:100%;">
-    <div class="glo-container glo-row" style="max-width:1440px;margin:0 auto;padding:48px 48px 90px;display:flex;gap:80px;align-items:center;">
-      <div class="glo-flex-half" style="flex:1;">
+  <div class="glo-split-hero">
+    <div class="glo-split-text"><div class="glo-split-text-inner">
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px;">
           <div style="width:36px;height:1px;background:#B8894F;"></div>
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">LOCATION</span>
@@ -278,13 +306,8 @@
           <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book" target="_blank" rel="noopener" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:16px 34px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book Your Ocala Consultation</a>
           <a href="https://www.google.com/maps/dir/?api=1&destination=1925%20SW%2018th%20Ct%2C%20Unit%20109%2C%20Ocala%2C%20FL%2034471" target="_blank" rel="noopener" class="btn-outline" style="background:transparent;border:1px solid #221F1B;color:#221F1B;padding:16px 34px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Get Directions</a>
         </div>
-      </div>
-      <div class="glo-flex-half" style="flex:0 0 42%;">
-        <div style="width:100%;aspect-ratio:4/5;border-radius:8px;overflow:hidden;box-shadow:0 24px 48px -20px rgba(34,31,27,0.35);">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260921_101723_d9e4d660-1b3a-42f6-9dc6-df4028ebe8bf.png" alt="GLO Aesthetics + Wellness Lounge Ocala location" style="width:100%;height:100%;object-fit:cover;display:block;" />
-        </div>
-      </div>
-    </div>
+    </div></div>
+    <div class="glo-split-media"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260921_101723_d9e4d660-1b3a-42f6-9dc6-df4028ebe8bf.png" alt="GLO Aesthetics + Wellness Lounge Ocala location" /></div>
   </div>
 
   <!-- ===================== NAP + MAP ===================== -->

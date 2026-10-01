@@ -22,12 +22,13 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+  a{text-decoration:none;color:inherit;}
   * { box-sizing: border-box; }
   body { margin: 0; font-family:'Inter',sans-serif; background:#FAF9F6; }
-  .cat-h1, .cat-h2, .cat-h3 { font-family:'Jost',sans-serif; }
+  .cat-h1, .cat-h2, .cat-h3 { font-family:'Playfair Display',Georgia,serif; }
   .cat-container { max-width:1320px; margin:0 auto; padding:0 48px; }
   .cat-eyebrow { display:flex; align-items:center; gap:14px; }
   .cat-eyebrow-line { width:32px; height:1px; background:#B8894F; }
@@ -58,6 +59,14 @@
   }
 </style>
 
+<style id="glo-type-css">
+  /* Type system: Playfair Display headings, Inter body, Montserrat for small uppercase labels, nav and buttons. */
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;}
+  body{font-variant-numeric:lining-nums;}
+  .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
+  a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
+  span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
+</style>
 </head>
 <body>
 
@@ -80,7 +89,7 @@
   </div>
 
   <!-- ===================== MAIN NAV BAR ===================== -->
-  <div style="width:100%;background:#FAF9F6;border-bottom:1px solid #E6E1D6;position:sticky;top:0;z-index:40;">
+  <div style="width:100%;background:#EFE9E1;border-bottom:1px solid #E0D6C8;position:sticky;top:0;z-index:40;">
     <div class="glo-navbar-inner" style="max-width:1440px;margin:0 auto;padding:8px 48px;display:flex;justify-content:space-between;align-items:center;">
       <a href="index.html#home" style="display:flex;align-items:center;">
         <img class="glo-logo" src="assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:104px;width:auto;display:block;flex:none;object-fit:contain;">
@@ -155,7 +164,7 @@
     </div>
 
     <div data-cond="mobileMenuOpen" style="display:none;">
-      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#FAF9F6;border-top:1px solid #E6E1D6;padding:20px 48px 30px;flex-direction:column;gap:2px;">
+      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#EFE9E1;border-top:1px solid #E0D6C8;padding:20px 48px 30px;flex-direction:column;gap:2px;">
         <a href="index.html#about" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">About</a>
         <a href="index.html#treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">All Treatments</a>
         <a href="Memberships.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Memberships</a>

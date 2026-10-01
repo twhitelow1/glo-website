@@ -120,11 +120,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap">
 <style>
   body{margin:0;background:#FAF9F6;font-family:'Inter',sans-serif;color:#221F1B;-webkit-font-smoothing:antialiased;}
   *{box-sizing:border-box;}
-  h1,h2,h3{font-family:'Jost',sans-serif;font-weight:400;margin:0;}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;margin:0;}
   a{text-decoration:none;color:inherit;}
   .nav-link{position:relative;transition:color .2s ease;}
   .nav-link:hover{color:#B8894F;}
@@ -172,6 +172,35 @@
   }
 </style>
 
+<style id="glo-split-hero-css">
+  .glo-split-hero{display:grid;grid-template-columns:1fr 1fr;min-height:680px;background:#F3F0EA;width:100%;}
+  .glo-split-text{display:flex;align-items:center;justify-content:flex-end;padding:100px 72px 124px 48px;}
+  .glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:100px 48px 124px 72px;}
+  .glo-split-text-inner{width:100%;max-width:600px;text-align:left;}
+  .glo-split-media{position:relative;min-height:680px;background-size:cover;background-repeat:no-repeat;background-position:center;}
+  .glo-split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .glo-split-hero .btn-outline-light:hover{background:#221F1B !important;color:#FAF9F6 !important;}
+  @media (max-width: 900px){
+    .glo-split-hero{grid-template-columns:1fr;min-height:0;}
+    .glo-split-media{order:-1 !important;min-height:380px;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{order:2;justify-content:flex-start;padding:52px 28px 100px !important;}
+  }
+  @media (max-width: 600px){
+    .glo-split-media{min-height:300px;}
+    .glo-stats-strip{padding:22px 14px !important;margin-left:16px !important;margin-right:16px !important;}
+    .glo-stats-strip > div > span:first-child{font-size:19px !important;white-space:nowrap;}
+    .glo-stats-strip > div > span:last-child{font-size:10.5px !important;}
+    .glo-split-text,.glo-split-hero--media-left .glo-split-text{padding:44px 20px 96px !important;}
+  }
+</style>
+<style id="glo-type-css">
+  /* Type system: Playfair Display headings, Inter body, Montserrat for small uppercase labels, nav and buttons. */
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;}
+  body{font-variant-numeric:lining-nums;}
+  .nav-link,.dd-cat,.btn-primary,.btn-outline,.btn-outline-light,
+  a[style*="text-transform:uppercase"],button[style*="text-transform:uppercase"],
+  span[style*="letter-spacing:0.28em"],span[style*="letter-spacing:0.18em"],div[style*="letter-spacing:0.28em"],div[style*="letter-spacing:0.18em"]{font-family:'Montserrat',sans-serif;}
+</style>
 </head>
 <body>
 
@@ -196,7 +225,7 @@
   </div>
 
   <!-- ===================== MAIN NAV BAR ===================== -->
-  <div style="width:100%;background:#FAF9F6;border-bottom:1px solid #E6E1D6;position:sticky;top:0;z-index:40;">
+  <div style="width:100%;background:#EFE9E1;border-bottom:1px solid #E0D6C8;position:sticky;top:0;z-index:40;">
     <div class="glo-navbar-inner" style="max-width:1440px;margin:0 auto;padding:8px 48px;display:flex;justify-content:space-between;align-items:center;">
       <a href="index.html#home" style="display:flex;align-items:center;">
         <img class="glo-logo" src="assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:104px;width:auto;display:block;flex:none;object-fit:contain;">
@@ -271,7 +300,7 @@
     </div>
 
     <div data-cond="mobileMenuOpen" style="display:none;">
-      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#FAF9F6;border-top:1px solid #E6E1D6;padding:20px 48px 30px;flex-direction:column;gap:2px;">
+      <div class="glo-mobile-menu" style="display:flex;width:100%;background:#EFE9E1;border-top:1px solid #E0D6C8;padding:20px 48px 30px;flex-direction:column;gap:2px;">
         <a href="index.html#about" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">About</a>
         <a href="index.html#treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">All Treatments</a>
         <a href="Memberships.html" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Memberships</a>
@@ -293,42 +322,40 @@
   </div>
 
   <!-- ===================== HERO ===================== -->
-  <div style="width:100%;position:relative;overflow:hidden;min-height:720px;display:flex;align-items:center;justify-content:center;">
-    <div role="img" aria-label="Radiant GLO client with glowing skin after Mini Facials" style="position:absolute;inset:0;width:100%;height:100%;background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260928_090610_5e08dc3e-fab7-4774-8fe9-80321e87d35a.png');background-size:cover;background-repeat:no-repeat;background-position:center 30%;"></div>
-    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(34,31,27,0.48) 0%, rgba(34,31,27,0.58) 45%, rgba(34,31,27,0.80) 100%);"></div>
-
-    <div class="glo-hero-inner" style="position:relative;max-width:820px;margin:0 auto;padding:130px 48px;width:100%;text-align:center;">
-      <div class="glo-hero-eyebrow" style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:26px;">
+  <div class="glo-split-hero">
+    <div class="glo-split-text"><div class="glo-split-text-inner">
+      <div class="glo-hero-eyebrow" style="display:flex;align-items:center;justify-content:flex-start;gap:14px;margin-bottom:26px;">
         <div style="width:36px;height:1px;background:#B8894F;"></div>
-        <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;text-shadow:0 2px 10px rgba(0,0,0,0.5);">NON-LASER FACIALS</span>
-        <div style="width:36px;height:1px;background:#B8894F;"></div>
+        <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">NON-LASER FACIALS</span>
       </div>
-      <h1 class="glo-hero-h1" style="font-size:62px;line-height:1.15;font-weight:400;font-style:italic;color:#FFFFFF;text-shadow:0 4px 28px rgba(0,0,0,0.55),0 1px 4px rgba(0,0,0,0.4);">Mini Facials</h1>
-      <p style="margin:26px auto 0;font-size:18px;line-height:1.8;color:#F3F0EA;font-weight:400;max-width:560px;text-shadow:0 2px 12px rgba(0,0,0,0.5);">
+      <h1 class="glo-hero-h1" style="font-size:62px;line-height:1.15;font-weight:400;font-style:italic;color:#221F1B;">Mini Facials</h1>
+      <p style="margin:26px 0 0;font-size:18px;line-height:1.8;color:#5C574E;font-weight:400;max-width:560px;">
           A quick, effective refresh — cleansing, light exfoliation, and hydration in about 30 minutes. Perfect for busy Ocala schedules, monthly maintenance, or a pre-event glow.
       </p>
-      <div class="glo-hero-cta" style="display:flex;gap:18px;margin-top:40px;justify-content:center;flex-wrap:wrap;">
+      <div class="glo-hero-cta" style="display:flex;gap:18px;margin-top:40px;justify-content:flex-start;flex-wrap:wrap;">
         <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/115" target="_blank" rel="noopener" class="btn-primary" style="background:#B8894F;color:#FAF9F6;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book Your Mini Facial</a>
-        <a href="index.html#tx-skin" class="btn-outline-light" style="background:transparent;border:1px solid #F3F0EA;color:#F3F0EA;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">See Related Treatments</a>
+        <a href="index.html#tx-skin" class="btn-outline-light" style="background:transparent;border:1px solid #221F1B;color:#221F1B;padding:17px 38px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">See Related Treatments</a>
       </div>
-    </div>
+    
+    </div></div>
+    <div class="glo-split-media" role="img" aria-label="Radiant GLO client with glowing skin after Mini Facials" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260928_090610_5e08dc3e-fab7-4774-8fe9-80321e87d35a.png');background-position:center 30%;"></div>
   </div>
 
   <!-- ===================== STATS STRIP (overlaps hero) ===================== -->
   <div style="width:100%;position:relative;z-index:10;">
     <div class="glo-stats-strip" style="max-width:820px;margin:-56px auto 0;background:#FAF9F6;border-radius:10px;box-shadow:0 30px 60px rgba(34,31,27,0.16);padding:30px 48px;display:flex;justify-content:space-around;">
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <span style="font-family:'Jost',sans-serif;font-size:28px;color:#B8894F;">30 min</span>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:28px;color:#B8894F;">30 min</span>
         <span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">DURATION</span>
       </div>
       <div style="width:1px;background:#E6E1D6;"></div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <span style="font-family:'Jost',sans-serif;font-size:28px;color:#B8894F;">None</span>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:28px;color:#B8894F;">None</span>
         <span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">DOWNTIME</span>
       </div>
       <div style="width:1px;background:#E6E1D6;"></div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <span style="font-family:'Jost',sans-serif;font-size:28px;color:#B8894F;">Great for monthly maintenance</span>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:28px;color:#B8894F;">Great for monthly maintenance</span>
         <span style="font-size:13px;letter-spacing:0.1em;color:#5C574E;">RESULTS LAST</span>
       </div>
     </div>
@@ -371,22 +398,22 @@
       </div>
       <div class="glo-grid-4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#E6E1D6;border:1px solid #E6E1D6;border-radius:8px;overflow:hidden;">
         <div style="background:#FAF9F6;padding:30px 24px;">
-          <div style="font-family:'Jost',sans-serif;font-size:32px;color:#B8894F;margin-bottom:10px;">01</div>
+          <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;color:#B8894F;margin-bottom:10px;">01</div>
           <div style="font-size:16.5px;font-weight:500;color:#221F1B;margin-bottom:6px;">Quick Consultation</div>
           <div style="font-size:14.5px;color:#5C574E;line-height:1.6;font-weight:300;">A quick check-in on your skin that day.</div>
         </div>
         <div style="background:#FAF9F6;padding:30px 24px;">
-          <div style="font-family:'Jost',sans-serif;font-size:32px;color:#B8894F;margin-bottom:10px;">02</div>
+          <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;color:#B8894F;margin-bottom:10px;">02</div>
           <div style="font-size:16.5px;font-weight:500;color:#221F1B;margin-bottom:6px;">Cleanse &amp; Light Exfoliation</div>
           <div style="font-size:14.5px;color:#5C574E;line-height:1.6;font-weight:300;">A gentle, effective refresh.</div>
         </div>
         <div style="background:#FAF9F6;padding:30px 24px;">
-          <div style="font-family:'Jost',sans-serif;font-size:32px;color:#B8894F;margin-bottom:10px;">03</div>
+          <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;color:#B8894F;margin-bottom:10px;">03</div>
           <div style="font-size:16.5px;font-weight:500;color:#221F1B;margin-bottom:6px;">Hydrating Mask</div>
           <div style="font-size:14.5px;color:#5C574E;line-height:1.6;font-weight:300;">Locks in moisture and glow.</div>
         </div>
         <div style="background:#FAF9F6;padding:30px 24px;">
-          <div style="font-family:'Jost',sans-serif;font-size:32px;color:#B8894F;margin-bottom:10px;">04</div>
+          <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;color:#B8894F;margin-bottom:10px;">04</div>
           <div style="font-size:16.5px;font-weight:500;color:#221F1B;margin-bottom:6px;">Immediate Glow</div>
           <div style="font-size:14.5px;color:#5C574E;line-height:1.6;font-weight:300;">Return to makeup or your day right away.</div>
         </div>
@@ -402,7 +429,7 @@
         <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">INVESTMENT</span>
         <div style="width:36px;height:1px;background:#B8894F;"></div>
       </div>
-      <div style="font-family:'Jost',sans-serif;font-size:55px;color:#B8894F;">Starting at $99<span style="font-size:20px;color:#9C9184;"> / session</span></div>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:55px;color:#B8894F;">Starting at $99<span style="font-size:20px;color:#9C9184;"> / session</span></div>
       <p style="margin-top:18px;font-size:16.5px;line-height:1.7;color:#D8D2C6;font-weight:300;max-width:480px;margin-left:auto;margin-right:auto;">
         Our Express Glo (30 min, $99) is a great monthly maintenance option between deeper treatments.
       </p>
