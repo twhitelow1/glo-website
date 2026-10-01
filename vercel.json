@@ -4,34 +4,369 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/Category-Injectables",
+      "destination": "/injectables",
+      "permanent": true
+    },
+    {
+      "source": "/Category-Injectables.html",
+      "destination": "/injectables",
+      "permanent": true
+    },
+    {
+      "source": "/Category-SkinServices",
+      "destination": "/skin-services",
+      "permanent": true
+    },
+    {
+      "source": "/Category-SkinServices.html",
+      "destination": "/skin-services",
+      "permanent": true
+    },
+    {
+      "source": "/Category-Wellness",
+      "destination": "/wellness",
+      "permanent": true
+    },
+    {
+      "source": "/Category-Wellness.html",
+      "destination": "/wellness",
+      "permanent": true
+    },
+    {
+      "source": "/Financing",
+      "destination": "/financing",
+      "permanent": true
+    },
+    {
+      "source": "/Financing.html",
+      "destination": "/financing",
+      "permanent": true
+    },
+    {
+      "source": "/Location-Ocala",
+      "destination": "/locations/ocala",
+      "permanent": true
+    },
+    {
+      "source": "/Location-Ocala.html",
+      "destination": "/locations/ocala",
+      "permanent": true
+    },
+    {
+      "source": "/Location-Palatka",
+      "destination": "/locations/palatka",
+      "permanent": true
+    },
+    {
+      "source": "/Location-Palatka.html",
+      "destination": "/locations/palatka",
+      "permanent": true
+    },
+    {
+      "source": "/Locations",
+      "destination": "/locations",
+      "permanent": true
+    },
+    {
+      "source": "/Locations.html",
+      "destination": "/locations",
+      "permanent": true
+    },
+    {
+      "source": "/Memberships",
+      "destination": "/membership-programs",
+      "permanent": true
+    },
+    {
+      "source": "/Memberships.html",
+      "destination": "/membership-programs",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-CoolPeel",
+      "destination": "/treatments/coolpeel",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-CoolPeel.html",
+      "destination": "/treatments/coolpeel",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-CustomFacialsPeels",
+      "destination": "/treatments/custom-facials-peels",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-CustomFacialsPeels.html",
+      "destination": "/treatments/custom-facials-peels",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Daxxify",
+      "destination": "/treatments/daxxify",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Daxxify.html",
+      "destination": "/treatments/daxxify",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DaxxifyFacialMicroneedling",
+      "destination": "/treatments/daxxify-facial-microneedling",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DaxxifyFacialMicroneedling.html",
+      "destination": "/treatments/daxxify-facial-microneedling",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DermalFiller",
+      "destination": "/treatments/dermal-filler",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DermalFiller.html",
+      "destination": "/treatments/dermal-filler",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DissolveHADermalFiller",
+      "destination": "/treatments/dissolve-ha-dermal-filler",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-DissolveHADermalFiller.html",
+      "destination": "/treatments/dissolve-ha-dermal-filler",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Everesse",
+      "destination": "/treatments/skin-tightening",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Everesse.html",
+      "destination": "/treatments/skin-tightening",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-FunctionalWeightLoss",
+      "destination": "/treatments/functional-weight-loss",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-FunctionalWeightLoss.html",
+      "destination": "/treatments/functional-weight-loss",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-HormoneReplacementTherapy",
+      "destination": "/treatments/hormone-replacement-therapy",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-HormoneReplacementTherapy.html",
+      "destination": "/treatments/hormone-replacement-therapy",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-IVHydration",
+      "destination": "/treatments/iv-hydration",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-IVHydration.html",
+      "destination": "/treatments/iv-hydration",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-LaserHairRemoval",
+      "destination": "/treatments/laser-hair-removal",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-LaserHairRemoval.html",
+      "destination": "/treatments/laser-hair-removal",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-LiquidRhinoplasty",
+      "destination": "/treatments/liquid-rhinoplasty",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-LiquidRhinoplasty.html",
+      "destination": "/treatments/liquid-rhinoplasty",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Microneedling",
+      "destination": "/treatments/microneedling",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Microneedling.html",
+      "destination": "/treatments/microneedling",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-MiniFacials",
+      "destination": "/treatments/mini-facials",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-MiniFacials.html",
+      "destination": "/treatments/mini-facials",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-MotusLaserFacial",
+      "destination": "/treatments/motus-laser-facial",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-MotusLaserFacial.html",
+      "destination": "/treatments/motus-laser-facial",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-PeptideTherapy",
+      "destination": "/treatments/peptide-therapy",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-PeptideTherapy.html",
+      "destination": "/treatments/peptide-therapy",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-RadiantLift",
+      "destination": "/treatments/radiant-lift",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-RadiantLift.html",
+      "destination": "/treatments/radiant-lift",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-TetraCO2",
+      "destination": "/treatments/laser-skin-revitalization",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-TetraCO2.html",
+      "destination": "/treatments/laser-skin-revitalization",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Xeomin",
+      "destination": "/treatments/xeomin",
+      "permanent": true
+    },
+    {
+      "source": "/Treatment-Xeomin.html",
+      "destination": "/treatments/xeomin",
+      "permanent": true
+    },
+    {
+      "source": "/Treatments",
+      "destination": "/treatments",
+      "permanent": true
+    },
+    {
+      "source": "/Treatments.html",
+      "destination": "/treatments",
+      "permanent": true
+    },
+    {
       "source": "/Treatment-EyelashBrowServices",
-      "destination": "/#treatments",
+      "destination": "/treatments",
       "permanent": true
     },
     {
       "source": "/Treatment-EyelashBrowServices.html",
-      "destination": "/#treatments",
+      "destination": "/treatments",
       "permanent": true
     },
     {
       "source": "/Category-BeautyServices",
-      "destination": "/Category-SkinServices",
+      "destination": "/skin-services",
       "permanent": true
     },
     {
       "source": "/Category-BeautyServices.html",
-      "destination": "/Category-SkinServices",
+      "destination": "/skin-services",
       "permanent": true
     },
     {
       "source": "/Category-Skin",
-      "destination": "/Category-SkinServices",
+      "destination": "/skin-services",
       "permanent": true
     },
     {
       "source": "/Category-Skin.html",
-      "destination": "/Category-SkinServices",
+      "destination": "/skin-services",
       "permanent": true
+    },
+    {
+      "source": "/Category-LaserServices",
+      "destination": "/skin-services",
+      "permanent": true
+    },
+    {
+      "source": "/Category-LaserServices.html",
+      "destination": "/skin-services",
+      "permanent": true
+    },
+    {
+      "source": "/Category-NonLaserServices",
+      "destination": "/skin-services",
+      "permanent": true
+    },
+    {
+      "source": "/Category-NonLaserServices.html",
+      "destination": "/skin-services",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<host>.*)\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(llms.txt|robots.txt|sitemap.xml)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
     }
   ]
 }
