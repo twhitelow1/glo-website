@@ -1,0 +1,45 @@
+{
+  "slug": "xeomin",
+  "keyword": "Xeomin",
+  "title": "Xeomin in Ocala, FL | Wrinkle Relaxer | GLO Aesthetics",
+  "meta": "Xeomin in Ocala, FL softens frown lines, forehead lines and crow's feet in a 15-minute visit, from $12 a unit. Book your consultation at GLO Aesthetics.",
+  "answer": "Xeomin is an FDA-approved wrinkle-relaxing injection that softens frown lines, forehead lines and crow's feet by calming the muscles that crease your skin. It suits adults who want a rested, natural look without surgery: the visit takes about 15 minutes, results appear within a week and last up to 3 months.",
+  "treats_h2": "What does Xeomin treat?",
+  "treats_intro": "Xeomin treats lines caused by facial movement — the creases that show when you frown, squint or raise your brows, and that start to stay put over time.",
+  "how_h2": "How does Xeomin work?",
+  "how": "Xeomin (incobotulinumtoxinA) temporarily blocks the nerve signals that tell a small muscle to contract. With the muscle relaxed, the skin above it stops folding, so existing lines soften and new ones are slower to form. Unlike some other options it contains no accessory proteins, only the active ingredient. The effect wears off gradually as nerve signalling returns.",
+  "fit_h2": "Is Xeomin right for me?",
+  "good_fit": [
+    "You notice “11s” between your brows, forehead lines or crow's feet when you move your face",
+    "You want to look rested and like yourself, not frozen",
+    "You'd like a quick treatment with no real downtime",
+    "You'd prefer a formula without accessory proteins"
+  ],
+  "not_fit": [
+    "You're pregnant or breastfeeding",
+    "You have a neuromuscular condition such as myasthenia gravis",
+    "You've had an allergic reaction to a botulinum toxin product",
+    "Your main concern is lost volume or deep folds at rest — dermal filler is usually the better fit"
+  ],
+  "expect_h2": "What happens during a Xeomin appointment?",
+  "expect_intro": "A Xeomin appointment takes about 15 minutes: a short consultation, a few tiny injections, and you're back to your day with no recovery time.",
+  "cost_h2": "How much does Xeomin cost in Ocala?",
+  "faq_h2": "Xeomin FAQs",
+  "faq_rename": {
+    "How long do results last?": "How long does Xeomin last?",
+    "Does it hurt?": "Do Xeomin injections hurt?"
+  },
+  "faq_add": [
+    {"q": "What should I avoid after Xeomin?", "a": "For the rest of the day, skip strenuous exercise, avoid rubbing or massaging the treated areas, and stay upright for about 4 hours. You can return to work and normal routines right away."},
+    {"q": "What's the difference between Xeomin and Daxxify?", "a": "Both relax expression lines. Xeomin typically lasts up to 3 months and contains only the active ingredient; Daxxify is peptide-formulated and can last 6 months or more for many people. Your provider will help you choose at your consultation."}
+  ],
+  "related_h2": "Treatments that pair well with Xeomin",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Forehead, glabella (between the brows) and outer eye area",
+    "howPerformed": "A licensed provider places a series of small injections of incobotulinumtoxinA into the facial muscles that cause expression lines.",
+    "preparation": "Avoid alcohol and, if your doctor agrees, blood-thinning supplements such as fish oil for 24 hours to reduce bruising. Arrive with a clean face.",
+    "followup": "Stay upright for 4 hours, avoid rubbing the area and strenuous exercise for the rest of the day. Results show within about a week; re-treat about every 3 months."
+  }
+}

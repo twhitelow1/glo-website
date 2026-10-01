@@ -1,0 +1,55 @@
+{
+  "slug": "dermal-filler",
+  "keyword": "Dermal Filler",
+  "title": "Dermal Filler in Ocala, FL | Lips & Cheeks | GLO Aesthetics",
+  "meta": "Dermal filler in Ocala, FL restores volume in lips, cheeks and jawline with results that can last 6–18 months. From $650 a syringe. Book at GLO Aesthetics.",
+  "answer": "Dermal filler is a hyaluronic-acid gel injection that restores lost volume, softens lines and enhances natural contours like lips, cheeks and jawline. It suits adults who want a refreshed look without surgery: treatment takes 30–45 minutes, results are visible right away with minimal downtime, and they last about 6–18 months. Results vary.",
+  "treats_h2": "What does dermal filler treat?",
+  "treats_intro": "Dermal filler treats volume loss and contour concerns — hollow cheeks, temples and under-eyes, thin or uneven lips, nasolabial folds and a soft jawline or chin.",
+  "how_h2": "How does dermal filler work?",
+  "how": "Hyaluronic-acid (HA) dermal filler is a smooth, cross-linked gel made from a sugar your skin already produces. Placed precisely beneath the skin, it adds volume and structure right away, and because HA attracts water it also helps the area look plumper and more hydrated. Your body gradually breaks the gel down over 6–18 months, depending on the product and area. Because it's HA, it can be dissolved with hyaluronidase if needed.",
+  "fit_h2": "Is dermal filler right for me?",
+  "good_fit": [
+    "You've noticed hollowing in your cheeks, temples or under-eyes",
+    "You'd like fuller, more balanced lips that still look like yours",
+    "You want softer nasolabial folds or a more defined jawline and chin",
+    "You want immediate results with minimal downtime"
+  ],
+  "not_fit": [
+    "You're pregnant or breastfeeding",
+    "You have an active skin infection, breakout or cold sore in the treatment area",
+    "You've had an allergic reaction to hyaluronic-acid filler or lidocaine",
+    "Your lines only show when you move your face — Xeomin or Daxxify is usually the better fit"
+  ],
+  "expect_h2": "What happens during a dermal filler appointment?",
+  "expect_intro": "A dermal filler appointment takes about 30–45 minutes: we map your goals and anatomy, apply numbing cream, place the filler precisely, and you see results right away.",
+  "cost_h2": "How much does dermal filler cost in Ocala?",
+  "faq_h2": "Dermal Filler FAQs",
+  "faq_rename": {
+    "Does it hurt?": "Does dermal filler hurt?",
+    "Is there downtime?": "Is there downtime after dermal filler?"
+  },
+  "faq_add": [
+    {
+      "q": "How long does dermal filler last?",
+      "a": "Hyaluronic-acid dermal filler typically lasts 6–18 months. How long yours lasts depends on the product, the area treated and your individual metabolism, and your provider will recommend when to schedule a touch-up."
+    },
+    {
+      "q": "What should I avoid after dermal filler?",
+      "a": "For about 24 hours, skip strenuous exercise, alcohol and heavy pressure or massage on the treated area. Your provider will give you aftercare instructions; mild swelling or bruising usually settles within a few days."
+    },
+    {
+      "q": "What's the difference between dermal filler and Xeomin?",
+      "a": "Dermal filler adds volume and structure to areas like lips, cheeks and jawline. Xeomin relaxes the muscles that cause expression lines, such as frown lines. Many people combine both, and your provider will recommend the right mix at your consultation."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Dermal Filler",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Lips, cheeks, temples, under-eyes, nasolabial folds, jawline and chin",
+    "howPerformed": "After topical numbing, a licensed injector places hyaluronic-acid filler with a fine needle or cannula into targeted areas to restore volume and contour.",
+    "preparation": "Avoid alcohol and, if your doctor agrees, blood-thinning supplements such as fish oil for 24 hours to reduce bruising. Arrive with a clean face.",
+    "followup": "Avoid strenuous exercise and pressing on the treated area for about 24 hours. Mild swelling or bruising can last a few days; results last about 6–18 months."
+  }
+}

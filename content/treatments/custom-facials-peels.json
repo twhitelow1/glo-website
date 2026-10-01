@@ -1,0 +1,54 @@
+{
+  "slug": "custom-facials-peels",
+  "keyword": "Facials & Chemical Peels",
+  "title": "Facials & Chemical Peels in Ocala, FL | GLO Aesthetics",
+  "meta": "Custom facials & chemical peels in Ocala, FL brighten dull skin, clear pores and refine texture in a 60-minute visit, from $185. Book at GLO Aesthetics.",
+  "answer": "A custom facial or chemical peel is a corrective skin treatment that combines cleansing, exfoliation, extractions and a peel or mask chosen for your skin that day. It suits skin with dullness, congestion, sun damage or rough texture. A visit takes about 60 minutes, with no downtime to a few days of peeling, and a series of 4–6 is often recommended.",
+  "treats_h2": "What do facials and chemical peels treat?",
+  "treats_intro": "Custom facials and chemical peels treat surface skin concerns — dullness, uneven tone, clogged pores, sun spots and fine texture — with a plan built around how your skin looks on the day.",
+  "how_h2": "How do custom facials and chemical peels work?",
+  "how": "Your provider starts with a skin analysis, then cleanses, exfoliates and performs extractions where needed. An enzyme or chemical peel loosens the bonds between dull, dead surface cells so they shed and reveal fresher skin underneath, which helps even tone and smooth texture. Medical-grade serums matched to your concerns finish the treatment. Peel depth is adjusted to your goals and schedule, from light peels with little flaking to medium-depth peels.",
+  "fit_h2": "Is a custom facial or chemical peel right for me?",
+  "good_fit": [
+    "Your skin looks dull, uneven or tired",
+    "You deal with clogged pores, congestion or breakouts",
+    "You have sun spots, pigmentation or rough texture you want to soften",
+    "You want a results-focused facial built around your skin, not a one-size-fits-all routine"
+  ],
+  "not_fit": [
+    "You have an active skin infection, open wounds or a cold sore flare in the area",
+    "You've recently used isotretinoin (Accutane) — peels are usually postponed",
+    "You're sunburned or have a vacation in the sun planned right after a peel",
+    "Your main concern is deeper wrinkles or acne scarring — microneedling or laser skin revitalization may be the better fit"
+  ],
+  "expect_h2": "What happens during a custom facial or chemical peel appointment?",
+  "expect_intro": "Your 60-minute visit starts with a skin analysis, then a customized facial or peel and targeted serums. You leave with an immediate glow, and peel benefits keep building over the next week.",
+  "cost_h2": "How much do facials and chemical peels cost in Ocala?",
+  "faq_h2": "Facial & Chemical Peel FAQs",
+  "faq_rename": {
+    "How often should I come in?": "How often should I get a facial or chemical peel?"
+  },
+  "faq_add": [
+    {
+      "q": "What should I avoid after a chemical peel?",
+      "a": "Avoid picking or peeling flaking skin, direct sun, exfoliants and retinoids until your skin has healed — usually about a week after a medium-depth peel. Use a gentle cleanser, moisturizer and daily broad-spectrum sunscreen."
+    },
+    {
+      "q": "Are chemical peels safe for darker skin?",
+      "a": "Yes, when the peel type and depth are chosen carefully. Darker skin tones can be more prone to pigment changes, so your provider will select a peel suited to your skin and goals and may suggest a gentler approach."
+    },
+    {
+      "q": "What's the difference between a custom facial and a mini facial?",
+      "a": "A custom facial is a 60-minute corrective treatment with extractions, peels and targeted serums for specific concerns. A Mini Facial (Express Glo) is a 30-minute refresh — cleansing, light exfoliation and hydration — ideal for maintenance between deeper treatments."
+    }
+  ],
+  "related_h2": "Treatments that pair well with facials and chemical peels",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/NoninvasiveProcedure",
+    "bodyLocation": "Face",
+    "howPerformed": "After a skin analysis, a licensed provider cleanses, exfoliates and extracts, then applies an enzyme or chemical peel or mask and medical-grade serums matched to your skin.",
+    "preparation": "Arrive with clean skin and let your provider know about any retinoids, recent sun exposure or skin medications. You may be asked to pause retinoids a few days before a peel.",
+    "followup": "Use gentle skincare and daily sunscreen, and don't pick at any peeling. For active concerns, a series of 4–6 sessions every 2–4 weeks is common, then monthly maintenance."
+  }
+}

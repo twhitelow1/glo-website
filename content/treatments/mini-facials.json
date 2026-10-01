@@ -1,0 +1,56 @@
+{
+  "slug": "mini-facials",
+  "keyword": "Mini Facials",
+  "title": "Mini Facials in Ocala, FL | Express Glo | GLO Aesthetics",
+  "meta": "Mini facials in Ocala, FL: our 30-minute Express Glo cleanses, exfoliates and hydrates with no downtime, from $99. Book your quick glow at GLO Aesthetics.",
+  "answer": "A mini facial is a short, refreshing skin treatment that cleanses, gently exfoliates and hydrates your skin for a quick glow. It suits busy schedules, monthly maintenance between deeper treatments and pre-event prep. GLO's Express Glo takes about 30 minutes, has no downtime and you can put makeup on and return to your day right away.",
+  "treats_h2": "What does a mini facial treat?",
+  "treats_intro": "A mini facial treats everyday dullness, mild congestion and dehydrated skin, and gives you a fast glow before a big day — without the time of a full facial.",
+  "how_h2": "How does a mini facial work?",
+  "how": "GLO's Express Glo mini facial follows a short, focused sequence. After a quick skin check, your provider cleanses away oil and buildup, then uses light exfoliation to lift dull surface cells so your skin looks brighter. A hydrating mask finishes the treatment to restore moisture and glow. It skips the extended massage and multi-step masking of a full facial, so it fits into about 30 minutes and works best as maintenance.",
+  "fit_h2": "Is a mini facial right for me?",
+  "good_fit": [
+    "You want a quick glow in about 30 minutes",
+    "Your skin feels dull, dry or a little congested",
+    "You have an event coming up and want to look fresh",
+    "You'd like easy monthly maintenance between deeper treatments"
+  ],
+  "not_fit": [
+    "You have an active skin infection, open wounds or a cold sore flare",
+    "You're sunburned or your skin is irritated right now",
+    "You want to treat a specific concern like pigmentation or stubborn congestion — a Custom Facial or Peel is the better fit",
+    "Your main concern is fine lines, scarring or texture — microneedling may be the better fit"
+  ],
+  "expect_h2": "What happens during a mini facial appointment?",
+  "expect_intro": "A mini facial takes about 30 minutes: a quick skin check, cleansing and light exfoliation, then a hydrating mask. You can wear makeup and get back to your day right away.",
+  "cost_h2": "How much does a mini facial cost in Ocala?",
+  "faq_h2": "Mini Facial FAQs",
+  "faq_rename": {
+    "How is this different from a full facial?": "How is a mini facial different from a full facial?",
+    "Can I wear makeup right after?": "Can I wear makeup right after a mini facial?",
+    "How often should I book one?": "How often should I get a mini facial?"
+  },
+  "faq_add": [
+    {
+      "q": "How long does a mini facial take?",
+      "a": "About 30 minutes. Our Express Glo mini facial is thoughtfully designed to fit into a lunch break or a busy day, with no downtime afterward."
+    },
+    {
+      "q": "When should I get a mini facial before an event?",
+      "a": "A day or two before your event works well for most people. Because a mini facial uses only light exfoliation and has no downtime, your skin looks fresh and hydrated without any peeling."
+    },
+    {
+      "q": "Is a mini facial good for sensitive skin?",
+      "a": "Often, yes. A mini facial uses gentle cleansing, light exfoliation and hydration. Let your provider know about any sensitivity, rosacea or products you use so the treatment can be adjusted for your skin."
+    }
+  ],
+  "related_h2": "Treatments that pair well with mini facials",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/NoninvasiveProcedure",
+    "bodyLocation": "Face",
+    "howPerformed": "A licensed provider cleanses and lightly exfoliates the skin, then applies a hydrating mask in a 30-minute session.",
+    "preparation": "No special preparation is needed. Arrive with clean skin if you can, and mention any sensitivity or active skincare you use.",
+    "followup": "There is no downtime, so you can wear makeup and return to your day right away. Monthly visits are popular for maintenance."
+  }
+}

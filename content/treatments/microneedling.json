@@ -1,0 +1,54 @@
+{
+  "slug": "microneedling",
+  "keyword": "Microneedling",
+  "title": "Microneedling in Ocala, FL | SkinPen | GLO Aesthetics",
+  "meta": "Microneedling in Ocala, FL with FDA-cleared SkinPen smooths acne scars, fine lines and pores, safe for all skin tones. From $350. Book at GLO Aesthetics.",
+  "answer": "Microneedling is a collagen-building skin treatment that uses the FDA-cleared SkinPen to create tiny, controlled micro-channels in your skin. It suits all skin tones and helps acne scars, fine lines, enlarged pores and texture. Sessions take 30–60 minutes, redness fades in 24–72 hours, and most people do a series of 3 or more sessions.",
+  "treats_h2": "What does microneedling treat?",
+  "treats_intro": "Microneedling treats texture concerns — acne scarring, fine lines and uneven texture, enlarged pores and neck wrinkles — by prompting your skin to build new collagen.",
+  "how_h2": "How does microneedling work?",
+  "how": "GLO uses SkinPen, the first FDA-cleared microneedling device. A sterile, single-use cartridge of fine needles creates controlled micro-channels in your skin. Your body responds with its natural healing cascade, building new collagen and elastin over the following weeks, which gradually smooths scars, lines and texture. Because it works mechanically rather than with heat or light, microneedling is considered safe across all Fitzpatrick skin types.",
+  "fit_h2": "Is microneedling right for me?",
+  "good_fit": [
+    "You have acne scars, fine lines or uneven texture",
+    "You'd like to refine the look of enlarged pores",
+    "You have a darker skin tone and want a treatment that doesn't rely on heat or light",
+    "You're happy to commit to a series of sessions for gradual results"
+  ],
+  "not_fit": [
+    "You have an active breakout, skin infection or cold sore in the treatment area",
+    "You're pregnant, or have recently taken isotretinoin (Accutane)",
+    "You tend to form keloid scars",
+    "Your main concern is oil and enlarged pores — the Daxxify Facial with Microneedling may be a better fit"
+  ],
+  "expect_h2": "What happens during a microneedling appointment?",
+  "expect_intro": "A microneedling appointment takes about 30–60 minutes: numbing cream, a SkinPen pass over your skin, and 24–72 hours of redness as your skin begins building collagen.",
+  "cost_h2": "How much does microneedling cost in Ocala?",
+  "faq_h2": "Microneedling FAQs",
+  "faq_rename": {
+    "How many sessions will I need?": "How many microneedling sessions will I need?"
+  },
+  "faq_add": [
+    {
+      "q": "Does microneedling hurt?",
+      "a": "Most people find microneedling very tolerable. Topical numbing cream is applied before treatment, so you'll usually feel only light pressure or a mild scratching sensation as the SkinPen moves across your skin."
+    },
+    {
+      "q": "What should I avoid after microneedling?",
+      "a": "For about 24–72 hours, skip makeup, sun exposure, strenuous exercise and active skincare such as retinoids or exfoliating acids. Use gentle products and sunscreen, and follow your provider's aftercare instructions."
+    },
+    {
+      "q": "How long do microneedling results last?",
+      "a": "Microneedling results build gradually as your skin makes new collagen over the weeks after each session. Results vary, and many people schedule maintenance sessions to keep them up; your provider will recommend a plan for your skin."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Microneedling",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Face and neck",
+    "howPerformed": "After topical numbing, a provider moves the SkinPen device with a sterile, single-use needle cartridge across the skin to create controlled micro-channels.",
+    "preparation": "Arrive with clean skin and let your provider know about any recent breakouts, cold sores, isotretinoin use or active skincare such as retinoids.",
+    "followup": "Expect redness for 24–72 hours; use gentle skincare and sunscreen. Most clients do 3 or more sessions spaced about 4 weeks apart."
+  }
+}

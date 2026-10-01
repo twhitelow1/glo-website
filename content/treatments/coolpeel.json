@@ -1,0 +1,55 @@
+{
+  "slug": "coolpeel",
+  "keyword": "CoolPeel",
+  "title": "CoolPeel in Ocala, FL | Lunchtime CO2 Laser | GLO Aesthetics",
+  "meta": "CoolPeel in Ocala, FL is a 15–20 minute CO2 laser for fine lines, sun damage and pores with just 24–72 hours of downtime. Book a laser consultation at GLO.",
+  "answer": "CoolPeel is a low-downtime CO2 laser resurfacing treatment on the Tetra platform that smooths fine lines, sun damage, mild acne scarring and rough texture. It suits busy people who want CO2 results without a week off. Sessions take 15–20 minutes, redness usually clears in 24–72 hours, and a series of 3 builds the best results.",
+  "treats_h2": "What does CoolPeel treat?",
+  "treats_intro": "CoolPeel treats fine lines and wrinkles, sun damage and age spots, mild acne scarring, and enlarged pores and rough texture. It refreshes the outermost layer of your skin.",
+  "how_h2": "How does CoolPeel work?",
+  "how": "CoolPeel is a protocol on the Tetra CO2 laser. It delivers very brief, low-density pulses of CO2 laser energy that treat only the outermost layer of your skin. That controlled, shallow treatment prompts your skin to shed damaged surface cells and make fresh collagen. Deeper layers are spared, so recovery takes days rather than a week or more. Because each session is superficial, improvements build over a series.",
+  "fit_h2": "Is CoolPeel right for me?",
+  "good_fit": [
+    "You'd like to soften fine lines, sun spots or dullness",
+    "You want CO2 laser results with only a few days of redness",
+    "You have mild acne scarring or enlarged pores",
+    "You can commit to a series of 3 or more sessions about a month apart"
+  ],
+  "not_fit": [
+    "You're pregnant or breastfeeding",
+    "You have an active cold sore, skin infection or open wound in the treatment area",
+    "You've recently taken isotretinoin (Accutane) — ask your provider about timing",
+    "You have deeper wrinkles or significant scarring — Tetra CO2 laser skin revitalization is usually the better fit"
+  ],
+  "expect_h2": "What happens during a CoolPeel appointment?",
+  "expect_intro": "A CoolPeel visit starts with numbing cream for comfort, then 15–20 minutes of quick laser passes. Your skin will be red at first, and the redness typically fades within 24–72 hours.",
+  "cost_h2": "How much does CoolPeel cost in Ocala?",
+  "faq_h2": "CoolPeel FAQs",
+  "faq_rename": {
+    "Can I go back to normal activity the same day?": "Can I go back to normal activity the same day after CoolPeel?",
+    "Is one session enough?": "Is one CoolPeel session enough?"
+  },
+  "faq_add": [
+    {
+      "q": "Does CoolPeel hurt?",
+      "a": "CoolPeel is usually very tolerable. We apply a numbing cream first, and most people feel only warmth and a light prickling during the quick laser passes. Your skin may feel warm, like a mild sunburn, for a few hours afterward."
+    },
+    {
+      "q": "What should I avoid after CoolPeel?",
+      "a": "Avoid direct sun and wear sunscreen every day while your skin recovers. Skip retinoids, exfoliants and harsh products until your provider says it's okay. Don't pick at any flaking skin. Most people are back to makeup within 24–72 hours."
+    },
+    {
+      "q": "CoolPeel vs. Tetra CO2: which is right for me?",
+      "a": "CoolPeel suits you if you want a refresh with 24–72 hours of downtime and can do a series. Tetra CO2 is stronger and better for significant sun damage, deeper wrinkles and acne scarring, with 5–7 days of downtime. We'll help you choose at your consultation."
+    }
+  ],
+  "related_h2": "Treatments that pair well with CoolPeel",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/NoninvasiveProcedure",
+    "bodyLocation": "Face",
+    "howPerformed": "After topical numbing, a licensed provider makes brief, low-density passes with the Tetra CO2 laser to treat the outermost layer of skin.",
+    "preparation": "Avoid sun exposure and tanning before treatment, and tell your provider about any history of cold sores or recent isotretinoin use. Arrive with a clean face.",
+    "followup": "Expect redness for 24–72 hours. Wear sunscreen daily, and plan a series of 3 or more sessions about a month apart for the best results."
+  }
+}

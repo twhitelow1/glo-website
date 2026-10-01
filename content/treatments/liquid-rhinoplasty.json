@@ -1,0 +1,54 @@
+{
+  "slug": "liquid-rhinoplasty",
+  "keyword": "Liquid Rhinoplasty",
+  "title": "Liquid Rhinoplasty in Ocala, FL | GLO Aesthetics",
+  "meta": "Liquid rhinoplasty in Ocala, FL smooths bumps and refines your nose with HA filler — no surgery, 15–30 minutes, from $900. Book now at GLO Aesthetics.",
+  "answer": "Liquid rhinoplasty is a non-surgical nose job that uses hyaluronic-acid filler to smooth a dorsal hump, balance asymmetry and refine the tip or bridge. It suits adults who want a straighter profile without surgery: treatment takes 15–30 minutes with minimal downtime, results show right away and last about 9–18 months. Results vary.",
+  "treats_h2": "What does liquid rhinoplasty treat?",
+  "treats_intro": "Liquid rhinoplasty treats shape concerns that adding volume can correct — dorsal humps, nasal asymmetry, an under-projected tip or bridge, and minor refinements after a prior surgical rhinoplasty.",
+  "how_h2": "How does liquid rhinoplasty work?",
+  "how": "Liquid rhinoplasty uses hyaluronic-acid dermal filler placed in tiny, precise amounts along the nose. Filler above and below a dorsal hump camouflages the bump for a straighter profile, and small amounts can lift the tip or balance one side with the other. Filler adds volume — it can't make your nose smaller. Because the nose has a delicate blood supply, our injectors use meticulous technique and keep hyaluronidase on hand to dissolve filler if needed.",
+  "fit_h2": "Is liquid rhinoplasty right for me?",
+  "good_fit": [
+    "You have a dorsal hump you'd like to smooth",
+    "You'd like to balance mild asymmetry or refine your tip or bridge",
+    "You want a refined profile without surgery, incisions or general anesthesia",
+    "You've had a rhinoplasty and want a minor touch-up"
+  ],
+  "not_fit": [
+    "You want your nose made smaller — surgical rhinoplasty is the right path",
+    "You have breathing or functional nasal concerns that need a medical evaluation",
+    "You're pregnant or breastfeeding",
+    "You've had an allergic reaction to hyaluronic-acid filler or lidocaine"
+  ],
+  "expect_h2": "What happens during a liquid rhinoplasty appointment?",
+  "expect_intro": "A liquid rhinoplasty appointment takes about 15–30 minutes: nasal mapping, numbing cream, precise filler placement, and a visible change right away that settles over a few days.",
+  "cost_h2": "How much does liquid rhinoplasty cost in Ocala?",
+  "faq_h2": "Liquid Rhinoplasty FAQs",
+  "faq_rename": {
+    "How long do results last?": "How long does liquid rhinoplasty last?"
+  },
+  "faq_add": [
+    {
+      "q": "Does liquid rhinoplasty hurt?",
+      "a": "Most people feel only mild pressure. Topical numbing cream is applied before treatment, and the injections themselves are quick, so discomfort is usually minimal and short-lived."
+    },
+    {
+      "q": "What should I avoid after liquid rhinoplasty?",
+      "a": "For the first few days, avoid pressing on or massaging your nose, and skip strenuous exercise for about 24 hours. Your provider will give you aftercare instructions, including when it's okay to wear glasses that rest on your nose."
+    },
+    {
+      "q": "Liquid rhinoplasty vs. surgical rhinoplasty: what's the difference?",
+      "a": "Liquid rhinoplasty uses filler to smooth and refine your nose in one short visit with minimal downtime, and results last about 9–18 months. Surgical rhinoplasty is permanent and can reduce size, but involves incisions, anesthesia and weeks of recovery."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Liquid Rhinoplasty",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Nose (bridge, dorsum and tip)",
+    "howPerformed": "After topical numbing, a licensed injector places small amounts of hyaluronic-acid filler along the nose to smooth humps, balance asymmetry and refine projection.",
+    "preparation": "Avoid alcohol and, if your doctor agrees, blood-thinning supplements such as fish oil for 24 hours to reduce bruising. Arrive with a clean face.",
+    "followup": "Avoid pressure on the nose and strenuous exercise as directed. Your result settles over a few days as swelling resolves and lasts about 9–18 months."
+  }
+}
