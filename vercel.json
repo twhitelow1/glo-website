@@ -15,22 +15,22 @@
     },
     {
       "source": "/Category-BeautyServices",
-      "destination": "/Category-LaserServices",
+      "destination": "/Category-SkinServices",
       "permanent": true
     },
     {
       "source": "/Category-BeautyServices.html",
-      "destination": "/Category-LaserServices",
+      "destination": "/Category-SkinServices",
       "permanent": true
     },
     {
       "source": "/Category-Skin",
-      "destination": "/#treatments",
+      "destination": "/Category-SkinServices",
       "permanent": true
     },
     {
       "source": "/Category-Skin.html",
-      "destination": "/#treatments",
+      "destination": "/Category-SkinServices",
       "permanent": true
     }
   ]
