@@ -126,6 +126,18 @@
   .glo-dark .btn-primary:hover,.glo-dark .cat-btn:hover{background:#FAF9F6 !important;color:#3A2D1E !important;}
   .glo-dark .footer-link:hover,.glo-dark .nav-link:hover{color:#E8D3A8 !important;}
 </style>
+<style id="glo-crumbs-css">
+  /* Breadcrumb sits inside the hero's text panel, pinned to its top and aligned with the copy. */
+  .glo-split-text{position:relative;}
+  .glo-hero-crumbs{position:absolute;top:26px;left:max(48px, calc(100% - 72px - 600px));right:72px;font-size:13.5px;color:#8A8377;letter-spacing:0.01em;}
+  .glo-hero-crumbs a{color:#8A8377;}
+  .glo-hero-crumbs a:hover{color:#B8894F;}
+  .glo-hero-crumbs [aria-current]{color:#221F1B;}
+  @media (max-width: 900px){
+    .glo-split-text:has(.glo-hero-crumbs){flex-direction:column;align-items:stretch !important;}
+    .glo-hero-crumbs{position:static;margin:0 0 22px;}
+  }
+</style>
 </head>
 <body>
 
@@ -237,15 +249,11 @@
     </div>
   </div>
 
-  <!-- ===================== BREADCRUMB ===================== -->
-  <div class="fin-container" style="padding:22px 48px 0;font-size:13.5px;color:#8A8377;">
-    <a href="index.html" style="color:#8A8377;text-decoration:none;">Home</a> &nbsp;/&nbsp;
-    <span style="color:#221F1B;">Financing</span>
-  </div>
-
   <!-- ===================== HERO ===================== -->
   <div class="glo-split-hero">
-    <div class="glo-split-text"><div class="glo-split-text-inner">
+    <div class="glo-split-text"><nav class="glo-hero-crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp;
+    <span aria-current="page">Financing</span></nav>
+      <div class="glo-split-text-inner">
       <div class="fin-eyebrow" style="justify-content:flex-start;margin-bottom:24px;">
         <div class="fin-eyebrow-line" style="background:#B8894F;"></div>
         <span style="font-size:12.5px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">FINANCING</span>
