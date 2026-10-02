@@ -91,3 +91,13 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
   .glo-stats-strip > div > span:first-child{font-size:17px !important;}
   .glo-stats-strip > div > span:last-child{font-size:10px !important;letter-spacing:.08em !important;line-height:1.3;}
 }
+
+/* ---------- Team group photo (AI-generated composite) ---------- */
+.glo-teamshot{display:flex;gap:56px;align-items:center;}
+.glo-teamshot figure{flex:0 0 46%;margin:0;}
+.glo-teamshot img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
+.glo-teamshot figcaption{font-size:12.5px;color:#8A8377;margin-top:10px;}
+.tm-groupshot{margin:0 0 36px;}
+.tm-groupshot img{width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 35%;border-radius:10px;display:block;}
+.tm-groupshot figcaption{font-size:12.5px;color:#8A8377;margin-top:10px;}
+@media (max-width:900px){.glo-teamshot{flex-direction:column;align-items:stretch;gap:28px;}.glo-teamshot figure{flex:none;}}

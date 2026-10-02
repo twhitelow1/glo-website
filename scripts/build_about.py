@@ -6,7 +6,7 @@ sys.path.insert(0, 'scripts')
 from glo_page import *  # noqa
 
 _t = json.load(open('content/team.json'))
-team, founder = _t['team'], _t['founder']
+team, founder, group = _t['team'], _t['founder'], _t['group_photo']
 PATH, URL = '/about', SITE + '/about'
 IMG_HERO = SITE + '/assets/ocala/lounge.jpg'
 HERO_SRC = '/assets/ocala/lounge.webp'
@@ -91,6 +91,7 @@ body += f'''
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
         <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation.</p>
       </div>
+      <figure class="tm-groupshot"><img src="{group['src']}" alt="{group['alt']}" width="{group['width']}" height="{group['height']}" loading="lazy" decoding="async"><figcaption>{group['note']}</figcaption></figure>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
     </div>

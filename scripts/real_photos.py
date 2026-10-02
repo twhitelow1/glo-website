@@ -68,7 +68,31 @@ def figure(s, key, caption):
     return s[:m.start(2)] + block + s[m.end(2):]
 
 
+def locations_team(s):
+    if 'id="meet-team"' in s:
+        return s
+    g = json.load(open('content/team.json'))['group_photo']
+    sec = f'''  <!-- ===================== MEET THE TEAM ===================== -->
+  <section id="meet-team" style="width:100%;background:#FAF9F6;">
+    <div class="glo-container glo-teamshot" style="max-width:1140px;margin:0 auto;padding:90px 48px;">
+      <figure><img src="{g['src']}" alt="{g['alt']}" width="{g['width']}" height="{g['height']}" loading="lazy" decoding="async"><figcaption>{g['note']}</figcaption></figure>
+      <div>
+        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:16px;">Who will I <span class="glo-accent">meet</span> at GLO?</h2>
+        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">The same warm, licensed team cares for clients in Ocala and Palatka &mdash; founder Renee Porter, nurse practitioner McKenzie McCalla, APRN, FNP-C, medical esthetician Sundee Bass, Baily Bellamy and aesthetician Mariah Young.</p>
+        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 26px;">Every visit starts with listening. Book with the provider whose focus fits your goals, or let us match you at your consultation.</p>
+        <a href="/about#team" class="btn-outline" style="display:inline-block;border:1px solid #221F1B;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Meet Our Team</a>
+      </div>
+    </div>
+  </section>
+
+'''
+    return s.replace('  <!-- ===================== FAQ', sec + '  <!-- ===================== FAQ', 1)
+
+
 if __name__ == '__main__':
+    f = 'locations/index.html'
+    s = locations_team(open(f).read())
+    open(f, 'w').write(s)
     f = 'locations/ocala.html'
     s = ocala(open(f).read())
     open(f, 'w').write(s)
