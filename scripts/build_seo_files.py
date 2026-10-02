@@ -68,6 +68,8 @@ lines = [
     '',
 ]
 for name, items in groups:
+    if not items:
+        continue
     lines += [f'## {name}', '']
     lines += [f'- [{p["h1"] or p["title"]}]({p["url"]}): {p["desc"]}' for p in items]
     lines.append('')

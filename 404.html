@@ -113,6 +113,7 @@
 </style>
 <style id="glo-locdd-css">.dd-loc{transition:background .18s ease;}.dd-loc:hover{background:#EFE9E1;}.dd-loc:hover span:first-child{color:#B8894F !important;}</style>
 <style>.faq-row{border-top:1px solid #E6E1D6;}.faq-row:last-child{border-bottom:1px solid #E6E1D6;}@media (max-width:1000px){.tx-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}}@media (max-width:640px){.tx-grid{grid-template-columns:1fr !important;}}</style>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 
@@ -247,7 +248,7 @@
         <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">PAGE NOT FOUND</span>
         <div style="width:36px;height:1px;background:#B8894F;"></div>
       </div>
-      <h1 class="glo-hero-h1" style="font-size:50px;line-height:1.15;color:#221F1B;">This page has moved &mdash; <span style="font-style:italic;color:#B8894F;">your glow hasn&rsquo;t</span></h1>
+      <h1 class="glo-hero-h1 is-long" style="font-size:50px;line-height:1.15;color:#221F1B;">This page has moved &mdash; <span style="font-style:italic;color:#B8894F;">your glow hasn&rsquo;t</span></h1>
       <p style="margin:22px auto 0;font-size:18px;line-height:1.8;color:#5C574E;max-width:600px;">The page you were looking for isn&rsquo;t here anymore. Every treatment we offer in Ocala and Palatka, FL is on our treatments page, or call us at <a href="tel:+13525598034" style="color:#B8894F;font-weight:600;">352-559-8034</a> and we&rsquo;ll point you in the right direction.</p>
       <div style="display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap;">
         <a href="/treatments" class="btn-primary" style="display:inline-block;background:#B8894F;color:#FAF9F6;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">View All Treatments</a>
@@ -259,15 +260,48 @@
   </div>
 
   <!-- ===================== FOOTER ===================== -->
-  <div class="glo-dark" style="width:100%;background:#6B5435;color:#B8B0A4;">
-    <div class="glo-container glo-row" style="max-width:1440px;margin:0 auto;padding:48px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;gap:12px;">
-      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-        <img src="/assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:38px;width:auto;display:block;object-fit:contain;">
-        <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
+  <footer id="contact" class="glo-footer">
+    <div class="glo-footer-top">
+      <div class="glo-footer-brand">
+        <a href="/" aria-label="GLO Aesthetics + Wellness Lounge home"><img src="/assets/glo-logo.png" alt="GLO Aesthetics + Wellness Lounge" width="160" height="72" style="height:72px;width:auto;display:block;" loading="lazy"></a>
+        <p>A medical aesthetics &amp; wellness med spa in Ocala and Palatka, FL &mdash; where every plan starts with listening to you.</p>
+        <a href="/#book" class="glo-footer-book">Book a Consultation</a>
       </div>
-            <a href="/#home" style="color:#B8894F;">Back to Home &rarr;</a>
+      <nav aria-label="Treatments">
+        <h3>Treatments</h3>
+        <ul>
+          <li><a href="/injectables">Injectables</a></li>
+          <li><a href="/skin-services">Skin Services</a></li>
+          <li><a href="/wellness">Medical Wellness</a></li>
+          <li><a href="/treatments">All Treatments</a></li>
+          <li><a href="/membership-programs">Memberships</a></li>
+          <li><a href="/financing">Financing</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Popular treatments">
+        <h3>Popular</h3>
+        <ul>
+          <li><a href="/treatments/xeomin">Xeomin</a></li>
+          <li><a href="/treatments/dermal-filler">Dermal &amp; Lip Filler</a></li>
+          <li><a href="/treatments/laser-skin-revitalization">CO2 Laser Resurfacing</a></li>
+          <li><a href="/treatments/microneedling">Microneedling</a></li>
+          <li><a href="/treatments/laser-hair-removal">Laser Hair Removal</a></li>
+          <li><a href="/treatments/functional-weight-loss">Medical Weight Loss</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Visit Us</h3>
+        <div class="glo-footer-loc"><strong><a href="/locations/ocala">Ocala</a></strong><p>1925 SW 18th Ct, Unit 109<br>Ocala, FL 34471<br>Mon, Tue, Thu, Fri 9am&ndash;5pm &middot; Wed 9am&ndash;6pm<br>Sat &amp; Sun by appointment</p></div>
+        <div class="glo-footer-loc"><strong><a href="/locations/palatka">Palatka</a></strong><p>210 St Johns Ave<br>Palatka, FL 32177</p></div>
+        <p style="margin-top:18px;"><a href="tel:+13525598034">352-559-8034</a><br><a href="mailto:info@gloocala.com">info@gloocala.com</a></p>
+      </div>
     </div>
-  </div>
+    <div class="glo-footer-bottom">
+      <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
+      <span><a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
+    </div>
+  </footer>
+
 
 </div>
 <script>
@@ -280,5 +314,7 @@ function toggleMobileMenu(){
   });
 }
 </script>
+<nav class="glo-mbar" aria-label="Quick actions"><a href="/#book" class="glo-mbar-book">Book Now</a><a href="tel:+13525598034" class="glo-mbar-call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a></nav>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -41,8 +41,12 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 - Treatment page content lives in `content/treatments/<slug>.json`; `scripts/apply_treatments.py` applied it.
 - Category pages are generated: edit `scripts/build_categories.py`, then run it.
 - `scripts/glo_page.py` holds the shared page shell, SEO head and schema helpers for new generated pages.
+- `python3 scripts/design_layer.py`: applies the shared design layer (`assets/site.css`, `assets/site.js`, shared footer,
+  mobile Book/Call bar, marquee, H2 accent words, card thumbnails, photo bands from `content/bands.json`). Run it after
+  adding or regenerating a page; add the new page's H2s to its accent map.
 
 ## Brand
 Playfair Display headings, Inter body, Montserrat labels and buttons. Cream `#F3F0EA`, page `#FAF9F6`, gold `#B8894F`,
 bronze sections `#6B5435` (`glo-dark`). Reuse the brand characters in `docs/brand-characters.md` for imagery.
-Copy is warm, inviting and accepting, and uses NEPQ-style questions that help the reader see themselves.
+Every H2 gets one italic gold accent word (`.glo-accent`). Each treatment page has its own photo band; never reuse
+one photo set across pages. Copy is warm, inviting and accepting, and uses NEPQ-style questions that help the reader see themselves.
