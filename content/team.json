@@ -1,0 +1,46 @@
+{
+ "source": "GLO's Jane booking site (gloocala.janeapp.com), October 2026. Photos are Jane's 160x190 thumbnails; swap in full-size originals from GLO when available.",
+ "team": [
+  {
+   "name": "McKenzie McCalla",
+   "full_name": "Rannie McKenzie McCalla",
+   "credentials": "APRN, FNP-C",
+   "title": "Board-Certified Family Nurse Practitioner",
+   "locations": ["Ocala"],
+   "focus": ["Peptide therapy", "Medical weight loss", "Everesse skin tightening", "CoolPeel & laser treatments"],
+   "bio": ["McKenzie McCalla, APRN, FNP-C, is a board-certified Family Nurse Practitioner who is passionate about helping people feel confident, healthy and comfortable in their own skin. She focuses on peptides, weight management and aesthetic laser treatments, with an emphasis on personalized care.", "Her approach centers on helping each patient reach their own goals in a safe, thoughtful way. She believes wellness and aesthetics go hand in hand, and that the best results come from understanding each person as a whole, not simply treating a concern."],
+   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTQvMTY0NjMxL2Q1OGU0MmUwLTc1YmMtNDJlMy05YzRmLTk0YmNmNWFjMjJkNi8zSThBNDA1NS1FZGl0LmpwZWciXSxbInAiLCJ0aHVtYiIsIjE2MHgxOTAjIl1d?sha=fa9da2735a832ec0&for=gloocala.janeapp.com",
+   "book": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/19"
+  },
+  {
+   "name": "Sundee Bass",
+   "credentials": "",
+   "title": "Medical Esthetician &amp; Microneedling Specialist",
+   "locations": ["Ocala", "Palatka"],
+   "focus": ["Microneedling", "Chemical peels", "Custom facials", "Skin revision"],
+   "bio": ["Sundee Bass is a medical esthetician specializing in advanced skin revision and results-driven treatments. As a microneedling specialist, she also has extensive experience with non-ablative lasers and chemical peels, building customized plans that help each client reach healthier, more radiant skin.", "Sundee believes skincare should be both results-driven and relaxing, and that clients should never feel pressured into a treatment. She takes the time to educate, listen and help each person make decisions that feel right for them. Outside of GLO, she&rsquo;s a proud mom of two boys."],
+   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDgtMjAvMTQ0MjM3LzM1N2E0ZTFkLTdmN2ItNGJjNi04NDhmLTYzNmExZGRjZTI5Yi8yM2RjMzQ1Yy0yM2QxLTQ5NzctODY4Yi04ZGUyZGZiMjEyZDcuanBnIl0sWyJwIiwidGh1bWIiLCIxNjB4MTkwIyJdXQ?sha=511c730037e3720e&for=gloocala.janeapp.com",
+   "book": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/18"
+  },
+  {
+   "name": "Baily Bellamy",
+   "credentials": "",
+   "title": "Aesthetics &amp; Wellness Provider",
+   "locations": ["Ocala", "Palatka"],
+   "focus": ["Injectables &amp; filler", "Liquid rhinoplasty", "Everesse &amp; laser treatments", "Medical weight loss &amp; peptides"],
+   "bio": [],
+   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDctMDEvMTcwMzM0LzYzNzVjNTczLWI5NGMtNGM3Mi04ODI3LTczMDI5MTU3M2ViNS9CYWlseUhlYWRzaG90LmpwZyJdLFsicCIsInRodW1iIiwiMTYweDE5MCMiXV0?sha=b00b13fb18ab4ad9&for=gloocala.janeapp.com",
+   "book": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/16"
+  },
+  {
+   "name": "Mariah Young",
+   "credentials": "",
+   "title": "Aesthetician",
+   "locations": ["Ocala"],
+   "focus": ["Custom facials &amp; peels", "Mini facials", "Microneedling", "Skin analysis"],
+   "bio": [],
+   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTUvMDAxNTQyLzk4OTA3NDBmLTcxYzgtNDg5MC04ZDI2LTE0ZDdmZDIzMjhmZi8yQTYwMzM1NC0xRTVELTQwNUYtQUJCQS02OTYxMUE3QkJDOUQucG5nIl0sWyJwIiwidGh1bWIiLCIxNjB4MTkwIyJdXQ?sha=80feb70250354539&for=gloocala.janeapp.com",
+   "book": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/8"
+  }
+ ]
+}
