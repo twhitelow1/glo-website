@@ -39,6 +39,21 @@
   .glo-dark .footer-link:hover,.glo-dark .nav-link:hover{color:#E8D3A8 !important;}
 </style>
 <style id="glo-locdd-css">.dd-loc{transition:background .18s ease;}.dd-loc:hover{background:#EFE9E1;}.dd-loc:hover span:first-child{color:#B8894F !important;}</style>
+<link rel="stylesheet" href="/assets/site.css">
+<style id="glo-book-css">
+  .bk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch;}
+  .bk-card{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:34px 30px 18px;box-shadow:0 18px 40px rgba(34,31,27,0.05);}
+  .bk-card h3{font-size:30px;color:#221F1B;margin:0 0 8px;font-style:italic;}
+  .bk-card > p{font-size:15px;line-height:1.6;color:#5C574E;margin:0 0 18px;}
+  .bk-card > p a{color:#B8894F;font-weight:500;white-space:nowrap;}
+  .bk-card ul{list-style:none;margin:0;padding:0;}
+  .bk-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid #E6E1D6;}
+  .bk-name{display:block;font-size:16px;font-weight:500;color:#221F1B;}
+  .bk-desc{display:block;font-size:13.5px;color:#8A8377;margin-top:3px;}
+  .bk-btn{flex:none;background:#B8894F;color:#FAF9F6;padding:10px 20px;border-radius:2px;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;transition:background .2s ease;}
+  .bk-btn:hover{background:#6B5435;}
+  @media (max-width:1000px){.bk-grid{grid-template-columns:1fr;max-width:620px;margin:0 auto;}}
+</style>
 </head><body>
 <!doctype html>
 <html lang="en">
@@ -620,7 +635,7 @@
           <div style="width:36px;height:1px;background:#B8894F;"></div>
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">MEDSPA IN OCALA, FLORIDA</span>
         </div>
-        <h1 class="glo-hero-h1" style="font-size:56px;line-height:1.12;font-weight:600;color:#221F1B;">Medical Aesthetics &amp; Wellness Lounge in <span style="font-style:italic;font-weight:600;color:#B8894F;">Ocala</span>, FL</h1>
+        <h1 class="glo-hero-h1 is-long" style="font-size:56px;line-height:1.12;font-weight:600;color:#221F1B;">Medical Aesthetics &amp; Wellness Lounge in <span style="font-style:italic;font-weight:600;color:#B8894F;">Ocala</span>, FL</h1>
         <p style="max-width:520px;margin-top:26px;font-size:18.5px;line-height:1.75;color:#5C574E;font-weight:400;">
           Have you caught your reflection lately and thought, <em>&ldquo;that&rsquo;s not how I feel inside&rdquo;</em>?
           You&rsquo;re in the right place. GLO is a warm, judgment-free medspa for
@@ -656,6 +671,9 @@
       </div>
     </div>
   </div>
+
+  <!-- ===================== BENEFIT MARQUEE ===================== -->
+  <div class="glo-marquee" role="presentation"><div class="glo-marquee-track"><ul><li>Licensed providers</li><li>Plans built around you</li><li>Injectables</li><li>Laser &amp; RF skin care</li><li>Facials &amp; peels</li><li>Medical wellness</li><li>Judgment-free care</li><li>Ocala &amp; Palatka, FL</li></ul><ul aria-hidden="true"><li>Licensed providers</li><li>Plans built around you</li><li>Injectables</li><li>Laser &amp; RF skin care</li><li>Facials &amp; peels</li><li>Medical wellness</li><li>Judgment-free care</li><li>Ocala &amp; Palatka, FL</li></ul></div></div>
 
   <!-- ===================== PHILOSOPHY / ABOUT ===================== -->
   <div id="about" style="width:100%;background:#FAF9F6;">
@@ -726,7 +744,7 @@
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">REAL GLOW, REAL OCALA</span>
           <div style="width:36px;height:1px;background:#B8894F;"></div>
         </div>
-        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">Picture Yourself Glowing at Every Age</h2>
+        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">Picture Yourself <span class="glo-accent">Glowing</span> at Every Age</h2>
       </div>
 
       <div class="glo-grid-4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;">
@@ -768,7 +786,7 @@
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">OUR TREATMENTS</span>
           <div style="width:36px;height:1px;background:#B8894F;"></div>
         </div>
-        <h2 class="glo-h2" style="font-size:46px;line-height:1.15;color:#221F1B;">Injectables, Laser &amp; Skin Treatments in Ocala</h2>
+        <h2 class="glo-h2" style="font-size:46px;line-height:1.15;color:#221F1B;">Injectables, Laser &amp; Skin Treatments in <span class="glo-accent">Ocala</span></h2>
         <p style="margin-top:18px;font-size:17.5px;line-height:1.7;color:#5C574E;font-weight:300;">
           Not sure where to start? That&rsquo;s completely okay. Most of our guests arrive with a feeling &mdash;
           <em>&ldquo;I look tired,&rdquo; &ldquo;my skin has lost its glow,&rdquo; &ldquo;I just don&rsquo;t feel like me&rdquo;</em> &mdash;
@@ -784,7 +802,7 @@
           </div>
           <h3 style="font-size:21px;color:#221F1B;margin-bottom:6px;"><a href="/skin-services">Skin Services</a></h3>
           <p style="font-size:14.5px;line-height:1.5;color:#8A8377;font-weight:300;margin-bottom:18px;max-width:760px;">Sun damage, uneven tone, loosening skin, unwanted hair &mdash; or skin that just looks tired? Laser resurfacing, radiofrequency skin tightening, laser hair removal, custom facials, chemical peels &amp; microneedling, each matched to your skin.</p>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));column-gap:32px;row-gap:11px;border-top:1px solid #E6E1D6;padding-top:16px;">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));column-gap:32px;row-gap:11px;border-top:1px solid #E6E1D6;padding-top:16px;">
             <a id="rx-tetra-co2" href="/treatments/laser-skin-revitalization" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Laser Skin Revitalization</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Tetra CO2 laser</span></a>
             <a id="rx-coolpeel" href="/treatments/coolpeel" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">CoolPeel</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; CO2 laser</span></a>
             <a id="rx-laser-facials" href="/treatments/motus-laser-facial" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Motus Laser Facial</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; DEKA Motus laser</span></a>
@@ -845,7 +863,7 @@
           <div style="width:36px;height:1px;background:#B8894F;"></div>
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">CUSTOM FACIALS</span>
         </div>
-        <h2 style="font-size:40px;line-height:1.2;color:#FAF9F6;max-width:440px;">Personalized Skincare, Every Session</h2>
+        <h2 style="font-size:40px;line-height:1.2;color:#FAF9F6;max-width:440px;">Personalized Skincare, <span class="glo-accent">Every Session</span></h2>
         <p style="margin-top:20px;font-size:17px;line-height:1.75;color:#D8D2C6;font-weight:300;max-width:440px;">
           Each facial is tailored to your skin's needs using medical-grade
           serums, oxygen infusion, radio frequency, red light therapy, gua sha
@@ -921,53 +939,40 @@
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">BOOK A CONSULTATION</span>
           <div style="width:36px;height:1px;background:#B8894F;"></div>
         </div>
-        <h2 class="glo-h2" style="font-size:46px;line-height:1.15;color:#221F1B;">Every Journey Starts With a Conversation</h2>
+        <h2 class="glo-h2" style="font-size:46px;line-height:1.15;color:#221F1B;">Every Journey Starts With a <span class="glo-accent">Conversation</span></h2>
         <p style="margin-top:18px;font-size:17.5px;line-height:1.7;color:#5C574E;font-weight:300;">
           There&rsquo;s no pressure and no wrong question. Every plan starts with a consultation where we
           listen first, so you can decide what feels right for you. Which conversation would you like to start with?
         </p>
       </div>
 
-      <div class="glo-grid-5" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;">
-        <div id="consult-aesthetics" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Aesthetics Consultation</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Injections, hormone therapy &amp; overall aesthetic goals.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/14/treatment/114" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
+      <div class="bk-grid">
+        <div class="bk-card">
+          <h3>Injectables</h3>
+          <p>Soften lines, restore volume or balance your features. <a href="/injectables">Explore injectables &rarr;</a></p>
+          <ul>
+            <li id="consult-aesthetics" class="bk-row"><div><span class="bk-name">Aesthetics Consultation</span><span class="bk-desc">Xeomin, Daxxify, filler &amp; facial balancing</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/14/treatment/114" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Aesthetics Consultation">Book</a></li>
+          </ul>
         </div>
-        <div id="consult-skincare" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Skincare Consultation</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Advanced skincare, device treatments &amp; custom facials &amp; peels.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/118" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
+        <div class="bk-card">
+          <h3>Skin</h3>
+          <p>Laser, radiofrequency, facials, peels &amp; microneedling. <a href="/skin-services">Explore skin &rarr;</a></p>
+          <ul>
+            <li id="consult-skincare" class="bk-row"><div><span class="bk-name">Skincare Consultation</span><span class="bk-desc">Advanced skincare &amp; device treatments</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/118" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Skincare Consultation">Book</a></li>
+            <li id="consult-skincare-telehealth" class="bk-row"><div><span class="bk-name">Skincare Consult by Video</span><span class="bk-desc">Prefer to start from home</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/119" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Skincare Consult by Video">Book</a></li>
+            <li id="consult-laser" class="bk-row"><div><span class="bk-name">Laser Consultation</span><span class="bk-desc">Resurfacing, tightening &amp; hair removal</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/5/treatment/49" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Laser Consultation">Book</a></li>
+            <li id="consult-custom-facial" class="bk-row"><div><span class="bk-name">Custom Facial or Peel</span><span class="bk-desc">Book directly &mdash; no consult needed</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/51" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Custom Facial or Peel">Book</a></li>
+            <li id="consult-mini-facial" class="bk-row"><div><span class="bk-name">Mini Facial (Express Glo)</span><span class="bk-desc">30 minutes, book directly</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/115" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Mini Facial (Express Glo)">Book</a></li>
+          </ul>
         </div>
-        <div id="consult-skincare-telehealth" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Skincare Consult (Telehealth)</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Prefer to start from home? Meet with us by video first.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/119" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
-        </div>
-        <div id="consult-custom-facial" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Custom Facial or Peel</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Skip the consult &mdash; book our signature facial or peel directly.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/51" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
-        </div>
-        <div id="consult-mini-facial" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Mini Facial (Express Glo)</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">A quick 30-minute refresh &mdash; book directly, no consult needed.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/10/treatment/115" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
-        </div>
-        <div id="consult-laser" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Laser Consultation</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Resurfacing, tightening &amp; hair removal.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/5/treatment/49" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
-        </div>
-        <div id="consult-weightloss" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Weight Loss Consultation</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Functional, metabolic <strong>weight loss in Ocala</strong> &mdash; telehealth available.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/57" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
-        </div>
-        <div id="consult-peptides" class="card-hover" style="background:#F3F0EA;border:1px solid #E6E1D6;border-radius:8px;padding:28px 22px;text-align:center;">
-          <h3 style="font-size:19px;color:#221F1B;margin-bottom:8px;">Peptides Consultation</h3>
-          <p style="font-size:14px;line-height:1.5;color:#5C574E;font-weight:300;margin-bottom:16px;">Recovery, energy &amp; longevity peptide therapy.</p>
-          <a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/121" target="_blank" rel="noopener" class="btn-primary" style="display:block;background:#B8894F;color:#FAF9F6;padding:11px 0;border-radius:2px;font-size:14px;font-weight:500;">Book Now</a>
+        <div class="bk-card">
+          <h3>Wellness</h3>
+          <p>Weight, hormones, energy &amp; recovery &mdash; guided by your labs. <a href="/wellness">Explore wellness &rarr;</a></p>
+          <ul>
+            <li id="consult-weightloss" class="bk-row"><div><span class="bk-name">Weight Loss Consultation</span><span class="bk-desc">Medical weight loss &middot; telehealth available</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/57" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Weight Loss Consultation">Book</a></li>
+            <li id="consult-peptides" class="bk-row"><div><span class="bk-name">Peptides Consultation</span><span class="bk-desc">Recovery, sleep &amp; vitality</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/121" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Peptides Consultation">Book</a></li>
+            <li id="consult-hormones" class="bk-row"><div><span class="bk-name">Hormone Therapy</span><span class="bk-desc">Start with an Aesthetics &amp; Wellness consult</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/14/treatment/114" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Hormone Therapy">Book</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -976,7 +981,7 @@
   <!-- ===================== FAQ ===================== -->
   <div id="faq" style="width:100%;background:#FAF9F6;">
     <div class="glo-container" style="max-width:860px;margin:0 auto;padding:90px 48px;">
-      <h2 class="glo-h2" style="font-size:38px;line-height:1.2;color:#221F1B;text-align:center;margin-bottom:36px;">GLO Med Spa FAQs</h2>
+      <h2 class="glo-h2" style="font-size:38px;line-height:1.2;color:#221F1B;text-align:center;margin-bottom:36px;">GLO Med Spa <span class="glo-accent">FAQs</span></h2>
       <div class="faq-row" style="padding:24px 0;">
         <h3 style="font-size:21px;color:#221F1B;margin:0 0 10px;">What is a med spa?</h3>
         <p style="font-size:16px;line-height:1.75;color:#5C574E;margin:0;">A med spa (medical spa) pairs a calm spa setting with medical treatments &mdash; injectables, lasers, medical-grade skin care and wellness therapies &mdash; performed by licensed providers under a physician&rsquo;s direction. GLO Aesthetics + Wellness Lounge is a med spa in Ocala and Palatka, FL.</p>
@@ -1013,7 +1018,7 @@
           <div style="width:36px;height:1px;background:#B8894F;"></div>
           <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">VISIT US</span>
         </div>
-        <h2 class="glo-h2" style="font-size:44px;line-height:1.15;color:#221F1B;max-width:480px;">Find Your Sanctuary in Ocala</h2>
+        <h2 class="glo-h2" style="font-size:44px;line-height:1.15;color:#221F1B;max-width:480px;">Find Your <span class="glo-accent">Sanctuary</span> in Ocala</h2>
         <p style="margin-top:20px;font-size:17px;line-height:1.75;color:#5C574E;font-weight:300;max-width:480px;">
           Tucked in the heart of Ocala, Florida, our wellness lounge is a calm, welcoming place to slow down,
           ask your questions and take a little time that&rsquo;s just for you.
@@ -1083,76 +1088,56 @@
     </div>
   </div>
 
-  <!-- ===================== FOOTER / CONTACT ===================== -->
-  <div id="contact" class="glo-dark" style="width:100%;background:#6B5435;color:#B8B0A4;">
-    <div class="glo-container glo-footer-grid" style="max-width:1440px;margin:0 auto;padding:80px 48px 40px;display:grid;grid-template-columns:1.4fr 0.9fr 1fr 1.1fr;gap:48px;">
-
-      <div>
-        <div style="margin-bottom:18px;">
-          <img src="/assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:72px;width:auto;display:block;object-fit:contain;">
-        </div>
-        <p style="font-size:15.5px;line-height:1.7;max-width:280px;font-weight:300;">
-          <strong>Medical aesthetics &amp; MedSpa in Ocala, FL</strong> — elevated aesthetics meet evidence-based women's wellness.<br>Your GLO era starts here.
-        </p>
-        <div style="display:flex;gap:10px;margin-top:26px;">
-          <a href="#" class="social-dot" style="width:34px;height:34px;border-radius:999px;border:1px solid rgba(184,176,164,0.3);display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.6V3.2C16.4 3.1 15.3 3 14 3c-2.6 0-4.4 1.6-4.4 4.5v2.3H7v3.2h2.6V21z"/></svg>
-          </a>
-          <a href="#" class="social-dot" style="width:34px;height:34px;border-radius:999px;border:1px solid rgba(184,176,164,0.3);display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6zM12 2c-2.7 0-3.1 0-4.1.06-1 .05-1.7.2-2.3.44a4.7 4.7 0 0 0-1.7 1.1 4.7 4.7 0 0 0-1.1 1.7c-.24.6-.4 1.3-.44 2.3C2.3 8.9 2.3 9.3 2.3 12s0 3.1.06 4.1c.05 1 .2 1.7.44 2.3.24.6.6 1.2 1.1 1.7.5.5 1.1.87 1.7 1.1.6.24 1.3.4 2.3.44 1 .05 1.4.06 4.1.06s3.1 0 4.1-.06c1-.05 1.7-.2 2.3-.44a4.7 4.7 0 0 0 1.7-1.1 4.7 4.7 0 0 0 1.1-1.7c.24-.6.4-1.3.44-2.3.05-1 .06-1.4.06-4.1s0-3.1-.06-4.1c-.05-1-.2-1.7-.44-2.3a4.7 4.7 0 0 0-1.1-1.7 4.7 4.7 0 0 0-1.7-1.1c-.6-.24-1.3-.4-2.3-.44C15.1 2 14.7 2 12 2z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-size:14px;letter-spacing:0.1em;color:#FAF9F6;margin-bottom:20px;">QUICK LINKS</div>
-        <div style="display:flex;flex-direction:column;gap:12px;font-size:15.5px;font-weight:300;">
-          <a href="#home" class="footer-link">Home</a>
-          <a href="#about" class="footer-link">About Us</a>
-          <a href="/treatments" class="footer-link">All Treatments</a>
-          <a href="/locations/ocala" class="footer-link">Ocala Location</a>
-          <a href="/locations/palatka" class="footer-link">Palatka Location</a>
-          <a href="#contact" class="footer-link">Contact Us</a>
-          <a href="#book" class="footer-link">Book a Consultation</a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-size:14px;letter-spacing:0.1em;color:#FAF9F6;margin-bottom:20px;">OUR TREATMENTS</div>
-        <div style="display:flex;flex-direction:column;gap:12px;font-size:15.5px;font-weight:300;">
-          <a href="#tx-injectables" class="footer-link">Injectables</a>
-          <a href="/skin-services" class="footer-link">Skin Services</a>
-          <a href="#tx-wellness" class="footer-link">Wellness</a>
-          <a href="/membership-programs" class="footer-link">Memberships</a>
-          <a href="/financing" class="footer-link">Financing</a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-size:14px;letter-spacing:0.1em;color:#FAF9F6;margin-bottom:20px;">GET IN TOUCH</div>
-        <div style="display:flex;flex-direction:column;gap:12px;font-size:15.5px;font-weight:300;">
-          <span>1925 SW 18th Ct, Unit 109<br>Ocala, FL 34471</span>
-          <a href="tel:+13525598034" class="footer-link">352-559-8034</a>
-          <a href="mailto:info@gloocala.com" class="footer-link">info@gloocala.com</a>
-          <span>Mon, Tue, Thu, Fri: 9am–5pm<br>Wed: 9am–6pm · Sat &amp; Sun: By Appt</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="glo-container" style="max-width:1000px;margin:0 auto;padding:0 48px 28px;text-align:center;">
-      <p style="font-size:13px;line-height:1.7;color:#5C574E;font-weight:300;">
-        Individual results vary and are not guaranteed. All aesthetic, injectable, laser, and energy-based treatments at GLO Aesthetics + Wellness Lounge are performed under the direction of our Florida-licensed Medical Director by appropriately licensed and supervised providers, in accordance with Florida Board of Medicine requirements for medical spas. Hormone, peptide, and medical weight-loss services require a clinical evaluation and are prescribed only when appropriate; some compounded or off-label therapies discussed on this site have not been independently evaluated by the FDA for that specific use, as noted on the relevant treatment page. Photography on this site is representative/AI-generated for illustrative purposes and does not depict actual GLO clients or guaranteed outcomes unless otherwise stated. This website is provided for general informational purposes only and is not a substitute for a one-on-one consultation, medical advice, diagnosis, or treatment from a licensed provider.
-      </p>
-    </div>
-
-    <div class="glo-container glo-row" style="max-width:1440px;margin:0 auto;padding:26px 48px;border-top:1px solid rgba(184,176,164,0.15);display:flex;justify-content:space-between;align-items:center;font-size:14px;gap:12px;">
-      <span>© 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
-      <div style="display:flex;gap:24px;">
-        <a href="#" class="footer-link">Privacy Policy</a>
-        <a href="/#faq" class="footer-link">FAQs</a>
-      </div>
+  <!-- ===================== MEDICAL / COMPLIANCE DISCLAIMER ===================== -->
+  <div style="width:100%;background:#F3F0EA;border-top:1px solid #E6E1D6;">
+    <div class="glo-container" style="max-width:1000px;margin:0 auto;padding:28px 48px;text-align:center;">
+      <p style="font-size:13px;line-height:1.7;color:#8A8377;font-weight:400;">Individual results vary and are not guaranteed. All aesthetic, injectable, laser, and energy-based treatments at GLO Aesthetics + Wellness Lounge are performed under the direction of our Florida-licensed Medical Director by appropriately licensed and supervised providers, in accordance with Florida Board of Medicine requirements for medical spas. Hormone, peptide, and medical weight-loss services require a clinical evaluation and are prescribed only when appropriate; some compounded or off-label therapies discussed on this site have not been independently evaluated by the FDA for that specific use, as noted on the relevant treatment page. Photography on this site is representative/AI-generated for illustrative purposes and does not depict actual GLO clients or guaranteed outcomes unless otherwise stated. This website is provided for general informational purposes only and is not a substitute for a one-on-one consultation, medical advice, diagnosis, or treatment from a licensed provider.</p>
     </div>
   </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="glo-footer">
+    <div class="glo-footer-top">
+      <div class="glo-footer-brand">
+        <a href="/" aria-label="GLO Aesthetics + Wellness Lounge home"><img src="/assets/glo-logo.png" alt="GLO Aesthetics + Wellness Lounge" width="160" height="72" style="height:72px;width:auto;display:block;" loading="lazy"></a>
+        <p>A medical aesthetics &amp; wellness med spa in Ocala and Palatka, FL &mdash; where every plan starts with listening to you.</p>
+        <a href="/#book" class="glo-footer-book">Book a Consultation</a>
+      </div>
+      <nav aria-label="Treatments">
+        <h3>Treatments</h3>
+        <ul>
+          <li><a href="/injectables">Injectables</a></li>
+          <li><a href="/skin-services">Skin Services</a></li>
+          <li><a href="/wellness">Medical Wellness</a></li>
+          <li><a href="/treatments">All Treatments</a></li>
+          <li><a href="/membership-programs">Memberships</a></li>
+          <li><a href="/financing">Financing</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Popular treatments">
+        <h3>Popular</h3>
+        <ul>
+          <li><a href="/treatments/xeomin">Xeomin</a></li>
+          <li><a href="/treatments/dermal-filler">Dermal &amp; Lip Filler</a></li>
+          <li><a href="/treatments/laser-skin-revitalization">CO2 Laser Resurfacing</a></li>
+          <li><a href="/treatments/microneedling">Microneedling</a></li>
+          <li><a href="/treatments/laser-hair-removal">Laser Hair Removal</a></li>
+          <li><a href="/treatments/functional-weight-loss">Medical Weight Loss</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Visit Us</h3>
+        <div class="glo-footer-loc"><strong><a href="/locations/ocala">Ocala</a></strong><p>1925 SW 18th Ct, Unit 109<br>Ocala, FL 34471<br>Mon, Tue, Thu, Fri 9am&ndash;5pm &middot; Wed 9am&ndash;6pm<br>Sat &amp; Sun by appointment</p></div>
+        <div class="glo-footer-loc"><strong><a href="/locations/palatka">Palatka</a></strong><p>210 St Johns Ave<br>Palatka, FL 32177</p></div>
+        <p style="margin-top:18px;"><a href="tel:+13525598034">352-559-8034</a><br><a href="mailto:info@gloocala.com">info@gloocala.com</a></p>
+      </div>
+    </div>
+    <div class="glo-footer-bottom">
+      <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
+      <span><a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
+    </div>
+  </footer>
+
 
 </div>
 <script>
@@ -1165,6 +1150,8 @@ function toggleMobileMenu(){
   });
 }
 </script>
+<nav class="glo-mbar" aria-label="Quick actions"><a href="/#book" class="glo-mbar-book">Book Now</a><a href="tel:+13525598034" class="glo-mbar-call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a></nav>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
 
