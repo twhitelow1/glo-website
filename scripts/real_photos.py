@@ -78,7 +78,7 @@ def locations_team(s):
       <figure><img src="{g['src']}" alt="{g['alt']}" width="{g['width']}" height="{g['height']}" loading="lazy" decoding="async"><figcaption>{g['note']}</figcaption></figure>
       <div>
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:16px;">Who will I <span class="glo-accent">meet</span> at GLO?</h2>
-        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">The same warm, licensed team cares for clients in Ocala and Palatka &mdash; founder Renee Porter, nurse practitioner McKenzie McCalla, APRN, FNP-C, medical esthetician Sundee Bass, Baily Bellamy and aesthetician Mariah Young.</p>
+        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">Founded by Renee Porter, GLO has two homes. In Ocala, you can book with McKenzie McCalla, Sundee Bass, Baily Bellamy and Mariah Young. In Palatka, Sundee Bass and Baily Bellamy see clients too.</p>
         <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 26px;">Every visit starts with listening. Book with the provider whose focus fits your goals, or let us match you at your consultation.</p>
         <a href="/about#team" class="btn-outline" style="display:inline-block;border:1px solid #221F1B;color:#221F1B;padding:15px 30px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Meet Our Team</a>
       </div>

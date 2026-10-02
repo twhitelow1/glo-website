@@ -106,7 +106,7 @@ def eyebrow(text, center=False):
             f'{line}<span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">{text}</span>{line if center else ""}</div>')
 
 
-def split_hero(crumbs, eyebrow_text, h1, answer, buttons, image, alt, pos='center 30%'):
+def split_hero(crumbs, eyebrow_text, h1, answer, buttons, image, alt, pos='center 30%', note=None, size=(1024, 1365)):
     return f'''  <!-- ===================== HERO ===================== -->
   <div class="glo-split-hero">
     <div class="glo-split-text">{crumbs_html(crumbs)}
@@ -117,7 +117,7 @@ def split_hero(crumbs, eyebrow_text, h1, answer, buttons, image, alt, pos='cente
       <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;">{buttons}</div>
       {updated_line()}
     </div></div>
-    <div class="glo-split-media"><img src="{image}" alt="{esc(alt)}" width="1024" height="1365" fetchpriority="high" style="object-position:{pos};"></div>
+    <div class="glo-split-media"><img src="{image}" alt="{esc(alt)}" width="{size[0]}" height="{size[1]}" fetchpriority="high" style="object-position:{pos};">{f'<span class="glo-hero-note">{note}</span>' if note else ''}</div>
   </div>
 '''
 
