@@ -82,3 +82,21 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
   .glo-stats-strip > div{min-width:0;flex:1 1 0;}
   .glo-stats-strip > div > span:first-child{white-space:normal !important;text-align:center;line-height:1.2;}
 }
+
+/* ---------- Real photo gallery (Ocala lounge) ---------- */
+.glo-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:260px;gap:14px;}
+.glo-gallery figure{position:relative;margin:0;border-radius:8px;overflow:hidden;background:#EFE9E1;}
+.glo-gallery figure:first-child{grid-column:span 2;grid-row:span 2;}
+.glo-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;}
+.glo-gallery figure:hover img{transform:scale(1.04);}
+.glo-gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;font-size:13px;color:#FAF9F6;background:linear-gradient(180deg,rgba(34,31,27,0),rgba(34,31,27,.7));}
+@media (max-width:900px){.glo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:220px;}}
+@media (max-width:600px){.glo-gallery{grid-auto-rows:180px;gap:10px;}}
+
+/* ---------- Real photo beside "How does it work?" ---------- */
+.hiw-flex{display:flex;gap:56px;align-items:center;}
+.hiw-flex > div{flex:1 1 auto;}
+.hiw-figure{flex:0 0 360px;margin:0;}
+.hiw-figure img{width:100%;height:440px;object-fit:cover;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
+.hiw-figure figcaption{font-size:13px;color:#8A8377;margin-top:10px;}
+@media (max-width:900px){.hiw-flex{flex-direction:column;align-items:stretch;gap:28px;}.hiw-figure{flex:none;}.hiw-figure img{height:380px;}}

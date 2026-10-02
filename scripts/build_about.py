@@ -7,7 +7,8 @@ from glo_page import *  # noqa
 
 team = json.load(open('content/team.json'))['team']
 PATH, URL = '/about', SITE + '/about'
-IMG_HERO = IMG.format('2940c9f3-89bf-4257-a861-f02aa9a1279d')
+IMG_HERO = SITE + '/assets/ocala/lounge.jpg'
+HERO_SRC = '/assets/ocala/lounge.webp'
 TITLE = 'About GLO Med Spa in Ocala, FL | Meet Our Team | GLO'
 META = 'Meet the licensed team at GLO Aesthetics + Wellness Lounge in Ocala and Palatka, FL: nurse practitioners, medical estheticians and aestheticians.'
 
@@ -18,7 +19,7 @@ answer = ('GLO Aesthetics + Wellness Lounge is a medical aesthetics and wellness
 crumbs = [('Home', '/'), ('About', '/about')]
 body = split_hero(crumbs, 'ABOUT GLO', 'About GLO in <span style="font-style:italic;color:#B8894F;">Ocala</span>, FL', answer,
                   f'<a href="#team" {BTN}>Meet Our Team</a><a href="/#book" {BTN_OUT}>Book a Consultation</a>',
-                  IMG_HERO, 'Four GLO clients of different ages relaxing together in the lounge', 'center 30%')
+                  HERO_SRC, 'Client lounge at GLO Aesthetics + Wellness Lounge in Ocala with ivory chairs and a gold table', 'center 55%')
 
 
 def member(m):
@@ -74,6 +75,11 @@ body += f'''
     </div>
   </div>
 
+'''
+from real_photos import gallery
+body += gallery('Where will I be <span class="glo-accent">treated</span>?',
+                'In a bright, calm space designed to feel like a retreat. These are real photos of our Ocala med spa &mdash; the lounge, our private treatment rooms and the Tetra Pro laser.', '#FFFFFF')
+body += f'''
   <!-- ===================== VALUES ===================== -->
   <div style="width:100%;background:#F3F0EA;">
     <div class="glo-container" style="max-width:1240px;margin:0 auto;padding:90px 48px;">
