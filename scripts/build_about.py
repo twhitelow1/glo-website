@@ -5,7 +5,8 @@ import json, sys
 sys.path.insert(0, 'scripts')
 from glo_page import *  # noqa
 
-team = json.load(open('content/team.json'))['team']
+_t = json.load(open('content/team.json'))
+team, founder = _t['team'], _t['founder']
 PATH, URL = '/about', SITE + '/about'
 IMG_HERO = SITE + '/assets/ocala/lounge.jpg'
 HERO_SRC = '/assets/ocala/lounge.webp'
@@ -58,9 +59,29 @@ body += f'''
   .gv-grid > div{{background:#FAF9F6;border:1px solid #E6E1D6;border-radius:8px;padding:28px 26px;}}
   .gv-grid h3{{font-size:21px;color:#221F1B;margin:0 0 8px;}}
   .gv-grid p{{font-size:15px;line-height:1.7;color:#5C574E;margin:0;}}
+  .fd-wrap{{display:flex;gap:64px;align-items:center;}}
+  .fd-photo{{flex:0 0 400px;margin:0;}}
+  .fd-photo img{{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}}
+  .fd-name{{display:block;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:28px;color:#221F1B;}}
+  .fd-role{{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}}
+  @media (max-width:900px){{.fd-wrap{{flex-direction:column;align-items:stretch;gap:32px;}}.fd-photo{{flex:none;max-width:420px;}}}}
   @media (max-width:1000px){{.tm-grid,.gv-grid{{grid-template-columns:1fr;}}}}
   @media (max-width:600px){{.tm-card{{flex-direction:column;align-items:flex-start;padding:22px;}}}}
 </style>
+
+  <!-- ===================== FOUNDER ===================== -->
+  <div id="founder" style="width:100%;background:#F3F0EA;">
+    <div class="glo-container fd-wrap" style="max-width:1140px;margin:0 auto;padding:90px 48px;">
+      <figure class="fd-photo"><img src="{founder['photo']}" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="{founder['width']}" height="{founder['height']}" loading="lazy" decoding="async"></figure>
+      <div class="fd-copy">
+        {eyebrow('OUR FOUNDER')}
+        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:16px;">Who <span class="glo-accent">founded</span> GLO?</h2>
+        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">GLO Aesthetics + Wellness Lounge was founded by Renee Porter. Her vision shapes everything you&rsquo;ll find here: a calm, beautiful space in Ocala, a licensed team that listens first, and care that never feels rushed or pressured.</p>
+        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 24px;">From the lounge to the treatment rooms, GLO was designed to feel less like a clinic and more like a place you look forward to coming back to.</p>
+        <div class="fd-sign"><span class="fd-name">Renee Porter</span><span class="fd-role">Founder</span></div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===================== TEAM ===================== -->
   <div id="team" style="width:100%;background:#FAF9F6;scroll-margin-top:130px;">
@@ -97,6 +118,7 @@ body += f'''
 '''
 
 FAQ = [
+    ('Who founded GLO Aesthetics + Wellness Lounge?', 'GLO Aesthetics + Wellness Lounge was founded by Renee Porter. GLO has two Florida locations, in Ocala and Palatka, with a licensed team working under the direction of a Florida-licensed Medical Director.'),
     ('Who performs treatments at GLO?', 'Treatments are performed by GLO&rsquo;s licensed team &mdash; including a board-certified family nurse practitioner, medical estheticians and aestheticians &mdash; under the direction of our Florida-licensed Medical Director.'),
     ('Can I choose my provider?', 'Yes. You can book with a specific team member through our online booking, or book a consultation and we&rsquo;ll match you with the provider whose focus fits your goals.'),
     ('Do you have a Medical Director?', 'Yes. All aesthetic, injectable, laser, energy-based and medical wellness services at GLO are performed under the direction of a Florida-licensed Medical Director, in line with Florida Board of Medicine requirements for medical spas.'),
@@ -115,7 +137,9 @@ graph = [
      'dateModified': UPDATED[0], 'isPartOf': {'@id': SITE + '/#website'}, 'about': {'@id': BUSINESS_ID},
      'mainEntity': {'@id': BUSINESS_ID}, 'primaryImageOfPage': IMG_HERO, 'breadcrumb': {'@id': URL + '#breadcrumb'}},
     {'@type': ['MedicalBusiness', 'HealthAndBeautyBusiness'], '@id': BUSINESS_ID, 'name': 'GLO Aesthetics + Wellness Lounge',
-     'url': SITE + '/', 'employee': [{'@id': p['@id']} for p in people]},
+     'url': SITE + '/', 'employee': [{'@id': p['@id']} for p in people], 'founder': {'@id': URL + '#renee-porter'}},
+    {'@type': 'Person', '@id': URL + '#renee-porter', 'name': founder['name'], 'jobTitle': 'Founder',
+     'image': SITE + founder['photo_jpg'], 'worksFor': {'@id': BUSINESS_ID}},
     *people,
     dict(breadcrumbs(crumbs), **{'@id': URL + '#breadcrumb'}),
     faq_schema(FAQ),
