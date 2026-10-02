@@ -28,16 +28,20 @@ def member(m):
     creds = f', {m["credentials"]}' if m['credentials'] else ''
     focus = ''.join(f'<li>{f}</li>' for f in m['focus'])
     bio = ''.join(f'<p>{p}</p>' for p in m['bio']) or f'<p>{m["name"].split()[0]} sees clients at our {" and ".join(m["locations"])} location{"s" if len(m["locations"]) > 1 else ""}. Book a consultation to meet her and talk through your goals.</p>'
+    first = m["name"].split()[0]
+    locs = ''.join(f'<li><a href="/locations/{l.lower()}">{l}, FL</a></li>' for l in m['locations'])
+    books = ''.join(f'<a href="{url}" target="_blank" rel="noopener" class="tm-book">Book with {first} in {l} &rarr;</a>'
+                    for l, url in m['book'].items())
     return f'''
         <article class="tm-card" id="{m["name"].lower().replace(" ", "-")}">
           <div class="tm-photo"><img src="{m["photo"]}" alt="{m["name"]}{creds}, {m["title"]} at GLO Aesthetics + Wellness Lounge" width="160" height="190" loading="lazy" decoding="async"></div>
           <div class="tm-body">
             <h3>{m["name"]}<span class="tm-creds">{creds}</span></h3>
             <div class="tm-title">{m["title"]}</div>
-            <div class="tm-loc">{" &middot; ".join(m["locations"])}</div>
+            <ul class="tm-loc" aria-label="Locations">{locs}</ul>
             {bio}
             <ul class="tm-focus" aria-label="Focus areas">{focus}</ul>
-            <a href="{m["book"]}" target="_blank" rel="noopener" class="tm-book">Book with {m["name"].split()[0]} &rarr;</a>
+            <div class="tm-books">{books}</div>
           </div>
         </article>'''
 
@@ -51,7 +55,10 @@ body += f'''
   .tm-body h3{{font-size:26px;color:#221F1B;margin:0;}}
   .tm-creds{{font-family:'Montserrat',sans-serif;font-size:14px;letter-spacing:.06em;color:#B8894F;font-weight:600;}}
   .tm-title{{font-size:15px;color:#221F1B;font-weight:500;margin-top:6px;}}
-  .tm-loc{{font-family:'Montserrat',sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#8A8377;margin:6px 0 14px;}}
+  .tm-loc{{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:10px 0 14px;padding:0;}}
+  .tm-loc a{{display:inline-flex;align-items:center;gap:6px;font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#FAF9F6;background:#6B5435;border-radius:999px;padding:5px 12px;}}
+  .tm-loc a::before{{content:'';width:6px;height:6px;border-radius:50%;background:#E3C79B;}}
+  .tm-books{{display:flex;flex-direction:column;gap:6px;}}
   .tm-body p{{font-size:15px;line-height:1.7;color:#5C574E;margin:0 0 10px;}}
   .tm-focus{{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 16px;padding:0;}}
   .tm-focus li{{font-size:12.5px;color:#6B5435;background:#F3F0EA;border:1px solid #E6E1D6;border-radius:999px;padding:5px 12px;}}
@@ -90,7 +97,7 @@ body += f'''
       <div style="max-width:760px;margin-bottom:40px;">
         {eyebrow('OUR TEAM')}
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
-        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation.</p>
+        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee, Baily and Mariah all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
       </div>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
@@ -121,6 +128,7 @@ body += f'''
 FAQ = [
     ('Who founded GLO Aesthetics + Wellness Lounge?', 'GLO Aesthetics + Wellness Lounge was founded by Renee Porter. GLO has two Florida locations, in Ocala and Palatka, with a licensed team working under the direction of a Florida-licensed Medical Director.'),
     ('Who performs treatments at GLO?', 'Treatments are performed by GLO&rsquo;s licensed team &mdash; including a board-certified family nurse practitioner, medical estheticians and aestheticians &mdash; under the direction of our Florida-licensed Medical Director.'),
+    ('Which providers work at each GLO location?', 'McKenzie McCalla, Sundee Bass, Baily Bellamy and Mariah Young all see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. You can book any of them online for the location that suits you.'),
     ('Can I choose my provider?', 'Yes. You can book with a specific team member through our online booking, or book a consultation and we&rsquo;ll match you with the provider whose focus fits your goals.'),
     ('Do you have a Medical Director?', 'Yes. All aesthetic, injectable, laser, energy-based and medical wellness services at GLO are performed under the direction of a Florida-licensed Medical Director, in line with Florida Board of Medicine requirements for medical spas.'),
     ('Where are GLO&rsquo;s locations?', 'GLO has two Florida locations: 1925 SW 18th Ct, Unit 109, Ocala, FL 34471, and 210 St Johns Ave, Palatka, FL 32177. Call 352-559-8034 for either.'),
@@ -131,7 +139,8 @@ body += cta('Ready to meet us?', 'Tell us what you&rsquo;d like to feel again. W
 
 people = [{'@type': 'Person', '@id': f'{URL}#{m["name"].lower().replace(" ", "-")}', 'name': m.get('full_name', m['name']),
            'alternateName': m['name'], 'jobTitle': plain(m['title']), 'image': m['photo'],
-           'worksFor': {'@id': BUSINESS_ID}, **({'honorificSuffix': m['credentials']} if m['credentials'] else {}),
+           'worksFor': {'@id': BUSINESS_ID}, 'workLocation': [{'@id': f'{SITE}/locations/{l.lower()}#location'} for l in m['locations']],
+           **({'honorificSuffix': m['credentials']} if m['credentials'] else {}),
            'knowsAbout': [plain(f) for f in m['focus']]} for m in team]
 graph = [
     {'@type': 'AboutPage', '@id': URL + '#page', 'url': URL, 'name': TITLE, 'description': META, 'inLanguage': 'en-US',

@@ -40,6 +40,8 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 - `python3 scripts/build_seo_files.py`: regenerates `sitemap.xml` and `llms.txt`. Run after adding or editing a page.
 - Treatment page content lives in `content/treatments/<slug>.json`; `scripts/apply_treatments.py` applied it.
 - Category pages are generated: edit `scripts/build_categories.py`, then run it.
+- `python3 scripts/location_teams.py`: who sees clients at each location (team sections, FAQ, `employee` schema on the location
+  pages; hub copy). It reads `content/team.json`, whose `locations` and per-location `book` links follow Jane. Run it after `real_photos.py`.
 - `scripts/glo_page.py` holds the shared page shell, SEO head and schema helpers for new generated pages.
 - `python3 scripts/design_layer.py`: applies the shared design layer (`assets/site.css`, `assets/site.js`, shared footer,
   mobile Book/Call bar, marquee, H2 accent words, card thumbnails, photo bands from `content/bands.json`). Run it after
