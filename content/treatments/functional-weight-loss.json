@@ -1,0 +1,55 @@
+{
+  "slug": "functional-weight-loss",
+  "keyword": "Medical Weight Loss",
+  "title": "Medical Weight Loss in Ocala, FL | GLO Aesthetics",
+  "meta": "Medical weight loss in Ocala, FL with metabolic labs, GLP-1 options when appropriate and personalized coaching, from $300/month. Book your consultation.",
+  "answer": "Functional weight loss is a medically supervised weight loss program that looks for the root causes of weight gain, such as insulin resistance, thyroid or hormone changes. It suits adults who have struggled to lose weight or hit a plateau. It's an ongoing program with no downtime, and many people see meaningful progress by 8–12 weeks; results vary.",
+  "treats_h2": "What does medical weight loss treat?",
+  "treats_intro": "GLO's medical weight loss program addresses the drivers behind stubborn weight — insulin resistance, thyroid-related and hormonal weight gain, and plateaus — with a plan based on your labs.",
+  "how_h2": "How does medical weight loss work?",
+  "how": "GLO's Functional Weight Loss program starts with comprehensive metabolic labs to find what is driving your weight. Your provider then builds a plan that can include FDA-approved GLP-1 medications such as semaglutide or tirzepatide when appropriate, plus nutrition and lifestyle guidance. GLP-1 medications mimic a natural gut hormone that helps regulate appetite and blood sugar, so you feel full sooner. Doses are increased gradually, with regular follow-ups and labs to adjust your plan.",
+  "fit_h2": "Is medical weight loss right for me?",
+  "good_fit": [
+    "You've tried diet and exercise and your weight won't budge",
+    "You have signs of insulin resistance, pre-diabetes or hormone-related weight gain",
+    "You want a full program with labs, nutrition and monitoring, not just a prescription",
+    "You're ready for gradual, sustainable change rather than a quick fix"
+  ],
+  "not_fit": [
+    "You're pregnant, breastfeeding or planning a pregnancy soon",
+    "You or a family member have had medullary thyroid cancer or MEN2 — GLP-1 medications are not recommended",
+    "You have a history of pancreatitis or certain gastrointestinal conditions — your provider will review alternatives",
+    "Your main concern is fatigue or low libido from hormone changes — hormone replacement therapy may be the better fit"
+  ],
+  "expect_h2": "What happens in a medical weight loss program?",
+  "expect_intro": "You start with metabolic testing, then get a personalized plan. If a GLP-1 medication is prescribed, you take a weekly injection with gradual dose increases and regular check-ins and lab work.",
+  "cost_h2": "How much does medical weight loss cost in Ocala?",
+  "faq_h2": "Medical Weight Loss FAQs",
+  "faq_rename": {
+    "How much weight can I expect to lose?": "How much weight can I lose with medical weight loss?",
+    "Is this just a prescription, or a full program?": "Is medical weight loss just a prescription, or a full program?"
+  },
+  "faq_add": [
+    {
+      "q": "What are the side effects of GLP-1 medications?",
+      "a": "The most common side effects are nausea, constipation, diarrhea and reduced appetite, which often ease as your body adjusts. Doses are increased gradually to help, and your provider will monitor you and adjust your plan as needed."
+    },
+    {
+      "q": "How long do I need to stay on a weight loss program?",
+      "a": "It depends on your goals and how your body responds. Functional weight loss is an ongoing program, and many people see meaningful results by 8–12 weeks. Your provider will discuss maintenance and next steps as you progress."
+    },
+    {
+      "q": "Semaglutide vs tirzepatide: what's the difference?",
+      "a": "Both are weekly GLP-1-based injections. Semaglutide (Wegovy, Ozempic) acts on the GLP-1 receptor; tirzepatide (Zepbound, Mounjaro) acts on both GLP-1 and GIP receptors. Your provider will recommend the option that fits your labs, health history and goals."
+    }
+  ],
+  "related_h2": "Treatments that pair well with medical weight loss",
+  "schema": {
+    "type": "MedicalTherapy",
+    "procedureType": null,
+    "bodyLocation": "Whole body (metabolic and endocrine system)",
+    "howPerformed": "After metabolic lab testing, a licensed provider builds a personalized plan of nutrition and lifestyle guidance and, when appropriate, prescribes an FDA-approved GLP-1 medication taken as a weekly injection.",
+    "preparation": "Bring a list of your medications and health history to your consultation. You'll complete comprehensive lab work so your plan can be based on your metabolism.",
+    "followup": "Regular follow-ups and lab work track your progress and adjust your dose and plan. Report side effects to your provider promptly."
+  }
+}

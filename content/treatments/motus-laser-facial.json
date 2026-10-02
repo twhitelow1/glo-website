@@ -1,0 +1,55 @@
+{
+  "slug": "motus-laser-facial",
+  "keyword": "Motus Laser Facial",
+  "title": "Motus Laser Facial in Ocala, FL | GLO Aesthetics",
+  "meta": "Motus Laser Facial in Ocala, FL gently improves tone, texture and glow in 20–30 minutes with no downtime, from $300 a session. Book a laser consult at GLO.",
+  "answer": "Motus Laser Facial is a gentle laser treatment on the DEKA Motus platform that gradually evens your tone, softens early sun damage and refreshes texture and glow. It suits sensitive skin and people new to lasers. Sessions take 20–30 minutes with no downtime. You'll see a glow right away, and monthly sessions build results.",
+  "treats_h2": "What does the Motus Laser Facial treat?",
+  "treats_intro": "The Motus Laser Facial treats uneven tone and mild redness, early sun damage, and dull texture. It's gentle enough for sensitive skin and for anyone nervous about trying lasers.",
+  "how_h2": "How does the Motus Laser Facial work?",
+  "how": "The Motus Laser Facial uses the DEKA Motus platform and its in-motion technology. Instead of firing high-intensity spots, your provider glides the handpiece continuously over your skin while the laser energy builds gradually to a comfortable level. This spread-out delivery gently heats the skin to target uneven pigment and redness and support collagen without wounding the surface. Because it's gentle, improvements build over a series of monthly sessions.",
+  "fit_h2": "Is the Motus Laser Facial right for me?",
+  "good_fit": [
+    "You have uneven tone, mild redness or early sun damage",
+    "You have sensitive skin or you're new to laser treatments",
+    "You want a glow with no downtime and little to no discomfort",
+    "You'd like regular monthly maintenance for tone and texture"
+  ],
+  "not_fit": [
+    "You're pregnant or breastfeeding",
+    "You have an active cold sore, skin infection or open wound in the treatment area",
+    "You have a fresh sunburn or tan — wait until it fades",
+    "You want to treat deeper wrinkles, acne scars or significant sun damage — CoolPeel or Tetra CO2 laser skin revitalization is usually the better fit"
+  ],
+  "expect_h2": "What happens during a Motus Laser Facial appointment?",
+  "expect_intro": "A Motus Laser Facial takes 20–30 minutes: a quick check of your goals and skin type, then continuous, comfortable laser passes. You'll leave with a visible glow and can go right back to your day.",
+  "cost_h2": "How much does the Motus Laser Facial cost in Ocala?",
+  "faq_h2": "Motus Laser Facial FAQs",
+  "faq_rename": {
+    "How is this different from CO2 resurfacing?": "How is the Motus Laser Facial different from CO2 resurfacing?",
+    "How many sessions do I need?": "How many Motus Laser Facial sessions do I need?"
+  },
+  "faq_add": [
+    {
+      "q": "What should I avoid after a Motus Laser Facial?",
+      "a": "There's no downtime, so you can go back to your day right away. For a few days, protect your skin from the sun, wear sunscreen daily and go easy on exfoliants or retinoids if your skin feels sensitive. Your provider will give you aftercare tips."
+    },
+    {
+      "q": "Is the Motus Laser Facial safe for darker skin?",
+      "a": "We assess your skin type at your consultation and adjust the settings to match. Darker skin tones call for more conservative settings to lower the risk of pigment changes. We'll let you know whether the Motus Laser Facial is a good fit for you."
+    },
+    {
+      "q": "Motus Laser Facial vs. CoolPeel: which should I choose?",
+      "a": "The Motus Laser Facial is our gentlest option, with no downtime and gradual results over monthly sessions. CoolPeel uses CO2 laser technology for more noticeable resurfacing, with 24–72 hours of redness. We'll help you choose based on your skin and schedule."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Motus Laser Facial",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/NoninvasiveProcedure",
+    "bodyLocation": "Face",
+    "howPerformed": "A licensed provider glides the DEKA Motus laser handpiece continuously over the skin, gradually building energy to a comfortable level.",
+    "preparation": "Avoid tanning and sunburn before your appointment, and arrive with a clean face. Tell your provider about any skin sensitivities or medications.",
+    "followup": "There's no downtime. Wear sunscreen daily, and schedule monthly sessions to build tone and texture improvement."
+  }
+}

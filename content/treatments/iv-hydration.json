@@ -1,0 +1,109 @@
+{
+  "slug": "iv-hydration",
+  "keyword": "IV Hydration Therapy",
+  "title": "IV Hydration Therapy in Ocala, FL | GLO Aesthetics",
+  "meta": "IV hydration therapy in Ocala, FL delivers fluids, vitamins and minerals for energy, immunity and recovery in 30–60 minutes, no downtime. Book your drip.",
+  "answer": "IV hydration therapy is a treatment that delivers fluids, vitamins, minerals and electrolytes directly into your bloodstream through a small IV. It suits adults who want support with hydration, energy, immune function or recovery after travel, illness or workouts. A session takes 30–60 minutes, there's no downtime, and most people feel the effects the same day.",
+  "treats_h2": "What does IV hydration therapy help with?",
+  "treats_intro": "IV hydration therapy helps with dehydration, low energy, immune support and recovery — after travel, illness, a tough workout or a big weekend — with a blend tailored to what your body needs that day.",
+  "how_h2": "How does IV hydration therapy work?",
+  "how": "A licensed provider places a small IV catheter, usually in your arm, and a sterile fluid base with your customized blend of vitamins, minerals and electrolytes flows directly into your bloodstream. Because it bypasses the digestive system, fluids and nutrients are available to your body right away rather than being absorbed gradually. Blends can include B vitamins for energy or vitamin C and zinc for immune support, and the infusion runs over 30–60 minutes.",
+  "fit_h2": "Is IV hydration therapy right for me?",
+  "good_fit": [
+    "You feel run down or dehydrated after travel, illness or a busy week",
+    "You want recovery support after workouts or a big weekend",
+    "You'd like an energy or immune-support boost",
+    "You're comfortable with a small IV in your arm"
+  ],
+  "not_fit": [
+    "You have heart failure or kidney disease, which can make extra fluids unsafe",
+    "You're pregnant — check with your obstetric provider first",
+    "You feel seriously ill, with chest pain, confusion or severe dehydration — seek emergency care instead",
+    "Your goal is long-term energy, metabolism or weight support — peptide therapy or functional weight loss may be a better fit"
+  ],
+  "expect_h2": "What happens during an IV hydration therapy session?",
+  "expect_intro": "After a quick health screening, a licensed provider places a small IV in your arm. Your blend infuses over 30–60 minutes while you relax, and you can get right back to your day.",
+  "cost_h2": null,
+  "faq_h2": "IV Hydration Therapy FAQs",
+  "faq_rename": {
+    "How long does a session take?": "How long does an IV hydration session take?"
+  },
+  "faq_add": [
+    {
+      "q": "How long do the effects of IV hydration last?",
+      "a": "Most people feel the effects the same day. How long they last varies with your hydration, activity, diet and health, so your provider can suggest how often a session makes sense for you."
+    },
+    {
+      "q": "Does an IV drip hurt?",
+      "a": "You'll feel a quick pinch when the small IV catheter is placed, usually in your arm. After that, most people feel little discomfort and relax in a lounge chair while the blend infuses."
+    },
+    {
+      "q": "What should I do after IV hydration therapy?",
+      "a": "Keep the small bandage on for a few hours, and you can resume normal activity right away. Minor bruising at the site is possible and typically fades within days."
+    }
+  ],
+  "related_h2": "Treatments that pair well with IV hydration therapy",
+  "related": [
+    "peptide-therapy",
+    "functional-weight-loss",
+    "hormone-replacement-therapy"
+  ],
+  "stats": [
+    [
+      "30–60 min",
+      "DURATION"
+    ],
+    [
+      "None",
+      "DOWNTIME"
+    ],
+    [
+      "Same day",
+      "RESULTS"
+    ]
+  ],
+  "treats": [
+    [
+      "Hydration",
+      "Fast fluid replenishment beyond what drinking water alone provides."
+    ],
+    [
+      "Energy",
+      "B-vitamin blends support natural energy production."
+    ],
+    [
+      "Immune Support",
+      "Vitamin C and zinc blends to support your immune system."
+    ],
+    [
+      "Recovery",
+      "Popular after travel, illness, workouts or a big weekend."
+    ]
+  ],
+  "expect_steps": [
+    [
+      "Health Screening",
+      "A quick screening confirms IV hydration is right for you."
+    ],
+    [
+      "IV Placement",
+      "A licensed provider places a small IV catheter, usually in your arm."
+    ],
+    [
+      "Relax & Infuse",
+      "Your blend infuses over 30–60 minutes in a comfortable lounge chair."
+    ],
+    [
+      "Back to Your Day",
+      "No downtime — keep the bandage on a few hours and resume normal activity."
+    ]
+  ],
+  "schema": {
+    "type": "MedicalTherapy",
+    "procedureType": null,
+    "bodyLocation": "Arm (intravenous)",
+    "howPerformed": "After a brief health screening, a licensed provider places a small IV catheter, usually in the arm, and infuses sterile fluids with a customized blend of vitamins, minerals and electrolytes over 30–60 minutes.",
+    "preparation": "Eat a light meal and drink water beforehand if you can, and share your health history and medications at your screening.",
+    "followup": "Keep the bandage on for a few hours and resume normal activity right away. Minor bruising at the site typically fades within days."
+  }
+}

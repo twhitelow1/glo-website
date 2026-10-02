@@ -1,0 +1,54 @@
+{
+  "slug": "daxxify",
+  "keyword": "Daxxify",
+  "title": "Daxxify in Ocala, FL | Long-Lasting Tox | GLO Aesthetics",
+  "meta": "Daxxify in Ocala, FL softens frown lines with a peptide-formulated injection that can last 6–9 months. 10–15 minutes, from $600. Book at GLO Aesthetics.",
+  "answer": "Daxxify is an FDA-approved, peptide-formulated wrinkle-relaxing injection that softens frown lines by calming the muscles that crease your skin. It suits adults who want natural-looking results with fewer visits a year: treatment takes 10–15 minutes with minimal downtime, and results can last up to 6–9 months. Results vary from person to person.",
+  "treats_h2": "What does Daxxify treat?",
+  "treats_intro": "Daxxify is FDA-approved for frown lines (“11s”) between the brows, and it's commonly used for forehead lines and crow's feet — the creases that form when you frown, squint or raise your brows.",
+  "how_h2": "How does Daxxify work?",
+  "how": "Daxxify (daxibotulinumtoxinA-lanm) temporarily blocks the nerve signals that tell a small facial muscle to contract. With the muscle relaxed, the skin above it stops folding, so lines soften. Instead of the human protein used in older formulas, Daxxify is stabilized with a proprietary peptide — its Peptide Exchange Technology — which is credited with a median duration of about 6 months, with some clinical-trial patients seeing results last up to 9 months.",
+  "fit_h2": "Is Daxxify right for me?",
+  "good_fit": [
+    "You have “11s” between your brows, forehead lines or crow's feet when you move your face",
+    "You'd like longer-lasting results and fewer appointments each year",
+    "You've used another neuromodulator and want to try a longer-lasting option",
+    "You want a quick visit with minimal downtime"
+  ],
+  "not_fit": [
+    "You're pregnant or breastfeeding",
+    "You have a neuromuscular condition such as myasthenia gravis",
+    "You've had an allergic reaction to a botulinum toxin product",
+    "Your main concern is lost volume or deep folds at rest — dermal filler is usually the better fit"
+  ],
+  "expect_h2": "What happens during a Daxxify appointment?",
+  "expect_intro": "A Daxxify appointment takes about 10–15 minutes: a consultation about your goals and history, a series of tiny injections, and you're back to your day with minimal downtime.",
+  "cost_h2": "How much does Daxxify cost in Ocala?",
+  "faq_h2": "Daxxify FAQs",
+  "faq_rename": {
+    "Does it hurt?": "Do Daxxify injections hurt?"
+  },
+  "faq_add": [
+    {
+      "q": "How long does Daxxify last?",
+      "a": "Daxxify lasts a median of about 6 months, and some clinical-trial patients saw results for up to 9 months. Results vary, and your provider will suggest when to re-treat based on how your muscles respond."
+    },
+    {
+      "q": "What should I avoid after Daxxify?",
+      "a": "For the rest of the day, avoid rubbing or massaging the treated areas and skip strenuous exercise. Your provider will give you aftercare instructions, and you can usually return to work and normal routines right away."
+    },
+    {
+      "q": "What's the difference between Daxxify and Xeomin?",
+      "a": "Both relax expression lines. Daxxify is peptide-formulated and can last 6 months or more for many people; Xeomin typically lasts up to 3 months and contains only the active ingredient. Your provider will help you choose at your consultation."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Daxxify",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Glabella (between the brows), and commonly the forehead and outer eye area",
+    "howPerformed": "A licensed provider places a series of small injections of daxibotulinumtoxinA into the facial muscles that cause expression lines, typically 40 units across five glabellar sites.",
+    "preparation": "Avoid alcohol and, if your doctor agrees, blood-thinning supplements such as fish oil for 24 hours to reduce bruising. Arrive with a clean face.",
+    "followup": "Avoid rubbing the area and strenuous exercise for the rest of the day. Results build over the following weeks and can last up to 6–9 months; your provider will advise when to re-treat."
+  }
+}

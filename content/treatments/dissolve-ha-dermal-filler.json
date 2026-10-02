@@ -1,0 +1,54 @@
+{
+  "slug": "dissolve-ha-dermal-filler",
+  "keyword": "Dissolve HA Filler",
+  "title": "Dissolve HA Filler in Ocala, FL | GLO Aesthetics",
+  "meta": "Dissolve HA filler in Ocala, FL with hyaluronidase to fix lumpy, overfilled or migrated filler in a 15–30 minute visit, from $250. Book at GLO Aesthetics.",
+  "answer": "Dissolving HA filler is a treatment that uses hyaluronidase, an enzyme injected into hyaluronic-acid filler, to break it down. It suits anyone with overfilled, lumpy or migrated filler, a bluish Tyndall effect, or a simple change of heart. Visits take 15–30 minutes with minimal downtime, and filler dissolves within hours to about a day.",
+  "treats_h2": "What can dissolving HA filler fix?",
+  "treats_intro": "Dissolving HA filler corrects results you're not happy with — overfilled or lumpy areas, filler that has migrated, a bluish Tyndall effect, or filler you'd simply like removed.",
+  "how_h2": "How does dissolving HA filler work?",
+  "how": "Hyaluronidase is an enzyme that breaks down hyaluronic acid. Your provider dilutes it in saline and injects it directly into the filler you want reduced or removed. Less cross-linked filler can dissolve in 1–2 hours, while denser, longer-lasting filler may take up to 24 hours. Hyaluronidase only works on hyaluronic acid, so it doesn't affect your natural collagen or non-HA fillers such as Radiesse or Sculptra.",
+  "fit_h2": "Is dissolving HA filler right for me?",
+  "good_fit": [
+    "Your hyaluronic-acid filler looks overfilled, lumpy or uneven",
+    "Filler has migrated from where it was placed",
+    "You see a bluish tint (Tyndall effect) from filler placed too superficially",
+    "You'd like to start fresh before new filler"
+  ],
+  "not_fit": [
+    "Your filler isn't hyaluronic acid (for example Radiesse or Sculptra) — hyaluronidase won't dissolve it",
+    "You've had an allergic reaction to hyaluronidase, or a severe reaction to bee or wasp stings",
+    "You have an active skin infection in the treatment area",
+    "You're pregnant or breastfeeding"
+  ],
+  "expect_h2": "What happens during a filler dissolving appointment?",
+  "expect_intro": "A filler dissolving appointment takes about 15–30 minutes: we assess the filler's location, age and type, inject hyaluronidase into it, and follow up to confirm it has dissolved.",
+  "cost_h2": "How much does it cost to dissolve filler in Ocala?",
+  "faq_h2": "Dissolve HA Filler FAQs",
+  "faq_rename": {
+    "How fast does it work?": "How fast does hyaluronidase dissolve filler?"
+  },
+  "faq_add": [
+    {
+      "q": "How many sessions does it take to dissolve filler?",
+      "a": "Many people need only one session. Larger amounts of filler or denser products sometimes need a follow-up treatment, and your provider will check your results and recommend whether another session is needed."
+    },
+    {
+      "q": "How soon can I get new filler after dissolving?",
+      "a": "Your provider will usually suggest waiting until any swelling has settled and the old filler has fully dissolved before placing new filler. They'll confirm the right timing for you at your follow-up visit."
+    },
+    {
+      "q": "What should I avoid after dissolving filler?",
+      "a": "For about 24 hours, avoid strenuous exercise and pressing on or massaging the treated area unless your provider tells you to. Mild swelling or redness is normal and usually fades within a few days."
+    }
+  ],
+  "related_h2": "Treatments that pair well with Dissolve HA Filler",
+  "schema": {
+    "type": "MedicalProcedure",
+    "procedureType": "https://schema.org/PercutaneousProcedure",
+    "bodyLocation": "Any area previously treated with hyaluronic-acid filler, such as lips, under-eyes, cheeks or nose",
+    "howPerformed": "A licensed provider dilutes hyaluronidase in saline and injects it directly into the hyaluronic-acid filler to break it down.",
+    "preparation": "Bring any details you have about your previous filler, such as the product and when it was placed. Avoid alcohol for 24 hours to reduce bruising.",
+    "followup": "Filler dissolves within hours to about a day. A follow-up visit confirms full dissolution and covers next steps, including new filler if you'd like it."
+  }
+}
