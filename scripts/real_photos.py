@@ -10,6 +10,7 @@ P = {
     'lounge': ('/assets/ocala/lounge.webp', 'Client lounge at GLO Aesthetics + Wellness Lounge in Ocala with ivory chairs and a gold table', 'The client lounge'),
     'hallway': ('/assets/ocala/hallway.webp', 'Hallway with gold starburst chandeliers leading to private treatment rooms at GLO Ocala', 'Private treatment rooms'),
     'laser-room': ('/assets/ocala/laser-room.webp', 'Tetra Pro CO2 laser beside a white treatment chair at GLO Ocala', 'Our Tetra Pro CO2 laser'),
+    'motus-room': ('/assets/ocala/motus-room.webp', 'DEKA Motus AY laser beside a white treatment chair at GLO Ocala', 'Our DEKA Motus AY laser'),
     'facial-room': ('/assets/ocala/facial-room.webp', 'Softly lit facial room with a heated treatment bed at GLO Ocala', 'A calm facial suite'),
     'lounge-retail': ('/assets/ocala/lounge-retail.webp', 'Lounge seating, coffee bar and medical-grade skincare shelves at GLO Ocala', 'Coffee, Wi-Fi &amp; medical-grade skincare'),
 }
@@ -73,6 +74,7 @@ if __name__ == '__main__':
     open(f, 'w').write(s)
     for slug, key, cap in [('laser-skin-revitalization', 'laser-room', 'The Tetra Pro CO2 laser in our Ocala treatment room.'),
                            ('coolpeel', 'laser-room', 'CoolPeel is performed on the Tetra Pro CO2 laser in our Ocala treatment room.'),
+                           ('motus-laser-facial', 'motus-room', 'The DEKA Motus AY laser in our Ocala treatment room.'),
                            ('custom-facials-peels', 'facial-room', 'One of our private facial suites in Ocala.'),
                            ('mini-facials', 'facial-room', 'One of our private facial suites in Ocala.')]:
         p = f'treatments/{slug}.html'
