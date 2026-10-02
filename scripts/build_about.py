@@ -8,7 +8,7 @@ from glo_page import *  # noqa
 _t = json.load(open('content/team.json'))
 team, founder, group = _t['team'], _t['founder'], _t['group_photo']
 PATH, URL = '/about', SITE + '/about'
-IMG_HERO = SITE + '/assets/ocala/lounge.jpg'
+IMG_HERO = json.load(open('content/team.json'))['group_photo']['src']
 HERO_SRC = '/assets/ocala/lounge.webp'
 TITLE = 'About GLO Med Spa in Ocala, FL | Meet Our Team | GLO'
 META = 'Meet the licensed team at GLO Aesthetics + Wellness Lounge in Ocala and Palatka, FL: nurse practitioners, medical estheticians and aestheticians.'
@@ -20,7 +20,8 @@ answer = ('GLO Aesthetics + Wellness Lounge is a medical aesthetics and wellness
 crumbs = [('Home', '/'), ('About', '/about')]
 body = split_hero(crumbs, 'ABOUT GLO', 'About GLO in <span style="font-style:italic;color:#B8894F;">Ocala</span>, FL', answer,
                   f'<a href="#team" {BTN}>Meet Our Team</a><a href="/#book" {BTN_OUT}>Book a Consultation</a>',
-                  HERO_SRC, 'Client lounge at GLO Aesthetics + Wellness Lounge in Ocala with ivory chairs and a gold table', 'center 55%')
+                  group['src'], group['alt'], 'center 30%', note='AI-generated composite of the GLO team', size=(group['width'], group['height']))
+body = body.replace('<div class="glo-split-hero">', '<div class="glo-split-hero glo-split-hero--group">', 1)
 
 
 def member(m):
@@ -91,7 +92,6 @@ body += f'''
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
         <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation.</p>
       </div>
-      <figure class="tm-groupshot"><img src="{group['src']}" alt="{group['alt']}" width="{group['width']}" height="{group['height']}" loading="lazy" decoding="async"><figcaption>{group['note']}</figcaption></figure>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
     </div>

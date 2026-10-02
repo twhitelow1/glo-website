@@ -97,7 +97,9 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-teamshot figure{flex:0 0 46%;margin:0;}
 .glo-teamshot img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
 .glo-teamshot figcaption{font-size:12.5px;color:#8A8377;margin-top:10px;}
-.tm-groupshot{margin:0 0 36px;}
-.tm-groupshot img{width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 35%;border-radius:10px;display:block;}
-.tm-groupshot figcaption{font-size:12.5px;color:#8A8377;margin-top:10px;}
 @media (max-width:900px){.glo-teamshot{flex-direction:column;align-items:stretch;gap:28px;}.glo-teamshot figure{flex:none;}}
+
+/* Small disclosure caption on an AI-generated hero photo */
+.glo-split-media .glo-hero-note{position:absolute;z-index:1;left:16px;bottom:14px;font-size:11.5px;color:rgba(250,249,246,.92);text-shadow:0 1px 3px rgba(0,0,0,.55);}
+/* Group photo heroes keep the photo's own 4:5 shape on phones so nobody is cropped out */
+@media (max-width:900px){.glo-split-hero--group .glo-split-media{min-height:0 !important;aspect-ratio:4/5;}}
