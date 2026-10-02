@@ -142,7 +142,7 @@ CATS = [
     ['Best for', 'Deeper lines, acne scars, sun damage', 'Loose or crepey skin on the face, jaw and neck', 'Texture, pores and acne scars, all skin tones'],
     ['Downtime', 'About 5&ndash;7 days', 'None', 'About 24&ndash;72 hours of redness'],
     ['Typical plan', '1&ndash;3 sessions, 4&ndash;6 weeks apart', 'Often 2 sessions about 6 months apart', '3 or more sessions about 4 weeks apart'],
-    ['Starting price', 'From $1,200 per session', 'From $550 per session', 'Series pricing available']],
+    ['Starting price', 'From $1,200 per session', 'From $550 per session', 'From $250 per session']],
    'Comparison of CO2 laser, radiofrequency and microneedling'),
   faqs=[
    ('Which skin treatment has the least downtime?', 'Mini Facials, custom facials, the Motus laser facial, Everesse and Radiant Lift radiofrequency, and laser hair removal typically have little to no downtime. CoolPeel usually means 24&ndash;72 hours of redness; Tetra CO2 resurfacing needs the most recovery, about 5&ndash;7 days.'),

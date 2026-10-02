@@ -32,6 +32,8 @@ ACCENTS = {
     'Membership FAQ': 'FAQ', 'Ready to join?': 'join',
     '3 Reasons Why Patients Love Cherry': 'Love', 'How Does It Work?': 'Work', 'Patient Requirements': 'Requirements',
     'Talk to Us Before You Apply': 'Before You Apply', 'Financing FAQ': 'FAQ',
+    # about
+    'Who will I see at GLO?': 'see', 'What makes GLO different?': 'different', 'About GLO FAQs': 'FAQs', 'Ready to meet us?': 'meet us',
     # categories
     'Which injectable smooths wrinkles?': 'smooths wrinkles',
     'Which injectable restores volume or reshapes my features?': 'restores volume',
@@ -92,7 +94,7 @@ FOOTER = '''  <!-- ===================== FOOTER ===================== -->
     </div>
     <div class="glo-footer-bottom">
       <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
-      <span><a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
+      <span><a href="/about">About &amp; Team</a> &nbsp;&middot;&nbsp; <a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
     </div>
   </footer>
 '''

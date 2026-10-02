@@ -47,6 +47,7 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 
 ## Brand
 Playfair Display headings, Inter body, Montserrat labels and buttons. Cream `#F3F0EA`, page `#FAF9F6`, gold `#B8894F`,
-bronze sections `#6B5435` (`glo-dark`). Reuse the brand characters in `docs/brand-characters.md` for imagery.
+bronze sections `#6B5435` (`glo-dark`). Prefer GLO's real photos (`assets/ocala/`, placed by `scripts/real_photos.py`) wherever they fit; use the brand characters in
+`docs/brand-characters.md` for lifestyle imagery. Real photos need no AI disclosure; AI images always keep it.
 Every H2 gets one italic gold accent word (`.glo-accent`). Each treatment page has its own photo band; never reuse
 one photo set across pages. Copy is warm, inviting and accepting, and uses NEPQ-style questions that help the reader see themselves.
