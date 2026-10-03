@@ -64,6 +64,16 @@ for f in files:
     for need in ('rel="canonical"', 'og:image', 'application/ld+json'):
         if need not in s:
             warnings.append(f'{f}: missing {need}')
+# The main nav must be identical on every page (a stray find-and-replace once scrambled one page's menu).
+navs = {}
+for f in files:
+    s = open(f).read()
+    a = s.find('<!-- ===================== MAIN NAV BAR')
+    if a >= 0:
+        navs[f] = s[a:s.find('<!-- =====', a + 10)]
+if navs:
+    common = max(set(navs.values()), key=list(navs.values()).count)
+    errors += [f'{f}: main nav differs from the other pages' for f, n in navs.items() if n != common]
 print('\n'.join(['ERROR ' + e for e in errors] + ['WARN  ' + w for w in warnings]) or 'all clear')
 print(f'{len(files)} files, {len(errors)} errors, {len(warnings)} warnings')
 sys.exit(1 if errors else 0)

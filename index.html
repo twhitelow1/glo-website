@@ -69,12 +69,12 @@
 <meta property="og:title" content="Medical Aesthetics &amp; Wellness in Ocala, FL | GLO MedSpa">
 <meta property="og:description" content="GLO is a medical aesthetics and wellness med spa in Ocala and Palatka, FL: injectables, laser, skin care and medical weight loss. Book a consultation.">
 <meta property="og:url" content="https://gloocala.com/">
-<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260921_101723_d9e4d660-1b3a-42f6-9dc6-df4028ebe8bf.png">
+<meta property="og:image" content="https://gloocala.com/assets/video/hero-reel-poster.jpg">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Medical Aesthetics &amp; Wellness in Ocala, FL | GLO MedSpa">
 <meta name="twitter:description" content="GLO is a medical aesthetics and wellness med spa in Ocala and Palatka, FL: injectables, laser, skin care and medical weight loss. Book a consultation.">
-<meta name="twitter:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20260921_101723_d9e4d660-1b3a-42f6-9dc6-df4028ebe8bf.png">
+<meta name="twitter:image" content="https://gloocala.com/assets/video/hero-reel-poster.jpg">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -423,6 +423,21 @@
  ]
 }
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "@id": "https://gloocala.com/#hero-video",
+ "name": "Inside GLO Aesthetics + Wellness Lounge in Ocala, FL",
+ "description": "A short look inside GLO Aesthetics + Wellness Lounge in Ocala, Florida: the entrance, client lounge, aesthetic treatment devices and treatment-room hallway.",
+ "thumbnailUrl": "https://gloocala.com/assets/video/hero-reel-poster.jpg",
+ "contentUrl": "https://gloocala.com/assets/video/hero-reel.mp4",
+ "uploadDate": "2026-10-03",
+ "duration": "PT15S",
+ "publisher": {"@id": "https://gloocala.com/#business"}
+}
+</script>
+<link rel="preload" as="image" href="/assets/video/hero-reel-poster.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap">
@@ -449,9 +464,6 @@
   .dropdown-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);opacity:0;visibility:hidden;transition:opacity .18s ease, transform .18s ease, visibility 0s linear .22s;pointer-events:none;}
   .has-dropdown:hover .dropdown-panel{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto;transition-delay:0s;}
   .dd-cat:hover{color:#B8894F;}
-  .lifestyle-card{transition:transform .3s ease, box-shadow .3s ease;}
-  .lifestyle-card > :not(img):not(.lc-shade){position:relative;z-index:1;}
-  .lifestyle-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(34,31,27,0.14);}
 
   /* ===================== RESPONSIVE / MOBILE ===================== */
   .glo-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex:none;}
@@ -528,11 +540,11 @@
   <!-- ===================== MAIN NAV BAR ===================== -->
   <div style="width:100%;background:#EFE9E1;border-bottom:1px solid #E0D6C8;position:sticky;top:0;z-index:40;">
     <div class="glo-navbar-inner" style="max-width:1440px;margin:0 auto;padding:8px 48px;display:flex;justify-content:space-between;align-items:center;">
-      <a href="#home" style="display:flex;align-items:center;">
+      <a href="/#home" style="display:flex;align-items:center;">
         <img class="glo-logo" src="/assets/glo-logo.png" alt="Glo Aesthetics + Wellness Lounge" style="height:104px;width:auto;display:block;flex:none;object-fit:contain;">
       </a>
       <div class="glo-nav-links" style="display:flex;align-items:center;gap:36px;font-size:19px;font-weight:700;letter-spacing:0.01em;color:#221F1B;">
-        <a href="#about" class="nav-link">About</a>
+        <a href="/about" class="nav-link">About</a>
 
         <div class="has-dropdown">
           <a href="/treatments" class="nav-link" style="display:flex;align-items:center;gap:5px;">
@@ -599,9 +611,9 @@
             <a href="/locations" class="dd-cat" style="display:block;margin-top:6px;padding:12px 14px 4px;border-top:1px solid #E6E1D6;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;color:#B8894F;">All Locations &rarr;</a>
           </div>
         </div>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="/#contact" class="nav-link">Contact</a>
       </div>
-      <a href="#book" class="glo-nav-links btn-primary" style="background:#B8894F;color:#FAF9F6;padding:12px 26px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
+      <a href="/#book" class="glo-nav-links btn-primary" style="background:#B8894F;color:#FAF9F6;padding:12px 26px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
       <button class="glo-hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
         <div data-cond="mobileMenuOpen" style="display:none;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#221F1B" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
@@ -614,15 +626,16 @@
 
     <div data-cond="mobileMenuOpen" style="display:none;">
       <div class="glo-mobile-menu" style="display:flex;width:100%;background:#EFE9E1;border-top:1px solid #E0D6C8;padding:20px 48px 30px;flex-direction:column;gap:2px;">
-        <a href="#about" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">About</a>
-        <a href="/treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Treatments</a>
+        <a href="/about" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">About</a>
+        <a href="/treatments" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">All Treatments</a>
         <a href="/membership-programs" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Memberships</a>
+        <a href="/financing" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Financing</a>
         <a href="/locations" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Locations</a>
         <a href="/locations/ocala" class="nav-link" onclick="toggleMobileMenu()" style="padding:11px 0 11px 18px;font-size:16px;font-weight:600;color:#5C574E;border-bottom:1px solid #E6E1D6;">Ocala, FL</a>
         <a href="/locations/palatka" class="nav-link" onclick="toggleMobileMenu()" style="padding:11px 0 11px 18px;font-size:16px;font-weight:600;color:#5C574E;border-bottom:1px solid #E6E1D6;">Palatka, FL</a>
-        <a href="#contact" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Contact</a>
+        <a href="/#contact" class="nav-link" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;border-bottom:1px solid #E6E1D6;">Contact</a>
         <a href="tel:+13525598034" onclick="toggleMobileMenu()" style="padding:14px 0;font-size:18px;font-weight:700;color:#B8894F;border-bottom:1px solid #E6E1D6;">Call 352-559-8034</a>
-        <a href="#book" class="btn-primary" onclick="toggleMobileMenu()" style="display:block;text-align:center;margin-top:20px;background:#B8894F;color:#FAF9F6;padding:15px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
+        <a href="/#book" class="btn-primary" onclick="toggleMobileMenu()" style="display:block;text-align:center;margin-top:20px;background:#B8894F;color:#FAF9F6;padding:15px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book a Consultation</a>
       </div>
     </div>
   </div>
@@ -649,7 +662,13 @@
       </div>
     
     </div></div>
-    <div class="glo-split-media"><img src="/assets/hero.jpg" alt="Confident woman with radiant, glowing skin" width="1024" height="1365" fetchpriority="high" decoding="async" style="object-position:left 15% top 20%;"></div>
+    <div class="glo-split-media glo-hero-video">
+      <video class="glo-hero-reel" autoplay muted loop playsinline preload="metadata" poster="/assets/video/hero-reel-poster.webp" width="720" height="1280" aria-label="A look inside GLO Aesthetics + Wellness Lounge in Ocala: the entrance, client lounge, treatment devices and gold-lit hallway">
+        <source src="/assets/video/hero-reel.mp4" type="video/mp4">
+        <source src="/assets/video/hero-reel.webm" type="video/webm">
+      </video>
+      <button type="button" class="glo-video-toggle" aria-label="Pause background video" aria-pressed="false"><span aria-hidden="true"></span></button>
+    </div>
   </div>
 
   <!-- ===================== STATS STRIP (overlaps hero) ===================== -->
@@ -735,47 +754,42 @@
     </div>
   </div>
 
-  <!-- ===================== REAL GLOW, REAL OCALA (lifestyle) ===================== -->
-  <div style="width:100%;background:#F3F0EA;">
-    <div class="glo-container" style="max-width:1440px;margin:0 auto;padding:90px 48px 100px;">
-      <div style="text-align:center;max-width:680px;margin:0 auto 48px;">
+  <!-- ===================== YOUR FIRST VISIT (real Ocala photos) ===================== -->
+  <section id="first-visit" style="width:100%;background:#F3F0EA;">
+    <div class="glo-container" style="max-width:1240px;margin:0 auto;padding:90px 48px 100px;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 46px;">
         <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:22px;">
           <div style="width:36px;height:1px;background:#B8894F;"></div>
-          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">REAL GLOW, REAL OCALA</span>
+          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">YOUR FIRST VISIT</span>
           <div style="width:36px;height:1px;background:#B8894F;"></div>
         </div>
-        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">Picture Yourself <span class="glo-accent">Glowing</span> at Every Age</h2>
+        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">What happens at your <span class="glo-accent">first</span> visit?</h2>
+        <p style="margin:18px auto 0;font-size:17.5px;line-height:1.75;color:#5C574E;max-width:640px;">Your first visit is a relaxed conversation, not a sales appointment. Nervous about walking into a med spa for the first time? Here&rsquo;s exactly what happens inside our Ocala lounge.</p>
       </div>
-
-      <div class="glo-grid-4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;">
-        <div class="lifestyle-card" role="img" aria-label="Woman in her sixties smiling at a horse-farm fence in Ocala horse country" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_175e4678-0ae9-4464-8168-4d4a5e763ed7.png') center 25%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Horse Country Mornings</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Confidence at Every Age</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Middle-aged man smiling after a morning run on a shaded Florida trail" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_f2efb89a-4a81-4e8a-ac4e-4c29d2e70aba.png') center 25%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Active &amp; Recharged</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Strength, Inside &amp; Out</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Woman with glowing skin enjoying golden-hour sunlight" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_a0a683a6-c3f0-4e84-b5d5-d3d138eabaee.png') center 30%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Golden Hour Glow</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Skin That Speaks for Itself</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Woman in her forties relaxing at home with a cup of tea" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_0f788a80-530e-483a-ba1b-60820956532a.png') center 30%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Balanced &amp; Energized</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Wellness for Every Chapter</div>
-          </div>
-        </div>
+      <ol class="fv-grid">
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/lounge.webp" alt="The GLO client lounge in Ocala with soft seating, fresh flowers and gold accents" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">1</span></figure>
+          <div class="fv-text"><h3>Settle in</h3><p>Arrive at our Ocala lounge, take a seat and breathe. No rushing and no clipboard pressure &mdash; this time is yours.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/facial-room.webp" alt="A private consultation and facial room at GLO Aesthetics + Wellness Lounge in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">2</span></figure>
+          <div class="fv-text"><h3>We listen first</h3><p>A licensed provider asks what you&rsquo;d like to feel again, reviews your health history and takes a close look at your skin.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/hallway.webp" alt="The gold-lit hallway leading to private treatment rooms at GLO in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">3</span></figure>
+          <div class="fv-text"><h3>Your plan, your pace</h3><p>You get honest options, real pricing and what to expect from each. Decide today, or take it home and think it over.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/laser-room.webp" alt="The Tetra Pro CO2 laser in a private GLO treatment room in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">4</span></figure>
+          <div class="fv-text"><h3>Treatment, in private</h3><p>When you&rsquo;re ready, treatment happens in a private room on medical-grade technology like the Tetra Pro CO2 and DEKA Motus AY lasers.</p></div>
+        </li>
+      </ol>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="#book" class="btn-primary" style="display:inline-block;background:#B8894F;color:#FAF9F6;padding:16px 36px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book Your Consultation</a>
+        <p style="margin:14px 0 0;font-size:14px;color:#8A8377;">Real photos of our Ocala med spa. <a href="/about#inside" style="color:#B8894F;">See more of the space &rarr;</a></p>
       </div>
-      <p style="text-align:center;font-size:14px;color:#8A8377;margin-top:22px;">Representative imagery, AI-generated for illustration &mdash; does not depict actual GLO clients or guaranteed results.</p>
     </div>
-  </div>
+  </section>
 
   <!-- ===================== TREATMENTS ===================== -->
   <div id="treatments" style="width:100%;background:#F3F0EA;">
@@ -803,15 +817,15 @@
           <h3 style="font-size:21px;color:#221F1B;margin-bottom:6px;"><a href="/skin-services">Skin Services</a></h3>
           <p style="font-size:14.5px;line-height:1.5;color:#8A8377;font-weight:300;margin-bottom:18px;max-width:760px;">Sun damage, uneven tone, loosening skin, unwanted hair &mdash; or skin that just looks tired? Laser resurfacing, radiofrequency skin tightening, laser hair removal, custom facials, chemical peels &amp; microneedling, each matched to your skin.</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));column-gap:32px;row-gap:11px;border-top:1px solid #E6E1D6;padding-top:16px;">
-            <a id="rx-tetra-co2" href="/treatments/laser-skin-revitalization" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Laser Skin Revitalization</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Tetra CO2 laser</span></a>
-            <a id="rx-coolpeel" href="/treatments/coolpeel" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">CoolPeel</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; CO2 laser</span></a>
-            <a id="rx-laser-facials" href="/treatments/motus-laser-facial" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Motus Laser Facial</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; DEKA Motus laser</span></a>
-            <a id="rx-laser-hair-removal" href="/treatments/laser-hair-removal" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Laser Hair Removal</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Laser</span></a>
-            <a id="rx-everesse" href="/treatments/skin-tightening" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Skin Tightening</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Everesse RF</span></a>
-            <a id="rx-radiant-lift" href="/treatments/radiant-lift" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Radiant Lift</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Radiofrequency</span></a>
-            <a id="rx-custom-facials" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Custom Facials</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Facial</span></a>
-            <a id="rx-chemical-peels" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Chemical Peels</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Peel</span></a>
-            <a id="rx-microneedling" href="/treatments/microneedling" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Microneedling</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; SkinPen</span></a>
+            <a id="rx-tetra-co2" href="/treatments/laser-skin-revitalization" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Laser Skin Revitalization </span><span>&middot; Tetra CO2 laser</span></span></a>
+            <a id="rx-coolpeel" href="/treatments/coolpeel" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>CoolPeel </span><span>&middot; CO2 laser</span></span></a>
+            <a id="rx-laser-facials" href="/treatments/motus-laser-facial" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Motus Laser Facial </span><span>&middot; DEKA Motus laser</span></span></a>
+            <a id="rx-laser-hair-removal" href="/treatments/laser-hair-removal" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Laser Hair Removal </span><span>&middot; Laser</span></span></a>
+            <a id="rx-everesse" href="/treatments/skin-tightening" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Skin Tightening </span><span>&middot; Everesse RF</span></span></a>
+            <a id="rx-radiant-lift" href="/treatments/radiant-lift" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Radiant Lift </span><span>&middot; Radiofrequency</span></span></a>
+            <a id="rx-custom-facials" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Custom Facials </span><span>&middot; Facial</span></span></a>
+            <a id="rx-chemical-peels" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Chemical Peels </span><span>&middot; Peel</span></span></a>
+            <a id="rx-microneedling" href="/treatments/microneedling" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Microneedling </span><span>&middot; SkinPen</span></span></a>
           </div>
         </div>
 
@@ -971,7 +985,7 @@
           <ul>
             <li id="consult-weightloss" class="bk-row"><div><span class="bk-name">Weight Loss Consultation</span><span class="bk-desc">Medical weight loss &middot; telehealth available</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/57" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Weight Loss Consultation">Book</a></li>
             <li id="consult-peptides" class="bk-row"><div><span class="bk-name">Peptides Consultation</span><span class="bk-desc">Recovery, sleep &amp; vitality</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/2/treatment/121" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Peptides Consultation">Book</a></li>
-            <li id="consult-hormones" class="bk-row"><div><span class="bk-name">Hormone Therapy</span><span class="bk-desc">Start with an Aesthetics &amp; Wellness consult</span></div><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/discipline/14/treatment/114" target="_blank" rel="noopener" class="bk-btn" aria-label="Book Hormone Therapy">Book</a></li>
+            <li id="consult-hormones" class="bk-row"><div><span class="bk-name">Hormone Therapy</span><span class="bk-desc">Women&rsquo;s wellness &amp; hormone consult &middot; call to book</span></div><a href="tel:+13525598034" class="bk-btn" aria-label="Call 352-559-8034 to book a hormone consultation">Call</a></li>
           </ul>
         </div>
       </div>

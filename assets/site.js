@@ -60,3 +60,21 @@
     }
   }, ['floatingEstimator']);
 })();
+
+/* Home hero video: honour reduced motion (show the still) and wire the pause/play button. */
+(function () {
+  var v = document.querySelector('.glo-hero-reel');
+  if (!v) return;
+  var btn = document.querySelector('.glo-video-toggle');
+  function set(paused) {
+    if (!btn) return;
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    btn.setAttribute('aria-label', paused ? 'Play background video' : 'Pause background video');
+  }
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    v.removeAttribute('autoplay'); v.pause(); set(true);
+  }
+  if (btn) btn.addEventListener('click', function () {
+    if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); set(false); } else { v.pause(); set(true); }
+  });
+})();
