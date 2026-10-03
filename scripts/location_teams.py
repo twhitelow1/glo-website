@@ -55,7 +55,9 @@ def faq_answer(city):
     a = f'{names(ms)} see{"s" if len(ms) == 1 else ""} clients at our {city} location. '
     other = 'Palatka' if city == 'Ocala' else 'Ocala'
     shared = [m for m in ms if other in m['locations']]
-    if shared:
+    if shared and len(shared) == len(ms):
+        a += f'{"Both" if len(ms) == 2 else "All of them"} also see clients in {other}. '
+    elif shared:
         a += f'{names(shared)} also see{"s" if len(shared) == 1 else ""} clients in {other}. '
     return a + f'You can book any of them online for {city}, or call 352-559-8034 and we&rsquo;ll match you.'
 
