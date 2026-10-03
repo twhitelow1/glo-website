@@ -125,6 +125,10 @@ body += f'''
   </div>
 '''
 
+body += reviews_section('What do clients <span class="glo-accent">say</span> about GLO?',
+                        'Here&rsquo;s how our clients describe their visits, in their own words. These reviews come straight from Google and update as new ones arrive.',
+                        bg='#FAF9F6')
+
 FAQ = [
     ('Who founded GLO Aesthetics + Wellness Lounge?', 'GLO Aesthetics + Wellness Lounge was founded by Renee Porter. GLO has two Florida locations, in Ocala and Palatka, with a licensed team working under the direction of a Florida-licensed Medical Director.'),
     ('Who performs treatments at GLO?', 'Treatments are performed by GLO&rsquo;s licensed team &mdash; including a board-certified family nurse practitioner, medical estheticians and aestheticians &mdash; under the direction of our Florida-licensed Medical Director.'),

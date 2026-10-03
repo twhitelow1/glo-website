@@ -42,6 +42,8 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 - Category pages are generated: edit `scripts/build_categories.py`, then run it.
 - `python3 scripts/location_teams.py`: who sees clients at each location (team sections, FAQ, `employee` schema on the location
   pages; hub copy). It reads `content/team.json`, whose `locations` and per-location `book` links follow Jane. Run it after `real_photos.py`.
+- Reviews: `python3 scripts/build_reviews.py` builds `/reviews` (grid widget). Home and About use the slider via
+  `reviews_section()` in `glo_page.py`. Reviews only ever come from the live widget: never type reviews, ratings or counts.
 - `scripts/glo_page.py` holds the shared page shell, SEO head and schema helpers for new generated pages.
 - `python3 scripts/design_layer.py`: applies the shared design layer (`assets/site.css`, `assets/site.js`, shared footer,
   mobile Book/Call bar, marquee, H2 accent words, card thumbnails, photo bands from `content/bands.json`). Run it after

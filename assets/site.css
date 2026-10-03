@@ -115,3 +115,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-cherry{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:12px;min-height:320px;overflow:hidden;}
 @media (max-width:600px){.glo-cherry{padding:4px;border-radius:8px;}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth;}}
+
+/* Live review widgets (api.gloocala.com) */
+.glo-reviews-widget{min-height:240px;}
+.glo-reviews-widget iframe{display:block;}
