@@ -70,6 +70,18 @@ for f in files:
     if 'cloudfront.net' in s and 'Photography on this site is representative' not in s:
         errors.append(f'{f}: AI imagery without the fine-print photography line')
 
+# Compliance guards: Florida s. 456.062 notice on every page (free consults, offers, member discounts), no AI image labelled
+# as a client or a result, no "FDA-approved" next to GLP-1 brands.
+for f in files:
+    s = open(f).read()
+    if 'class="glo-footer"' in s and 'glo-footer-legal' not in s:
+        errors.append(f'{f}: missing the Florida 456.062 free/discount notice in the footer')
+    for alt in re.findall(r'<img src="https://d8j0ntlcm91z4[^"]*" alt="([^"]*)"', s):
+        if re.search(r'\bclients?\b|\bafter\b|\bresults?\b', alt, re.I):
+            errors.append(f'{f}: AI image labelled as a client or result: "{alt}"')
+    if re.search(r'FDA-approved GLP|Wegovy|Ozempic|Mounjaro|Zepbound', re.sub(r'<!--.*?-->', '', s, flags=re.S)):
+        errors.append(f'{f}: GLP-1 brand or "FDA-approved GLP-1" claim (confirm with GLO first)')
+
 # The main nav must be identical on every page (a stray find-and-replace once scrambled one page's menu).
 navs = {}
 for f in files:

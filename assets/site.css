@@ -178,3 +178,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
   table.glo-stack td::before{content:attr(data-label);display:block;font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-bottom:3px;}
   table.glo-stack--pair td{border-top:0 !important;margin-top:0;padding-top:4px !important;}
 }
+/* Florida s. 456.062 notice for free or discounted services */
+.glo-footer-legal{max-width:1320px;margin:0 auto;padding:0 48px 28px;font-size:11px;line-height:1.6;letter-spacing:.02em;color:#9C8E77;}
+.glo-offer-legal{font-size:10.5px;line-height:1.55;color:#8A8377;margin:10px 0 0;text-align:left;}
+@media (max-width:600px){.glo-footer-legal{padding:0 20px 24px;}}

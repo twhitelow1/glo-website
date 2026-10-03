@@ -2,17 +2,17 @@
   "slug": "peptide-therapy",
   "keyword": "Peptide Therapy",
   "title": "Peptide Therapy in Ocala, FL | GLO Aesthetics",
-  "meta": "Peptide therapy in Ocala, FL with physician-directed protocols for recovery, sleep, libido and vitality, from $200/month. Book a peptides consultation.",
-  "answer": "Peptide therapy is a physician-directed treatment that uses short chains of amino acids to support natural processes such as tissue repair, sleep and growth-hormone pathways, and libido. It suits adults looking for personalized recovery and vitality support. Protocols are ongoing with no downtime, are usually given by subcutaneous injection, and effects vary by peptide, typically over weeks.",
+  "meta": "Peptide therapy in Ocala, FL with provider-directed protocols for recovery, sleep, libido and vitality. Initial visit $50. Book a peptides consultation.",
+  "answer": "Peptide therapy is a provider-directed treatment that uses short chains of amino acids to support natural processes such as tissue repair, sleep and growth-hormone pathways, and libido. It suits adults looking for personalized recovery and vitality support. Protocols are ongoing with no downtime, are usually given by subcutaneous injection, and effects vary by peptide, typically over weeks.",
   "treats_h2": "What does peptide therapy help with?",
   "treats_intro": "Peptide therapy is used to support recovery and tissue repair, sleep and natural growth-hormone pathways, low libido and overall vitality, with a protocol prescribed when appropriate after evaluation.",
   "how_h2": "How does peptide therapy work?",
-  "how": "Peptides are short chains of amino acids that act as signaling molecules, prompting specific responses in the body such as repair or hormone release. At GLO, a physician reviews your goals, health history and labs, then prescribes a personalized protocol, typically given by subcutaneous injection at home or in the office. Peptides come from licensed compounding pharmacies; most aren't FDA-approved for these uses, except PT-141 (Vyleesi) for one specific indication.",
+  "how": "Peptides are short chains of amino acids that act as signaling molecules, prompting specific responses in the body such as repair or hormone release. At GLO, your provider reviews your goals, health history and labs, then prescribes a personalized protocol, typically given by subcutaneous injection at home or in the office. Peptides come from licensed compounding pharmacies; most aren't FDA-approved for these uses, except PT-141 (Vyleesi) for one specific indication.",
   "fit_h2": "Is peptide therapy right for me?",
   "good_fit": [
     "You want support with recovery, sleep or overall vitality",
     "You're dealing with low libido and want to explore options",
-    "You value a physician-supervised, lab-informed plan",
+    "You value a medically supervised, lab-informed plan",
     "You're comfortable with small subcutaneous injections"
   ],
   "not_fit": [
@@ -22,7 +22,7 @@
     "Your symptoms come from confirmed low hormone levels — hormone replacement therapy may be the better fit"
   ],
   "expect_h2": "What happens when you start peptide therapy?",
-  "expect_intro": "You start with a consultation about your goals and health history, plus lab work if needed. Your physician then builds a personalized protocol and monitors and adjusts it over time.",
+  "expect_intro": "You start with a consultation about your goals and health history, plus lab work if needed. Your provider then builds a personalized protocol and monitors and adjusts it over time.",
   "cost_h2": "How much does peptide therapy cost in Ocala?",
   "faq_h2": "Peptide Therapy FAQs",
   "faq_rename": {
@@ -31,15 +31,15 @@
   "faq_add": [
     {
       "q": "How long does it take for peptide therapy to work?",
-      "a": "It varies by peptide, but most people notice changes over a period of weeks. Your physician will tell you what to expect for your specific protocol and check in on your progress."
+      "a": "It varies by peptide, but most people notice changes over a period of weeks. Your provider will tell you what to expect for your specific protocol and check in on your progress."
     },
     {
       "q": "What are the side effects of peptide therapy?",
-      "a": "The most common side effects are mild redness, swelling or itching at the injection site. Some peptides can cause flushing, nausea or headache. Your physician will review the risks of your specific protocol and monitor you over time."
+      "a": "The most common side effects are mild redness, swelling or itching at the injection site. Some peptides can cause flushing, nausea or headache. Your provider will review the risks of your specific protocol and monitor you over time."
     },
     {
       "q": "Peptide therapy vs hormone replacement therapy: what's the difference?",
-      "a": "Hormone replacement therapy replaces hormones that labs show are low. Peptide therapy uses signaling molecules to support the body's own processes, such as repair or natural growth-hormone release. Some people use both under physician guidance."
+      "a": "Hormone replacement therapy replaces hormones that labs show are low. Peptide therapy uses signaling molecules to support the body's own processes, such as repair or natural growth-hormone release. Some people use both under medical guidance."
     }
   ],
   "related_h2": "Treatments that pair well with peptide therapy",
@@ -47,8 +47,8 @@
     "type": "MedicalTherapy",
     "procedureType": null,
     "bodyLocation": "Whole body",
-    "howPerformed": "After a consultation and lab work as indicated, a physician prescribes a personalized peptide protocol, typically self- or in-office administered by subcutaneous injection.",
-    "preparation": "Bring your goals, health history and current medications to your consultation, and complete any lab work your physician requests.",
-    "followup": "Your physician monitors your response and adjusts your protocol over time. Report any injection-site or other side effects promptly."
+    "howPerformed": "After a consultation and lab work as indicated, your GLO provider prescribes a personalized peptide protocol, typically self- or in-office administered by subcutaneous injection.",
+    "preparation": "Bring your goals, health history and current medications to your consultation, and complete any lab work your provider requests.",
+    "followup": "Your provider monitors your response and adjusts your protocol over time. Report any injection-site or other side effects promptly."
   }
 }

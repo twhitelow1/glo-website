@@ -34,6 +34,15 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 - No outcome guarantees, "best in Ocala" claims or "cure". Off-label or compounded therapies are never called FDA-approved.
 - Don't claim content was "medically reviewed" until a named GLO provider has reviewed it; then add their name and
   credentials to the Updated line and `reviewedBy`/`lastReviewed` to the schema.
+- Prices: only list prices that appear in GLO's Jane booking site; otherwise say "priced at your consultation".
+- Providers: GLO is led by licensed providers (nurse practitioners, aestheticians) under a Florida-licensed Medical Director who
+  reviews and signs off on charts. Never say "physician-led" or imply a physician treats clients; say "provider" or "Medical Director oversight".
+- Any page advertising something free or discounted (free consults, offers, member discounts) must carry the Florida s. 456.062
+  notice; the shared footer (`glo-footer-legal`) has it, and offer blocks repeat it (`glo-offer-legal`).
+- No statistics without a cited source. No absolute "safe for all", "painless" or similar claims: say "most people", "suits most".
+- GLP-1s: no brand names or "FDA-approved" claims until GLO confirms what it prescribes (brand vs compounded). Hormone therapy is
+  "coming soon": no prices or free-consult claims until it launches.
+- AI images are never labelled as clients, results or "after" in alt text, and never stand in for GLO's real rooms or locations.
 - Placeholder text (`[TBD]`, `[Confirm …]`) is only allowed on `noindex` pages and never inside JSON-LD.
 
 ## Tools (run from the repo root before every push)
