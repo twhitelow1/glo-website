@@ -41,7 +41,7 @@ def compare(h2, intro, cols, rows, caption, bg='#F3F0EA'):
     th = 'style="text-align:left;padding:16px 18px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8A8377;font-weight:600;"'
     head = ''.join(f'<th scope="col" {th}>{c}</th>' for c in [''] + cols)
     body = ''.join('<tr><th scope="row" style="text-align:left;padding:16px 18px;font-weight:600;color:#221F1B;border-top:1px solid #E6E1D6;white-space:nowrap;">'
-                   + r[0] + '</th>' + ''.join(f'<td style="padding:16px 18px;border-top:1px solid #E6E1D6;color:#5C574E;">{c}</td>' for c in r[1:]) + '</tr>'
+                   + r[0] + '</th>' + ''.join(f'<td data-label="{plain(col)}" style="padding:16px 18px;border-top:1px solid #E6E1D6;color:#5C574E;">{c}</td>' for col, c in zip(cols, r[1:])) + '</tr>'
                    for r in rows)
     return f'''
   <!-- ===================== COMPARE ===================== -->
@@ -51,8 +51,8 @@ def compare(h2, intro, cols, rows, caption, bg='#F3F0EA'):
         <h2 class="glo-h2" style="font-size:38px;line-height:1.2;color:#221F1B;margin-bottom:14px;">{h2}</h2>
         <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">{intro}</p>
       </div>
-      <div style="overflow-x:auto;background:#FFFFFF;border:1px solid #E6E1D6;border-radius:8px;">
-        <table style="width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:640px;">
+      <div class="glo-table-wrap" style="overflow-x:auto;background:#FFFFFF;border:1px solid #E6E1D6;border-radius:8px;">
+        <table class="glo-stack" style="width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:640px;">
           <caption style="position:absolute;left:-9999px;">{caption}</caption>
           <thead><tr>{head}</tr></thead>
           <tbody>{body}</tbody>
@@ -129,7 +129,7 @@ CATS = [
     'Lasers use light energy to resurface or refresh skin and to remove hair. Tetra CO2 resurfacing treats deeper lines, scars and sun damage; CoolPeel and the Motus laser facial refresh tone and texture with far less downtime.',
     ['laser-skin-revitalization', 'coolpeel', 'motus-laser-facial', 'laser-hair-removal']),
    ('radiofrequency', 'What does radiofrequency skin tightening do?',
-    'Radiofrequency (RF) gently heats the deeper layers of skin to prompt new collagen, so loose or crepey skin looks firmer over the following months. It isn&rsquo;t a laser, and there&rsquo;s no downtime.',
+    'Radiofrequency (RF) gently heats the deeper layers of skin to prompt new collagen, so loose or crepey skin looks firmer over the following months. Everesse on its own isn&rsquo;t a laser and has no downtime; Radiant Lift adds a CoolPeel CO2 laser to refresh tone and texture too.',
     ['skin-tightening', 'radiant-lift']),
    ('facials', 'Which facial, peel or microneedling treatment should I choose?',
     'Custom facials and chemical peels clear congestion, even tone and restore glow; SkinPen microneedling builds collagen to improve texture, pores and acne scars. Mini Facials are a quick monthly refresh.',
@@ -142,13 +142,13 @@ CATS = [
     ['Best for', 'Deeper lines, acne scars, sun damage', 'Loose or crepey skin on the face, jaw and neck', 'Texture, pores and acne scars, all skin tones'],
     ['Downtime', 'About 5&ndash;7 days', 'None', 'About 24&ndash;72 hours of redness'],
     ['Typical plan', '1&ndash;3 sessions, 4&ndash;6 weeks apart', 'Often 2 sessions about 6 months apart', '3 or more sessions about 4 weeks apart'],
-    ['Starting price', 'From $1,200 per session', 'From $550 per session', 'From $250 per session']],
+    ['Starting price', 'From $800 per session', 'From $700 per session', 'From $250 per session']],
    'Comparison of CO2 laser, radiofrequency and microneedling'),
   faqs=[
-   ('Which skin treatment has the least downtime?', 'Mini Facials, custom facials, the Motus laser facial, Everesse and Radiant Lift radiofrequency, and laser hair removal typically have little to no downtime. CoolPeel usually means 24&ndash;72 hours of redness; Tetra CO2 resurfacing needs the most recovery, about 5&ndash;7 days.'),
+   ('Which skin treatment has the least downtime?', 'Mini Facials, custom facials, the Motus laser facial, Everesse radiofrequency and laser hair removal typically have little to no downtime. CoolPeel and Radiant Lift (Everesse + CoolPeel) usually mean 24&ndash;72 hours of redness; Tetra CO2 resurfacing needs the most recovery, about 5&ndash;7 days.'),
    ('Is Everesse a laser?', 'No. Everesse uses radiofrequency energy, not laser light. It heats the deeper layers of skin to tighten and build collagen, with no downtime, which makes it a good option for loose or crepey skin.'),
    ('What&rsquo;s the difference between Tetra CO2 and CoolPeel?', 'Both use CO2 laser technology on the same platform. Tetra CO2 resurfacing goes deeper for lines, scars and sun damage, with about a week of downtime. CoolPeel is a lighter, faster treatment with 24&ndash;72 hours of redness, usually done as a series.'),
-   ('Are laser treatments safe for darker skin?', 'Many are, with the right technology and settings. Your provider assesses your skin type at your consultation and adjusts settings or recommends an alternative. Microneedling works without heat or light, so it&rsquo;s considered safe across all skin types.'),
+   ('Are laser treatments safe for darker skin?', 'Many are, with the right technology and settings. Your provider assesses your skin type at your consultation and adjusts settings or recommends an alternative. Microneedling works without heat or light, so it suits most skin types and tones.'),
    ('How many sessions will I need?', 'It depends on the treatment and your goals. Microneedling and CoolPeel are usually done as a series of 3 or more, laser hair removal as 6&ndash;8 sessions, and Everesse often as 2 sessions about 6 months apart. Your provider will build your plan with you.'),
    ('Can I combine skin treatments?', 'Often, yes. Many clients pair a resurfacing or microneedling series with monthly facials, or add radiofrequency tightening. Your provider will space treatments safely and tell you what works well together for your skin.'),
   ],
@@ -170,7 +170,7 @@ CATS = [
     'Yes &mdash; when there&rsquo;s a medical reason behind it. Medical weight loss and hormone replacement therapy start with labs, so your plan treats what&rsquo;s actually going on, with monitoring and adjustments along the way.',
     ['functional-weight-loss', 'hormone-replacement-therapy']),
    ('recovery', 'What helps with energy and recovery?',
-    'IV hydration replenishes fluids, vitamins and minerals in a single visit. Peptide therapy is an ongoing, physician-directed protocol to support recovery, sleep and vitality.',
+    'IV hydration replenishes fluids, vitamins and minerals in a single visit. Peptide therapy is an ongoing, provider-directed protocol to support recovery, sleep and vitality.',
     ['iv-hydration', 'peptide-therapy']),
   ],
   compare=('Which wellness program fits my goals?',
@@ -183,11 +183,11 @@ CATS = [
    'Comparison of GLO wellness programs'),
   faqs=[
    ('Do I need lab work before starting a wellness program?', 'For medical weight loss, hormone therapy and peptide therapy, yes. Labs show what&rsquo;s actually happening so your provider can prescribe only what&rsquo;s appropriate and monitor you safely. IV hydration starts with a health screening.'),
-   ('Does GLO prescribe GLP-1 medications like semaglutide or tirzepatide?', 'When appropriate, yes. GLO&rsquo;s medical weight loss program can include FDA-approved GLP-1 medications alongside metabolic labs, personalized nutrition and ongoing monitoring. Your provider decides whether medication fits after your evaluation.'),
+   ('Does GLO prescribe GLP-1 medications like semaglutide or tirzepatide?', 'When appropriate, yes. GLO&rsquo;s medical weight loss program can include GLP-1 medications alongside metabolic labs, personalized nutrition and ongoing monitoring. Your provider decides whether medication fits after your evaluation.'),
    ('Is hormone replacement therapy for men and women?', 'Yes. GLO offers testosterone replacement for men, bioidentical hormone therapy for women and thyroid support, each built around your labs and symptoms, with follow-up labs to adjust your plan.'),
    ('Are compounded or peptide therapies FDA-approved?', 'Not all are. Some compounded and peptide therapies haven&rsquo;t been evaluated by the FDA for every use. Your provider will explain what&rsquo;s known about any therapy they recommend and prescribe it only when it&rsquo;s appropriate for you.'),
    ('How long does an IV hydration session take?', 'Most IV hydration sessions take 30 to 60 minutes, depending on the blend and infusion rate. You can relax in the lounge and return to your day afterward.'),
-   ('Do I need a consultation first?', 'Yes. Every wellness program begins with a clinical evaluation so your plan is safe and personal. Hormone therapy offers a complimentary initial consultation.'),
+   ('Do I need a consultation first?', 'Yes. Every wellness program begins with a clinical evaluation so your plan is safe and personal. Hormone therapy is coming soon; call us to join the list.'),
   ],
   related_h2='Explore more at GLO',
   related=[('All Treatments', '/treatments'), ('Injectables', '/injectables'), ('Skin Services', '/skin-services'), ('Memberships', '/membership-programs')],

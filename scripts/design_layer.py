@@ -29,8 +29,6 @@ ACCENTS = {
     "Visiting Ocala? Here's What to Know": 'What to Know', "Visiting Palatka? Here's What to Know": 'What to Know',
     'Our Palatka, FL Location': 'Palatka', 'Our Ocala, FL Location': 'Ocala',
     # memberships, financing
-    'Skin &amp; Skin Health Membership': 'Skin Health', 'Weight Loss &amp; Metabolic Membership': 'Metabolic',
-    'Membership FAQ': 'FAQ', 'Ready to join?': 'join',
     '3 Reasons Why Patients Love Cherry': 'Love', 'How Does It Work?': 'Work', 'Patient Requirements': 'Requirements',
     'Talk to Us Before You Apply': 'Before You Apply', 'Financing FAQ': 'FAQ',
     # about
@@ -97,6 +95,7 @@ FOOTER = '''  <!-- ===================== FOOTER ===================== -->
       <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
       <span><a href="/about">About &amp; Team</a> &nbsp;&middot;&nbsp; <a href="/reviews">Reviews</a> &nbsp;&middot;&nbsp; <a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
     </div>
+    <p class="glo-footer-legal">THE PATIENT AND ANY OTHER PERSON RESPONSIBLE FOR PAYMENT HAS A RIGHT TO REFUSE TO PAY, CANCEL PAYMENT, OR BE REIMBURSED FOR PAYMENT FOR ANY OTHER SERVICE, EXAMINATION, OR TREATMENT THAT IS PERFORMED AS A RESULT OF AND WITHIN 72 HOURS OF RESPONDING TO THE ADVERTISEMENT FOR THE FREE, DISCOUNTED FEE, OR REDUCED FEE SERVICE, EXAMINATION, OR TREATMENT.</p>
   </footer>
 '''
 
@@ -251,7 +250,6 @@ def photo_band(f, s, bands):
             f'      <p>{text}</p>\n'
             f'      <a {book} class="glo-band-btn">Book a Consultation</a>\n'
             f'    </div></div>\n'
-            f'    <p class="glo-band-note">Representative imagery, AI-generated for illustration.</p>\n'
             f'  </section>')
     return s[:m.start()] + band + s[end:]
 

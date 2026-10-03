@@ -2,12 +2,12 @@
   "slug": "functional-weight-loss",
   "keyword": "Medical Weight Loss",
   "title": "Medical Weight Loss in Ocala, FL | GLO Aesthetics",
-  "meta": "Medical weight loss in Ocala, FL with metabolic labs, GLP-1 options when appropriate and personalized coaching, from $300/month. Book your consultation.",
+  "meta": "Medical weight loss in Ocala, FL with metabolic labs, GLP-1 options when appropriate and personalized coaching. Start with a $50 consult. Book online now.",
   "answer": "Functional weight loss is a medically supervised weight loss program that looks for the root causes of weight gain, such as insulin resistance, thyroid or hormone changes. It suits adults who have struggled to lose weight or hit a plateau. It's an ongoing program with no downtime, and many people see meaningful progress by 8–12 weeks; results vary.",
   "treats_h2": "What does medical weight loss treat?",
   "treats_intro": "GLO's medical weight loss program addresses the drivers behind stubborn weight — insulin resistance, thyroid-related and hormonal weight gain, and plateaus — with a plan based on your labs.",
   "how_h2": "How does medical weight loss work?",
-  "how": "GLO's Functional Weight Loss program starts with comprehensive metabolic labs to find what is driving your weight. Your provider then builds a plan that can include FDA-approved GLP-1 medications such as semaglutide or tirzepatide when appropriate, plus nutrition and lifestyle guidance. GLP-1 medications mimic a natural gut hormone that helps regulate appetite and blood sugar, so you feel full sooner. Doses are increased gradually, with regular follow-ups and labs to adjust your plan.",
+  "how": "GLO's Functional Weight Loss program starts with comprehensive metabolic labs to find what is driving your weight. Your provider then builds a plan that can include a GLP-1 medication such as semaglutide or tirzepatide when appropriate, plus nutrition and lifestyle guidance. GLP-1 medications mimic a natural gut hormone that helps regulate appetite and blood sugar, so you feel full sooner. Doses are increased gradually, with regular follow-ups and labs to adjust your plan.",
   "fit_h2": "Is medical weight loss right for me?",
   "good_fit": [
     "You've tried diet and exercise and your weight won't budge",
@@ -40,7 +40,7 @@
     },
     {
       "q": "Semaglutide vs tirzepatide: what's the difference?",
-      "a": "Both are weekly GLP-1-based injections. Semaglutide (Wegovy, Ozempic) acts on the GLP-1 receptor; tirzepatide (Zepbound, Mounjaro) acts on both GLP-1 and GIP receptors. Your provider will recommend the option that fits your labs, health history and goals."
+      "a": "Both are weekly GLP-1-based injections. Semaglutide acts on the GLP-1 receptor; tirzepatide acts on both GLP-1 and GIP receptors. Your provider will recommend the option that fits your labs, health history and goals."
     }
   ],
   "related_h2": "Treatments that pair well with medical weight loss",
@@ -48,7 +48,7 @@
     "type": "MedicalTherapy",
     "procedureType": null,
     "bodyLocation": "Whole body (metabolic and endocrine system)",
-    "howPerformed": "After metabolic lab testing, a licensed provider builds a personalized plan of nutrition and lifestyle guidance and, when appropriate, prescribes an FDA-approved GLP-1 medication taken as a weekly injection.",
+    "howPerformed": "After metabolic lab testing, a licensed provider builds a personalized plan of nutrition and lifestyle guidance and, when appropriate, prescribes a GLP-1 medication taken as a weekly injection.",
     "preparation": "Bring a list of your medications and health history to your consultation. You'll complete comprehensive lab work so your plan can be based on your metabolism.",
     "followup": "Regular follow-ups and lab work track your progress and adjust your dose and plan. Report side effects to your provider promptly."
   }

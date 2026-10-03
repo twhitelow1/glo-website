@@ -1,28 +1,28 @@
 {
   "slug": "radiant-lift",
   "keyword": "Radiant Lift",
-  "title": "Radiant Lift in Ocala, FL | RF Lifting | GLO Aesthetics",
-  "meta": "Radiant Lift in Ocala, FL uses radiofrequency to tighten and contour the face and neck in 30–45 minutes with no downtime, from $500. Book a consult.",
-  "answer": "Radiant Lift is GLO's non-invasive radiofrequency treatment that gently heats deeper skin layers to tighten and contour your face, jawline and neck. It suits mild-to-moderate laxity, tired-looking skin and preventive care. Sessions take 30–45 minutes with no downtime. You'll see a refresh right away, and results build over 3–6 months.",
+  "title": "Radiant Lift in Ocala, FL | Everesse + CoolPeel | GLO",
+  "meta": "Radiant Lift in Ocala, FL pairs Everesse RF tightening with a CoolPeel CO2 laser in one visit to lift, firm and refresh skin. From $1,050. Book a consult.",
+  "answer": "Radiant Lift is GLO's combination treatment: Everesse radiofrequency tightens and lifts from deep in the skin, then a CoolPeel CO2 laser refreshes the surface, all in one visit. It suits loosening skin plus dull tone, fine lines or texture on the face and neck, upper arms or abdomen. Visits take 70–120 minutes, with 24–72 hours of redness.",
   "treats_h2": "What does Radiant Lift treat?",
-  "treats_intro": "Radiant Lift treats mild-to-moderate skin laxity, a softening jawline and neck, and tired-looking skin. It's also a preventive option to help slow visible signs of aging.",
+  "treats_intro": "Radiant Lift treats loosening skin and surface concerns together: a softening jawline and neck, crepey upper arms or abdomen, plus dullness, fine lines, sun damage and rough texture.",
   "how_h2": "How does Radiant Lift work?",
-  "how": "Radiant Lift uses radiofrequency (RF) energy, not a laser, to gently heat the deeper layers of your skin without needles. That warmth tightens existing collagen fibers for a visible refresh right after treatment. It also starts your skin's natural repair response, so new collagen builds over the following 3–6 months for a firmer, more lifted look. We'll confirm whether Radiant Lift or Everesse suits your goals.",
+  "how": "Radiant Lift combines two technologies in one visit. First, Everesse delivers monopolar radiofrequency (RF) energy with continuous cooling to heat the deeper layers of your skin, tightening existing collagen and prompting new collagen to form. Then a CoolPeel treatment on the Tetra Pro CO2 laser resurfaces the very top layer to improve tone, fine lines and texture with far less downtime than traditional CO2. One works from within, the other on the surface.",
   "fit_h2": "Is Radiant Lift right for me?",
   "good_fit": [
-    "You have mild-to-moderate loosening on your face, jawline or neck",
-    "Your skin looks tired and you'd like a natural-looking refresh",
-    "You want to stay ahead of visible aging with preventive care",
-    "You want a comfortable treatment with no needles and no downtime"
+    "You have mild-to-moderate loosening on your face, jawline, neck, upper arms or abdomen",
+    "You'd also like smoother texture, softer fine lines or a brighter, more even tone",
+    "You'd like the benefits of two treatments in a single visit",
+    "You can plan for 1–3 days of redness while your skin heals"
   ],
   "not_fit": [
     "You have a pacemaker or another implanted electronic device",
-    "You have significant metal implants in the treatment area or you're pregnant",
-    "You'd like to treat body areas such as the knees or abdomen — Everesse skin tightening may be the better fit",
-    "Your main concern is sun damage, fine lines or acne scars — laser skin revitalization is usually the better fit"
+    "You're pregnant or breastfeeding, or have significant metal implants in the treatment area",
+    "You have an active cold sore, skin infection or open wound in the treatment area, or you've recently taken isotretinoin (Accutane)",
+    "You only want tightening with no downtime — Everesse skin tightening on its own may be the better fit"
   ],
   "expect_h2": "What happens during a Radiant Lift appointment?",
-  "expect_intro": "A Radiant Lift session takes 30–45 minutes of gentle, comfortable radiofrequency heating. You'll see a visible refresh right away and can go straight back to your day.",
+  "expect_intro": "A Radiant Lift visit takes 70–120 minutes, depending on the area. Everesse comes first, with continuous cooling to keep you comfortable. Then we apply numbing cream before the quick CoolPeel laser passes. Expect redness, like a mild sunburn, for 24–72 hours.",
   "cost_h2": "How much does Radiant Lift cost in Ocala?",
   "faq_h2": "Radiant Lift FAQs",
   "faq_rename": {
@@ -32,24 +32,25 @@
   "faq_add": [
     {
       "q": "Does Radiant Lift hurt?",
-      "a": "Radiant Lift is designed to be comfortable. Most people feel gentle warmth as the radiofrequency energy heats the deeper layers of skin. There are no needles, and you can go back to your day right after."
+      "a": "Everesse feels like deep warmth, with continuous cooling to keep you comfortable. We apply numbing cream before the CoolPeel, and most people feel only warmth and a light prickling. Your skin may feel warm for a few hours afterward."
     },
     {
       "q": "How many Radiant Lift sessions do I need?",
-      "a": "It depends on your skin and goals. Your provider will recommend a plan at your consultation, including how often to come back for maintenance as collagen builds over the following 3–6 months."
+      "a": "It depends on your skin and goals. Your provider will recommend a plan at your consultation. Collagen from the Everesse portion keeps building for about 6 months."
     },
     {
       "q": "How long do Radiant Lift results last?",
-      "a": "You'll see a refresh right away, and results build over 3–6 months as new collagen forms. How long they last depends on your age, skin and lifestyle, since your skin keeps aging. Maintenance sessions can help. Results vary."
+      "a": "You'll see some tightening right away and smoother, brighter skin once the redness fades. Collagen keeps building for about 6 months. How long results last depends on your age, skin and lifestyle, since your skin keeps aging. Results vary."
     }
   ],
   "related_h2": "Treatments that pair well with Radiant Lift",
   "schema": {
     "type": "MedicalProcedure",
     "procedureType": "https://schema.org/NoninvasiveProcedure",
-    "bodyLocation": "Face, jawline and neck",
-    "howPerformed": "A licensed provider delivers radiofrequency energy to gently heat the deeper skin layers of the face and neck and stimulate new collagen.",
-    "preparation": "Arrive with clean skin, free of makeup and lotion. Tell your provider about any pacemaker, implanted device, metal implants or pregnancy.",
-    "followup": "There's no downtime; return to normal activities right away. Collagen remodeling builds over the following 3–6 months, and your provider will advise on maintenance."
+    "bodyLocation": "Face and neck, upper arms or abdomen",
+    "howPerformed": "A licensed provider first treats the area with Everesse monopolar radiofrequency to heat the deeper skin layers and stimulate collagen, then performs a CoolPeel CO2 laser treatment on the Tetra Pro to resurface the top layer.",
+    "preparation": "Arrive with clean skin, free of makeup and lotion. Numbing cream is applied before the CoolPeel. Tell your provider about any pacemaker, implanted device, metal implants, pregnancy, cold sores or recent isotretinoin use.",
+    "followup": "Expect redness for 24–72 hours. Wear sunscreen daily. Collagen keeps building for about 6 months, and your provider will advise on maintenance.",
+    "description": "Radiant Lift, GLO's combination of Everesse radiofrequency skin tightening and a CoolPeel CO2 laser treatment in one visit, offered in Ocala, FL."
   }
 }

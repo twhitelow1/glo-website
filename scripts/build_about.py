@@ -20,7 +20,7 @@ answer = ('GLO Aesthetics + Wellness Lounge is a medical aesthetics and wellness
 crumbs = [('Home', '/'), ('About', '/about')]
 body = split_hero(crumbs, 'ABOUT GLO', 'About GLO in <span style="font-style:italic;color:#B8894F;">Ocala</span>, FL', answer,
                   f'<a href="#team" {BTN}>Meet Our Team</a><a href="/#book" {BTN_OUT}>Book a Consultation</a>',
-                  group['src'], group['alt'], 'center 30%', note='AI-generated composite of the GLO team', size=(group['width'], group['height']))
+                  group['src'], group['alt'], 'center 30%', size=(group['width'], group['height']))
 body = body.replace('<div class="glo-split-hero">', '<div class="glo-split-hero glo-split-hero--group">', 1)
 
 
