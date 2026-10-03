@@ -251,7 +251,6 @@ def photo_band(f, s, bands):
             f'      <p>{text}</p>\n'
             f'      <a {book} class="glo-band-btn">Book a Consultation</a>\n'
             f'    </div></div>\n'
-            f'    <p class="glo-band-note">Representative imagery, AI-generated for illustration.</p>\n'
             f'  </section>')
     return s[:m.start()] + band + s[end:]
 

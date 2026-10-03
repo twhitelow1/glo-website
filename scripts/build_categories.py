@@ -129,7 +129,7 @@ CATS = [
     'Lasers use light energy to resurface or refresh skin and to remove hair. Tetra CO2 resurfacing treats deeper lines, scars and sun damage; CoolPeel and the Motus laser facial refresh tone and texture with far less downtime.',
     ['laser-skin-revitalization', 'coolpeel', 'motus-laser-facial', 'laser-hair-removal']),
    ('radiofrequency', 'What does radiofrequency skin tightening do?',
-    'Radiofrequency (RF) gently heats the deeper layers of skin to prompt new collagen, so loose or crepey skin looks firmer over the following months. It isn&rsquo;t a laser, and there&rsquo;s no downtime.',
+    'Radiofrequency (RF) gently heats the deeper layers of skin to prompt new collagen, so loose or crepey skin looks firmer over the following months. Everesse on its own isn&rsquo;t a laser and has no downtime; Radiant Lift adds a CoolPeel CO2 laser to refresh tone and texture too.',
     ['skin-tightening', 'radiant-lift']),
    ('facials', 'Which facial, peel or microneedling treatment should I choose?',
     'Custom facials and chemical peels clear congestion, even tone and restore glow; SkinPen microneedling builds collagen to improve texture, pores and acne scars. Mini Facials are a quick monthly refresh.',
@@ -145,7 +145,7 @@ CATS = [
     ['Starting price', 'From $1,200 per session', 'From $550 per session', 'From $250 per session']],
    'Comparison of CO2 laser, radiofrequency and microneedling'),
   faqs=[
-   ('Which skin treatment has the least downtime?', 'Mini Facials, custom facials, the Motus laser facial, Everesse and Radiant Lift radiofrequency, and laser hair removal typically have little to no downtime. CoolPeel usually means 24&ndash;72 hours of redness; Tetra CO2 resurfacing needs the most recovery, about 5&ndash;7 days.'),
+   ('Which skin treatment has the least downtime?', 'Mini Facials, custom facials, the Motus laser facial, Everesse radiofrequency and laser hair removal typically have little to no downtime. CoolPeel and Radiant Lift (Everesse + CoolPeel) usually mean 24&ndash;72 hours of redness; Tetra CO2 resurfacing needs the most recovery, about 5&ndash;7 days.'),
    ('Is Everesse a laser?', 'No. Everesse uses radiofrequency energy, not laser light. It heats the deeper layers of skin to tighten and build collagen, with no downtime, which makes it a good option for loose or crepey skin.'),
    ('What&rsquo;s the difference between Tetra CO2 and CoolPeel?', 'Both use CO2 laser technology on the same platform. Tetra CO2 resurfacing goes deeper for lines, scars and sun damage, with about a week of downtime. CoolPeel is a lighter, faster treatment with 24&ndash;72 hours of redness, usually done as a series.'),
    ('Are laser treatments safe for darker skin?', 'Many are, with the right technology and settings. Your provider assesses your skin type at your consultation and adjusts settings or recommends an alternative. Microneedling works without heat or light, so it&rsquo;s considered safe across all skin types.'),

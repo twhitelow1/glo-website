@@ -64,6 +64,12 @@ for f in files:
     for need in ('rel="canonical"', 'og:image', 'application/ld+json'):
         if need not in s:
             warnings.append(f'{f}: missing {need}')
+# AI imagery (hosted on the Higgsfield CDN) has no per-photo caption, so the page must carry the fine-print photography line.
+for f in files:
+    s = open(f).read()
+    if 'cloudfront.net' in s and 'Photography on this site is representative' not in s:
+        errors.append(f'{f}: AI imagery without the fine-print photography line')
+
 # The main nav must be identical on every page (a stray find-and-replace once scrambled one page's menu).
 navs = {}
 for f in files:

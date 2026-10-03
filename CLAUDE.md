@@ -20,7 +20,8 @@ not extras: **no page ships unless it meets the page standard below**, and all c
 - 4–8 real FAQs as H3s with matching FAQPage schema.
 - Schema for the page type, linked to the business by `@id` (`https://gloocala.com/#business`).
 - Links up to the parent category or hub, across to 2–4 related pages, and to booking.
-- Photos as `<img>` with descriptive alt text (not CSS backgrounds). AI imagery keeps its disclosure.
+- Photos as `<img>` with descriptive alt text (not CSS backgrounds). No per-photo AI captions: AI imagery is covered by the
+  site-wide photography line in the medical disclaimer band, which every page with an AI image must carry.
 - One booking call to action above the fold and one at the end. Usable at 390px with no sideways scroll.
 - Name, address and phone exactly as on the home page.
 
@@ -52,6 +53,6 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 ## Brand
 Playfair Display headings, Inter body, Montserrat labels and buttons. Cream `#F3F0EA`, page `#FAF9F6`, gold `#B8894F`,
 bronze sections `#6B5435` (`glo-dark`). Prefer GLO's real photos (`assets/ocala/`, placed by `scripts/real_photos.py`) wherever they fit; use the brand characters in
-`docs/brand-characters.md` for lifestyle imagery. Real photos need no AI disclosure; AI images always keep it.
+`docs/brand-characters.md` for lifestyle imagery. Never present AI images as real clients, results or before-and-afters; the fine-print photography line covers them.
 Every H2 gets one italic gold accent word (`.glo-accent`). Each treatment page has its own photo band; never reuse
 one photo set across pages. Copy is warm, inviting and accepting, and uses NEPQ-style questions that help the reader see themselves.
