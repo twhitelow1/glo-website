@@ -127,3 +127,29 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-video-toggle:hover,.glo-video-toggle:focus-visible{background:rgba(107,84,53,.8);}
 .glo-video-toggle span{display:block;width:12px;height:14px;border-left:4px solid #FAF9F6;border-right:4px solid #FAF9F6;}
 .glo-video-toggle[aria-pressed="true"] span{width:0;height:0;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #FAF9F6;margin-left:3px;}
+
+/* Treatment rows on the home cards: name + tag flow as one line of text, so long names wrap cleanly */
+.rx-text{font-size:15.5px;color:#221F1B;line-height:1.45;}
+.rx-text > span{font-size:inherit;}
+.rx-text > span + span{font-size:12.5px;color:#8A8377;white-space:nowrap;}
+
+/* Home "What happens at your first visit?" — four steps with real Ocala photos */
+.fv-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;counter-reset:none;}
+.fv-step{display:flex;flex-direction:column;background:#FAF9F6;border:1px solid #E6E1D6;border-radius:10px;overflow:hidden;}
+.fv-photo{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;background:#EFE9E1;}
+.fv-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;}
+.fv-step:hover .fv-photo img{transform:scale(1.04);}
+.fv-num{position:absolute;left:14px;top:14px;width:38px;height:38px;border-radius:50%;background:#FAF9F6;color:#6B5435;font-family:'Playfair Display',Georgia,serif;font-size:19px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(34,31,27,.18);}
+.fv-text{padding:22px 22px 26px;}
+.fv-text h3{font-size:22px;color:#221F1B;margin:0 0 8px;}
+.fv-text p{font-size:15px;line-height:1.65;color:#5C574E;margin:0;}
+@media (max-width:1000px){.fv-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:600px){
+  .fv-grid{grid-template-columns:1fr;gap:16px;}
+  .fv-step{flex-direction:row;align-items:stretch;}
+  .fv-photo{flex:0 0 112px;aspect-ratio:auto;min-height:150px;}
+  .fv-num{left:10px;top:10px;width:32px;height:32px;font-size:16px;}
+  .fv-text{padding:16px 16px 18px;}
+  .fv-text h3{font-size:19px;margin-bottom:6px;}
+  .fv-text p{font-size:14.5px;line-height:1.6;}
+}

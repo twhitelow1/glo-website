@@ -464,9 +464,6 @@
   .dropdown-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);opacity:0;visibility:hidden;transition:opacity .18s ease, transform .18s ease, visibility 0s linear .22s;pointer-events:none;}
   .has-dropdown:hover .dropdown-panel{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto;transition-delay:0s;}
   .dd-cat:hover{color:#B8894F;}
-  .lifestyle-card{transition:transform .3s ease, box-shadow .3s ease;}
-  .lifestyle-card > :not(img):not(.lc-shade){position:relative;z-index:1;}
-  .lifestyle-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(34,31,27,0.14);}
 
   /* ===================== RESPONSIVE / MOBILE ===================== */
   .glo-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex:none;}
@@ -757,47 +754,42 @@
     </div>
   </div>
 
-  <!-- ===================== REAL GLOW, REAL OCALA (lifestyle) ===================== -->
-  <div style="width:100%;background:#F3F0EA;">
-    <div class="glo-container" style="max-width:1440px;margin:0 auto;padding:90px 48px 100px;">
-      <div style="text-align:center;max-width:680px;margin:0 auto 48px;">
+  <!-- ===================== YOUR FIRST VISIT (real Ocala photos) ===================== -->
+  <section id="first-visit" style="width:100%;background:#F3F0EA;">
+    <div class="glo-container" style="max-width:1240px;margin:0 auto;padding:90px 48px 100px;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 46px;">
         <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:22px;">
           <div style="width:36px;height:1px;background:#B8894F;"></div>
-          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">REAL GLOW, REAL OCALA</span>
+          <span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:500;">YOUR FIRST VISIT</span>
           <div style="width:36px;height:1px;background:#B8894F;"></div>
         </div>
-        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">Picture Yourself <span class="glo-accent">Glowing</span> at Every Age</h2>
+        <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;">What happens at your <span class="glo-accent">first</span> visit?</h2>
+        <p style="margin:18px auto 0;font-size:17.5px;line-height:1.75;color:#5C574E;max-width:640px;">Your first visit is a relaxed conversation, not a sales appointment. Nervous about walking into a med spa for the first time? Here&rsquo;s exactly what happens inside our Ocala lounge.</p>
       </div>
-
-      <div class="glo-grid-4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;">
-        <div class="lifestyle-card" role="img" aria-label="Woman in her sixties smiling at a horse-farm fence in Ocala horse country" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_175e4678-0ae9-4464-8168-4d4a5e763ed7.png') center 25%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Horse Country Mornings</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Confidence at Every Age</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Middle-aged man smiling after a morning run on a shaded Florida trail" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_f2efb89a-4a81-4e8a-ac4e-4c29d2e70aba.png') center 25%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Active &amp; Recharged</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Strength, Inside &amp; Out</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Woman with glowing skin enjoying golden-hour sunlight" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_a0a683a6-c3f0-4e84-b5d5-d3d138eabaee.png') center 30%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Golden Hour Glow</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Skin That Speaks for Itself</div>
-          </div>
-        </div>
-        <div class="lifestyle-card" role="img" aria-label="Woman in her forties relaxing at home with a cup of tea" style="border-radius:8px;overflow:hidden;background:linear-gradient(180deg,rgba(34,31,27,0) 42%,rgba(34,31,27,0.78) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261001_004311_0f788a80-530e-483a-ba1b-60820956532a.png') center 30%/cover no-repeat,#B8894F;aspect-ratio:3/4;position:relative;display:flex;align-items:flex-end;padding:22px;">
-          <div>
-            <div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;color:#FAF9F6;line-height:1.2;">Balanced &amp; Energized</div>
-            <div style="font-size:14px;color:#F3F0EA;margin-top:4px;">Wellness for Every Chapter</div>
-          </div>
-        </div>
+      <ol class="fv-grid">
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/lounge.webp" alt="The GLO client lounge in Ocala with soft seating, fresh flowers and gold accents" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">1</span></figure>
+          <div class="fv-text"><h3>Settle in</h3><p>Arrive at our Ocala lounge, take a seat and breathe. No rushing and no clipboard pressure &mdash; this time is yours.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/facial-room.webp" alt="A private consultation and facial room at GLO Aesthetics + Wellness Lounge in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">2</span></figure>
+          <div class="fv-text"><h3>We listen first</h3><p>A licensed provider asks what you&rsquo;d like to feel again, reviews your health history and takes a close look at your skin.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/hallway.webp" alt="The gold-lit hallway leading to private treatment rooms at GLO in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">3</span></figure>
+          <div class="fv-text"><h3>Your plan, your pace</h3><p>You get honest options, real pricing and what to expect from each. Decide today, or take it home and think it over.</p></div>
+        </li>
+        <li class="fv-step">
+          <figure class="fv-photo"><img src="/assets/ocala/laser-room.webp" alt="The Tetra Pro CO2 laser in a private GLO treatment room in Ocala" width="900" height="1599" loading="lazy" decoding="async"><span class="fv-num">4</span></figure>
+          <div class="fv-text"><h3>Treatment, in private</h3><p>When you&rsquo;re ready, treatment happens in a private room on medical-grade technology like the Tetra Pro CO2 and DEKA Motus AY lasers.</p></div>
+        </li>
+      </ol>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="#book" class="btn-primary" style="display:inline-block;background:#B8894F;color:#FAF9F6;padding:16px 36px;border-radius:2px;font-size:13px;letter-spacing:0.1em;font-weight:500;text-transform:uppercase;">Book Your Consultation</a>
+        <p style="margin:14px 0 0;font-size:14px;color:#8A8377;">Real photos of our Ocala med spa. <a href="/about#inside" style="color:#B8894F;">See more of the space &rarr;</a></p>
       </div>
-      <p style="text-align:center;font-size:14px;color:#8A8377;margin-top:22px;">Representative imagery, AI-generated for illustration &mdash; does not depict actual GLO clients or guaranteed results.</p>
     </div>
-  </div>
+  </section>
 
   <!-- ===================== TREATMENTS ===================== -->
   <div id="treatments" style="width:100%;background:#F3F0EA;">
@@ -825,15 +817,15 @@
           <h3 style="font-size:21px;color:#221F1B;margin-bottom:6px;"><a href="/skin-services">Skin Services</a></h3>
           <p style="font-size:14.5px;line-height:1.5;color:#8A8377;font-weight:300;margin-bottom:18px;max-width:760px;">Sun damage, uneven tone, loosening skin, unwanted hair &mdash; or skin that just looks tired? Laser resurfacing, radiofrequency skin tightening, laser hair removal, custom facials, chemical peels &amp; microneedling, each matched to your skin.</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));column-gap:32px;row-gap:11px;border-top:1px solid #E6E1D6;padding-top:16px;">
-            <a id="rx-tetra-co2" href="/treatments/laser-skin-revitalization" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Laser Skin Revitalization</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Tetra CO2 laser</span></a>
-            <a id="rx-coolpeel" href="/treatments/coolpeel" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">CoolPeel</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; CO2 laser</span></a>
-            <a id="rx-laser-facials" href="/treatments/motus-laser-facial" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Motus Laser Facial</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; DEKA Motus laser</span></a>
-            <a id="rx-laser-hair-removal" href="/treatments/laser-hair-removal" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Laser Hair Removal</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Laser</span></a>
-            <a id="rx-everesse" href="/treatments/skin-tightening" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Skin Tightening</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Everesse RF</span></a>
-            <a id="rx-radiant-lift" href="/treatments/radiant-lift" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Radiant Lift</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Radiofrequency</span></a>
-            <a id="rx-custom-facials" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Custom Facials</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Facial</span></a>
-            <a id="rx-chemical-peels" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Chemical Peels</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; Peel</span></a>
-            <a id="rx-microneedling" href="/treatments/microneedling" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span style="font-size:15.5px;color:#221F1B;">Microneedling</span><span style="font-size:12.5px;color:#8A8377;margin-left:2px;white-space:nowrap;">&middot; SkinPen</span></a>
+            <a id="rx-tetra-co2" href="/treatments/laser-skin-revitalization" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Laser Skin Revitalization </span><span>&middot; Tetra CO2 laser</span></span></a>
+            <a id="rx-coolpeel" href="/treatments/coolpeel" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>CoolPeel </span><span>&middot; CO2 laser</span></span></a>
+            <a id="rx-laser-facials" href="/treatments/motus-laser-facial" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Motus Laser Facial </span><span>&middot; DEKA Motus laser</span></span></a>
+            <a id="rx-laser-hair-removal" href="/treatments/laser-hair-removal" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Laser Hair Removal </span><span>&middot; Laser</span></span></a>
+            <a id="rx-everesse" href="/treatments/skin-tightening" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Skin Tightening </span><span>&middot; Everesse RF</span></span></a>
+            <a id="rx-radiant-lift" href="/treatments/radiant-lift" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Radiant Lift </span><span>&middot; Radiofrequency</span></span></a>
+            <a id="rx-custom-facials" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Custom Facials </span><span>&middot; Facial</span></span></a>
+            <a id="rx-chemical-peels" href="/treatments/custom-facials-peels" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Chemical Peels </span><span>&middot; Peel</span></span></a>
+            <a id="rx-microneedling" href="/treatments/microneedling" style="display:flex;gap:9px;align-items:baseline;"><span style="width:5px;height:5px;border-radius:999px;background:#B8894F;flex:none;margin-top:2px;"></span><span class="rx-text"><span>Microneedling </span><span>&middot; SkinPen</span></span></a>
           </div>
         </div>
 
