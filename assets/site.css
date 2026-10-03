@@ -110,3 +110,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-map-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:#6B5435;padding:14px 18px;}
 .glo-map-bar span{font-size:14.5px;color:#FAF9F6;}
 .glo-map-bar a{font-size:14px;color:#E8D3A8;font-weight:600;white-space:nowrap;}
+
+/* Cherry payment calculator widget (financing page) */
+.glo-cherry{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:12px;min-height:320px;overflow:hidden;}
+@media (max-width:600px){.glo-cherry{padding:4px;border-radius:8px;}}

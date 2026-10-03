@@ -6,6 +6,7 @@ Run from the repo root:  python3 scripts/design_layer.py
 import glob, html, json, re
 
 ACCENTS = {
+    'What would my monthly payment be?': 'monthly',
     # home
     'Picture Yourself Glowing at Every Age': 'Glowing',
     'Injectables, Laser &amp; Skin Treatments in Ocala': 'Ocala',
