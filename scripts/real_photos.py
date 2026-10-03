@@ -12,6 +12,9 @@ P = {
     'laser-room': ('/assets/ocala/laser-room.webp', 'Tetra Pro CO2 laser beside a white treatment chair at GLO Ocala', 'Our Tetra Pro CO2 laser'),
     'motus-room': ('/assets/ocala/motus-room.webp', 'DEKA Motus AY laser beside a white treatment chair at GLO Ocala', 'Our DEKA Motus AY laser'),
     'facial-room': ('/assets/ocala/facial-room.webp', 'Softly lit facial room with a heated treatment bed at GLO Ocala', 'A calm facial suite'),
+    'everesse-treatment': ('/assets/ocala/everesse-treatment.webp', 'A GLO provider in pink gloves gliding the Everesse radiofrequency handpiece across a relaxed client\'s forehead in Ocala', 'Everesse in progress'),
+    'everesse-device': ('/assets/ocala/everesse-device.webp', 'The Everesse monopolar radiofrequency system by Classys in a GLO treatment room in Ocala', 'Our Everesse system'),
+    'laser-treatment': ('/assets/ocala/laser-treatment.webp', 'A laser handpiece with its red aiming beam on a client\'s forearm during a treatment at GLO Ocala', 'A laser treatment in progress'),
     'lounge-retail': ('/assets/ocala/lounge-retail.webp', 'Lounge seating, coffee bar and medical-grade skincare shelves at GLO Ocala', 'Coffee, Wi-Fi &amp; medical-grade skincare'),
 }
 ORDER = ['lounge', 'hallway', 'laser-room', 'facial-room', 'lounge-retail']
@@ -100,7 +103,9 @@ if __name__ == '__main__':
                            ('coolpeel', 'laser-room', 'CoolPeel is performed on the Tetra Pro CO2 laser in our Ocala treatment room.'),
                            ('motus-laser-facial', 'motus-room', 'The DEKA Motus AY laser in our Ocala treatment room.'),
                            ('custom-facials-peels', 'facial-room', 'One of our private facial suites in Ocala.'),
-                           ('mini-facials', 'facial-room', 'One of our private facial suites in Ocala.')]:
+                           ('mini-facials', 'facial-room', 'One of our private facial suites in Ocala.'),
+                           ('skin-tightening', 'everesse-treatment', 'A real Everesse treatment at our Ocala med spa: the cooled handpiece glides over the skin.'),
+                           ('laser-hair-removal', 'laser-treatment', 'A laser treatment in progress at our Ocala med spa; the red light is the aiming beam.')]:
         p = f'treatments/{slug}.html'
         s = figure(open(p).read(), key, cap)
         open(p, 'w').write(s)

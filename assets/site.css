@@ -153,3 +153,14 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
   .fv-text h3{font-size:19px;margin-bottom:6px;}
   .fv-text p{font-size:14.5px;line-height:1.6;}
 }
+
+/* "How it works" text + real photo side by side (scripts/real_photos.py figure()) */
+.hiw-flex{display:flex;gap:56px;align-items:center;}
+.hiw-flex > div{flex:1 1 auto;min-width:0;max-width:760px;}
+.hiw-figure{flex:0 0 360px;margin:0;}
+.hiw-figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 55%;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
+.hiw-figure figcaption{font-size:13px;line-height:1.55;color:#8A8377;margin-top:10px;}
+@media (max-width:900px){
+  .hiw-flex{flex-direction:column;align-items:stretch;gap:28px;}
+  .hiw-figure{flex:none;max-width:420px;}
+}
