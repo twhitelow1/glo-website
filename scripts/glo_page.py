@@ -148,3 +148,33 @@ def _head_rest():
     s = open(TEMPLATE).read().split('</head>', 1)[0]
     s = re.sub(r'<script type="application/ld\+json">.*?</script>\s*', '', s, flags=re.S)
     return s[s.index('<link rel="preconnect"'):]
+
+
+# GLO's review widgets (LeadConnector reputation, api.gloocala.com): live reviews, resized by review-widget.js.
+REVIEWS_SLIDER = 'https://api.gloocala.com/reputation/widgets/review_widget/AydYhaW9nUR8bWdvPa8A?widgetId=6a9042b9fe997b700ec5efc9'
+REVIEWS_GRID = 'https://api.gloocala.com/reputation/widgets/review_widget/AydYhaW9nUR8bWdvPa8A'
+
+
+def reviews_widget(src=REVIEWS_SLIDER):
+    return ("<script src=\"https://api.gloocala.com/reputation/assets/review-widget.js\"></script>"
+            f"<iframe class=\"lc_reviews_widget\" src=\"{src}\" title=\"Reviews of GLO Aesthetics + Wellness Lounge\" "
+            "frameborder=\"0\" scrolling=\"no\" style=\"min-width:100%;width:100%;border:0;\"></iframe>")
+
+
+def reviews_section(heading, intro, src=REVIEWS_SLIDER, bg='#FFFFFF', more=True, section_id='reviews'):
+    """A reviews band: question H2, one-line answer, the live widget, and a link to /reviews."""
+    link = ('<p style="text-align:center;margin:26px 0 0;"><a href="/reviews" style="font-size:15px;color:#B8894F;font-weight:600;">'
+            'Read all GLO reviews &rarr;</a></p>') if more else ''
+    return f'''
+  <!-- ===================== REVIEWS ===================== -->
+  <section id="{section_id}" class="glo-reviews" style="width:100%;background:{bg};scroll-margin-top:130px;">
+    <div class="glo-container" style="max-width:1240px;margin:0 auto;padding:90px 48px;">
+      <div style="max-width:720px;margin:0 auto 34px;text-align:center;">
+        {eyebrow('CLIENT REVIEWS', center=True)}
+        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:14px;">{heading}</h2>
+        <p style="font-size:17px;line-height:1.75;color:#5C574E;margin:0;">{intro}</p>
+      </div>
+      <div class="glo-reviews-widget">{reviews_widget(src)}</div>{link}
+    </div>
+  </section>
+'''

@@ -6,6 +6,7 @@ Run from the repo root:  python3 scripts/design_layer.py
 import glob, html, json, re
 
 ACCENTS = {
+    'What would my monthly payment be?': 'monthly',
     # home
     'Picture Yourself Glowing at Every Age': 'Glowing',
     'Injectables, Laser &amp; Skin Treatments in Ocala': 'Ocala',
@@ -94,7 +95,7 @@ FOOTER = '''  <!-- ===================== FOOTER ===================== -->
     </div>
     <div class="glo-footer-bottom">
       <span>&copy; 2026 GLO Aesthetics + Wellness Lounge. All rights reserved.</span>
-      <span><a href="/about">About &amp; Team</a> &nbsp;&middot;&nbsp; <a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
+      <span><a href="/about">About &amp; Team</a> &nbsp;&middot;&nbsp; <a href="/reviews">Reviews</a> &nbsp;&middot;&nbsp; <a href="/locations">Locations</a> &nbsp;&middot;&nbsp; <a href="/#faq">FAQs</a> &nbsp;&middot;&nbsp; <a href="/#book">Book Online</a></span>
     </div>
   </footer>
 '''

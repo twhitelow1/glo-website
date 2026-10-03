@@ -48,7 +48,7 @@ def section(prefix_test):
 groups = [
     ('Treatment categories', section(lambda x: x in ('/treatments', '/injectables', '/skin-services', '/wellness'))),
     ('Treatments', section(lambda x: x.startswith('/treatments/'))),
-    ('About', section(lambda x: x == '/about')),
+    ('About', section(lambda x: x in ('/about', '/reviews'))),
     ('Locations', section(lambda x: x.startswith('/locations'))),
     ('Pricing and payment', section(lambda x: x in ('/membership-programs', '/financing'))),
 ]
