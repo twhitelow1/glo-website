@@ -41,7 +41,7 @@ def compare(h2, intro, cols, rows, caption, bg='#F3F0EA'):
     th = 'style="text-align:left;padding:16px 18px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8A8377;font-weight:600;"'
     head = ''.join(f'<th scope="col" {th}>{c}</th>' for c in [''] + cols)
     body = ''.join('<tr><th scope="row" style="text-align:left;padding:16px 18px;font-weight:600;color:#221F1B;border-top:1px solid #E6E1D6;white-space:nowrap;">'
-                   + r[0] + '</th>' + ''.join(f'<td style="padding:16px 18px;border-top:1px solid #E6E1D6;color:#5C574E;">{c}</td>' for c in r[1:]) + '</tr>'
+                   + r[0] + '</th>' + ''.join(f'<td data-label="{plain(col)}" style="padding:16px 18px;border-top:1px solid #E6E1D6;color:#5C574E;">{c}</td>' for col, c in zip(cols, r[1:])) + '</tr>'
                    for r in rows)
     return f'''
   <!-- ===================== COMPARE ===================== -->
@@ -51,8 +51,8 @@ def compare(h2, intro, cols, rows, caption, bg='#F3F0EA'):
         <h2 class="glo-h2" style="font-size:38px;line-height:1.2;color:#221F1B;margin-bottom:14px;">{h2}</h2>
         <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">{intro}</p>
       </div>
-      <div style="overflow-x:auto;background:#FFFFFF;border:1px solid #E6E1D6;border-radius:8px;">
-        <table style="width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:640px;">
+      <div class="glo-table-wrap" style="overflow-x:auto;background:#FFFFFF;border:1px solid #E6E1D6;border-radius:8px;">
+        <table class="glo-stack" style="width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:640px;">
           <caption style="position:absolute;left:-9999px;">{caption}</caption>
           <thead><tr>{head}</tr></thead>
           <tbody>{body}</tbody>
