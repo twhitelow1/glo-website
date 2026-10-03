@@ -123,7 +123,7 @@ HOME_FAQ = [
     ('What treatments does GLO offer?', 'Injectables (Xeomin, Daxxify, dermal and lip filler, liquid rhinoplasty), skin services (Tetra CO2 and Motus laser, CoolPeel, laser hair removal, Everesse radiofrequency, Radiant Lift (Everesse + CoolPeel), facials, chemical peels and SkinPen microneedling) and medical wellness (weight loss, hormone therapy, IV hydration and peptides). <a href="/treatments" style="color:#B8894F;font-weight:500;">Compare all treatments</a>.'),
     ('Do I need a consultation before my first treatment?', 'Yes. Every new client starts with a consultation, so a licensed provider can review your goals and health history and recommend a plan. There&rsquo;s never pressure to book anything during the visit.'),
     ('What are GLO&rsquo;s hours?', 'The Ocala location is open Monday, Tuesday, Thursday and Friday 9am&ndash;5pm, Wednesday 9am&ndash;6pm, and weekends by appointment. Palatka hours vary; see real-time availability on our online booking calendar or call 352-559-8034.'),
-    ('Do you offer memberships or financing?', 'Yes. GLO memberships include a monthly treatment and member pricing, and financing through Cherry lets you pay over time. <a href="/financing" style="color:#B8894F;font-weight:500;">Learn about financing</a>.'),
+    ('Do you offer memberships or financing?', 'Yes. The GLO Club membership includes a Signature Facial every month, 10% off all treatments and skincare, and priority booking. Financing through Cherry lets you pay over time. <a href="/financing" style="color:#B8894F;font-weight:500;">Learn about financing</a>.'),
 ]
 if 'id="faq"' not in s:
     s = s.replace('  <!-- ===================== VISIT US ===================== -->',

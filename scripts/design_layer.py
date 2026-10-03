@@ -29,8 +29,6 @@ ACCENTS = {
     "Visiting Ocala? Here's What to Know": 'What to Know', "Visiting Palatka? Here's What to Know": 'What to Know',
     'Our Palatka, FL Location': 'Palatka', 'Our Ocala, FL Location': 'Ocala',
     # memberships, financing
-    'Skin &amp; Skin Health Membership': 'Skin Health', 'Weight Loss &amp; Metabolic Membership': 'Metabolic',
-    'Membership FAQ': 'FAQ', 'Ready to join?': 'join',
     '3 Reasons Why Patients Love Cherry': 'Love', 'How Does It Work?': 'Work', 'Patient Requirements': 'Requirements',
     'Talk to Us Before You Apply': 'Before You Apply', 'Financing FAQ': 'FAQ',
     # about
