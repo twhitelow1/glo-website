@@ -62,3 +62,10 @@ Tetra Pro (`assets/ocala/laser-room.webp`), Motus AY (`motus-room.webp`, `laser-
 and the microneedling pen (Sundee's portrait). Injection scenes use a plain clear syringe with no product labels.
 Xeomin and Microneedling use real GLO photos (Baily, Sundee). The full list lives in `HEROES` in `scripts/real_photos.py`.
 Every hero is used on one page only.
+
+### Real GLO providers in generated heroes (Nov 2026, at Todd's request)
+The provider in each service hero is GLO's real team member, generated from their own photos (`assets/team/`), so the
+right person appears with the right treatment: Baily (Xeomin, Dermal Filler, Liquid Rhinoplasty), McKenzie (Daxxify,
+Dissolve HA, CoolPeel, CO2 laser, Skin Tightening, Radiant Lift), Sundee (Motus, Custom Facials & Peels, Mini Facials,
+Daxxify Facial, home "Why GLO"). Clients are still the brand characters above. Alt text always starts
+"Representative image, AI-generated:" and names the provider. Microneedling keeps Sundee's real photo.
