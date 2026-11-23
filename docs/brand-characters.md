@@ -54,3 +54,11 @@ subject in the left third so the band copy sits on the right. Copy and image URL
 | iv-hydration | Woman reading in a lounge chair during IV hydration | `hf_20261002_054939_7798f828-e557-49e3-bb43-28ab9dd99d1d.png` |
 | locations/ocala | Four GLO clients of different ages relaxing together in the lounge | `hf_20261001_004311_2940c9f3-89bf-4257-a861-f02aa9a1279d.png` |
 | locations/palatka | Four GLO clients of different ages relaxing together in the lounge | `hf_20261001_004311_2940c9f3-89bf-4257-a861-f02aa9a1279d.png` |
+
+## Service-page heroes (4:5, Nov 2026)
+
+Generated with `gpt_image_2_6` (2k, medium) from GLO's own device photos as references, so each device matches what GLO uses:
+Tetra Pro (`assets/ocala/laser-room.webp`), Motus AY (`motus-room.webp`, `laser-treatment.webp`), Everesse (`everesse-device.webp`)
+and the microneedling pen (Sundee's portrait). Injection scenes use a plain clear syringe with no product labels.
+Xeomin and Microneedling use real GLO photos (Baily, Sundee). The full list lives in `HEROES` in `scripts/real_photos.py`.
+Every hero is used on one page only.

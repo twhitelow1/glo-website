@@ -68,7 +68,7 @@ def section(city):
              f'{WORDS[len(ms)]} of our team see clients here &mdash; book with the person whose focus fits your goals, '
              f'or let us match you at your consultation.')
     return f'''{START}
-  <section id="team" style="width:100%;background:#FFFFFF;scroll-margin-top:130px;">
+  <section id="team" style="width:100%;background:{"#F3F0EA" if city == "Palatka" else "#FAF9F6"};scroll-margin-top:130px;">
     <div class="glo-container" style="max-width:1140px;margin:0 auto;padding:90px 48px;">
       <div style="max-width:760px;margin-bottom:36px;">
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I <span class="glo-accent">see</span> at our {city} location?</h2>

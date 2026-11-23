@@ -161,7 +161,7 @@ def reviews_widget(src=REVIEWS_SLIDER):
             "frameborder=\"0\" scrolling=\"no\" style=\"min-width:100%;width:100%;border:0;\"></iframe>")
 
 
-def reviews_section(heading, intro, src=REVIEWS_SLIDER, bg='#FFFFFF', more=True, section_id='reviews'):
+def reviews_section(heading, intro, src=REVIEWS_SLIDER, bg='#FAF9F6', more=True, section_id='reviews'):
     """A reviews band: question H2, one-line answer, the live widget, and a link to /reviews."""
     link = ('<p style="text-align:center;margin:26px 0 0;"><a href="/reviews" style="font-size:15px;color:#B8894F;font-weight:600;">'
             'Read all GLO reviews &rarr;</a></p>') if more else ''

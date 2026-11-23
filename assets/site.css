@@ -277,3 +277,21 @@ html.glo-faq .faq-row.is-open > :not(h3){display:block;margin:0 0 24px !importan
 }
 @media (max-width:600px){.glo-gallery{margin:4px -20px 0;padding:0 20px 6px;scroll-padding:0 20px;}.glo-gallery figure,.glo-gallery figure:first-child{flex-basis:80%;}}
 .glo-gallery-hint{display:none;margin:16px 0 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A8377;}
+
+/* ---------- Visual polish (Nov 2026 audit) ---------- */
+/* Stats card: stop its negative margin collapsing through the wrapper, so the card overlaps the hero and the
+   wrapper (painted the colour of the next section) never shows as a band. */
+div:has(> .glo-stats-strip){display:flow-root;}
+/* Balanced headings: no lone "FL" or single last word */
+h1,h2,h3,.glo-band h2{text-wrap:balance;}
+p,li{text-wrap:pretty;}
+@media (max-width:600px){
+  .glo-stats-strip > div > span:first-child{font-size:16px !important;}
+  .glo-stats-strip > div > span:last-child{font-size:11px !important;letter-spacing:.06em !important;}
+  /* Offer blocks (e.g. Xeomin $25 off): give the form card room on phones */
+  .glo-row[style*="padding:52px"]{padding:28px 18px !important;gap:24px !important;}
+  /* Cherry calculator: no second frame, nothing clipped */
+  .glo-cherry{padding:0;border:0;background:transparent;overflow:visible;}
+  /* Hero buttons on one line each, full width */
+  .glo-split-text .btn-primary{white-space:normal;text-align:center;}
+}

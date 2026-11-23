@@ -50,6 +50,9 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 ## Tools (run from the repo root before every push)
 - `python3 scripts/check_site.py`: links, anchors, JSON-LD, the page standard. Must report 0 errors.
 - `python3 scripts/build_seo_files.py`: regenerates `sitemap.xml` and `llms.txt`. Run after adding or editing a page.
+- `python3 scripts/localize_images.py` (needs Pillow): downloads any AI image still linked from the Higgsfield CDN into `assets/ai/`
+  (WebP for `<img>`, JPG for og/schema) and rewrites the pages. Run it last in every rebuild; pages must never hotlink the CDN.
+- Never use pure white (`#FFFFFF`) for a full-width section: alternate `#FAF9F6` and `#F3F0EA`.
 - Treatment page content lives in `content/treatments/<slug>.json`; `scripts/apply_treatments.py` applied it.
 - Category pages are generated: edit `scripts/build_categories.py`, then run it.
 - `python3 scripts/location_teams.py`: who sees clients at each location (team sections, FAQ, `employee` schema on the location

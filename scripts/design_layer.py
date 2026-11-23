@@ -86,7 +86,7 @@ FOOTER = '''  <!-- ===================== FOOTER ===================== -->
       </nav>
       <div>
         <h3>Visit Us</h3>
-        <div class="glo-footer-loc"><strong><a href="/locations/ocala">Ocala</a></strong><p>1925 SW 18th Ct, Unit 109<br>Ocala, FL 34471<br>Mon, Tue, Thu, Fri 9am&ndash;5pm &middot; Wed 9am&ndash;6pm<br>Sat &amp; Sun by appointment</p></div>
+        <div class="glo-footer-loc"><strong><a href="/locations/ocala">Ocala</a></strong><p>1925 SW 18th Ct, Unit 109<br>Ocala, FL 34471<br>Mon, Tue, Thu, Fri&nbsp;9am&ndash;5pm &middot; Wed&nbsp;9am&ndash;6pm<br>Sat &amp; Sun by appointment</p></div>
         <div class="glo-footer-loc"><strong><a href="/locations/palatka">Palatka</a></strong><p>210 St Johns Ave<br>Palatka, FL 32177</p></div>
         <p style="margin-top:18px;"><a href="tel:+13525598034">352-559-8034</a><br><a href="mailto:info@gloocala.com">info@gloocala.com</a></p>
       </div>
@@ -204,6 +204,19 @@ def card_thumbs(s, heroes):
     return re.sub(r'<a href="/treatments/([a-z0-9-]+)" class="card-hover"[^>]*>', repl, s)
 
 
+def stats_band(s):
+    """The stats card overlapping the hero sits in a full-width wrapper; paint the wrapper in the colour of the
+    section below it so no off-white band shows between the hero and the content."""
+    m = re.search(r'<div style="width:100%;position:relative;z-index:10;(?:background:#[0-9A-Fa-f]{6};)?">(\s*<div class="glo-stats-strip")', s)
+    if not m:
+        return s
+    nx = re.search(r'\n  <(?:div|section)[^>]*background:(#[0-9A-Fa-f]{6})', s[m.end():])
+    if not nx:
+        return s
+    new = f'<div style="width:100%;position:relative;z-index:10;background:{nx.group(1)};">' + m.group(1)
+    return s[:m.start()] + new + s[m.end():]
+
+
 if __name__ == '__main__':
     heroes = {}
     for f in glob.glob('treatments/*.html'):
@@ -221,6 +234,7 @@ if __name__ == '__main__':
         n = accent_h2(f, n, keywords.get(slug))
         n = long_h1(n)
         n = card_thumbs(n, heroes)
+        n = stats_band(n)
         if n != s:
             open(f, 'w').write(n)
             print('updated', f)
