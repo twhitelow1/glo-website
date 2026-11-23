@@ -18,7 +18,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-marquee-track{display:flex;width:max-content;animation:glo-marquee 48s linear infinite;}
 .glo-marquee:hover .glo-marquee-track{animation-play-state:paused;}
 .glo-marquee ul{display:flex;align-items:center;margin:0;padding:0;list-style:none;}
-.glo-marquee li{display:flex;align-items:center;gap:28px;padding:17px 0 17px 28px;white-space:nowrap;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:19px;letter-spacing:.01em;}
+.glo-marquee li{display:flex;align-items:center;gap:28px;padding:17px 0 17px 28px;white-space:nowrap;font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:19px;letter-spacing:.01em;}
 .glo-marquee li::after{content:"";width:6px;height:6px;border-radius:50%;background:#E8D3A8;opacity:.75;}
 @keyframes glo-marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 @media (prefers-reduced-motion:reduce){.glo-marquee-track{animation:none;}}
@@ -29,11 +29,11 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,33,22,0) 22%,rgba(43,33,22,.55) 52%,rgba(43,33,22,.86) 100%);}
 .glo-band-inner{position:relative;z-index:1;width:100%;max-width:1320px;margin:0 auto;padding:90px 48px;display:flex;justify-content:flex-end;}
 .glo-band-copy{max-width:520px;}
-.glo-band-copy .glo-band-kicker{display:flex;align-items:center;gap:14px;margin-bottom:20px;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.28em;color:#E8D3A8;font-weight:600;text-transform:uppercase;}
+.glo-band-copy .glo-band-kicker{display:flex;align-items:center;gap:14px;margin-bottom:20px;font-family:'Albert Sans',sans-serif;font-size:13px;letter-spacing:.28em;color:#E8D3A8;font-weight:600;text-transform:uppercase;}
 .glo-band-copy .glo-band-kicker::before{content:"";width:36px;height:1px;background:#E8D3A8;}
 .glo-band-copy h2{font-size:42px;line-height:1.18;color:#FAF9F6;margin:0 0 18px;}
 .glo-band-copy p{font-size:17.5px;line-height:1.75;color:#EADFCC;margin:0 0 30px;}
-.glo-band-copy a.glo-band-btn{display:inline-block;background:#E8D3A8;color:#3A2D1E;padding:16px 34px;border-radius:2px;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;transition:background .2s ease;}
+.glo-band-copy a.glo-band-btn{display:inline-block;background:#E8D3A8;color:#3A2D1E;padding:16px 34px;border-radius:2px;font-family:'Albert Sans',sans-serif;font-size:13px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;transition:background .2s ease;}
 .glo-band-copy a.glo-band-btn:hover{background:#FAF9F6;}
 .glo-band-note{position:absolute;z-index:1;left:20px;bottom:14px;font-size:11.5px;color:rgba(250,249,246,.72);}
 @media (max-width:900px){
@@ -55,11 +55,11 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-footer a{color:#D9CBB4;transition:color .2s ease;}
 .glo-footer a:hover{color:#E8D3A8;}
 .glo-footer-top{max-width:1320px;margin:0 auto;padding:76px 48px 44px;display:grid;grid-template-columns:1.35fr 1fr 1fr 1.15fr;gap:48px;}
-.glo-footer h3{font-family:'Montserrat',sans-serif;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#FAF9F6;font-weight:600;margin:0 0 20px;}
+.glo-footer h3{font-family:'Albert Sans',sans-serif;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#FAF9F6;font-weight:600;margin:0 0 20px;}
 .glo-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;}
 .glo-footer p{margin:0;line-height:1.7;font-weight:300;}
 .glo-footer .glo-footer-brand p{max-width:300px;margin-top:18px;}
-.glo-footer .glo-footer-book{display:inline-block;margin-top:24px;background:#E8D3A8;color:#3A2D1E !important;padding:14px 26px;border-radius:2px;font-family:'Montserrat',sans-serif;font-size:12.5px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;}
+.glo-footer .glo-footer-book{display:inline-block;margin-top:24px;background:#E8D3A8;color:#3A2D1E !important;padding:14px 26px;border-radius:2px;font-family:'Albert Sans',sans-serif;font-size:12.5px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;}
 .glo-footer .glo-footer-book:hover{background:#FAF9F6;}
 .glo-footer-loc + .glo-footer-loc{margin-top:18px;}
 .glo-footer-loc strong{display:block;color:#FAF9F6;font-weight:500;margin-bottom:4px;}
@@ -71,7 +71,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .glo-mbar{display:none;}
 @media (max-width:900px){
   .glo-mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(250,249,246,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid #E0D6C8;box-shadow:0 -8px 24px rgba(34,31,27,.08);}
-  .glo-mbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:2px;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.08em;font-weight:600;text-transform:uppercase;}
+  .glo-mbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:2px;font-family:'Albert Sans',sans-serif;font-size:13px;letter-spacing:.08em;font-weight:600;text-transform:uppercase;}
   .glo-mbar .glo-mbar-book{background:#B8894F;color:#FAF9F6;}
   .glo-mbar .glo-mbar-call{flex:0 0 38%;border:1px solid #6B5435;color:#221F1B;}
   body{padding-bottom:calc(68px + env(safe-area-inset-bottom));}
@@ -145,7 +145,7 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
 .fv-photo{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;background:#EFE9E1;}
 .fv-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;}
 .fv-step:hover .fv-photo img{transform:scale(1.04);}
-.fv-num{position:absolute;left:14px;top:14px;width:38px;height:38px;border-radius:50%;background:#FAF9F6;color:#6B5435;font-family:'Playfair Display',Georgia,serif;font-size:19px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(34,31,27,.18);}
+.fv-num{position:absolute;left:14px;top:14px;width:38px;height:38px;border-radius:50%;background:#FAF9F6;color:#6B5435;font-family:'Newsreader',Georgia,serif;font-size:19px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(34,31,27,.18);}
 .fv-text{padding:22px 22px 26px;}
 .fv-text h3{font-size:22px;color:#221F1B;margin:0 0 8px;}
 .fv-text p{font-size:15px;line-height:1.65;color:#5C574E;margin:0;}
@@ -179,12 +179,63 @@ html.glo-js .glo-reveal.is-in{opacity:1;transform:none;}
   table.glo-stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
   table.glo-stack tbody,table.glo-stack tr,table.glo-stack th,table.glo-stack td{display:block;width:auto;}
   table.glo-stack tr{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:16px 18px;margin:0 0 12px;}
-  table.glo-stack th[scope="row"]{padding:0 0 8px !important;border:0 !important;white-space:normal !important;font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:400 !important;color:#221F1B;}
+  table.glo-stack th[scope="row"]{padding:0 0 8px !important;border:0 !important;white-space:normal !important;font-family:'Newsreader',Georgia,serif;font-size:19px;font-weight:400 !important;color:#221F1B;}
   table.glo-stack td{padding:8px 0 0 !important;border:0 !important;border-top:1px solid #F0ECE4 !important;margin-top:8px;}
-  table.glo-stack td::before{content:attr(data-label);display:block;font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-bottom:3px;}
+  table.glo-stack td::before{content:attr(data-label);display:block;font-family:'Albert Sans',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-bottom:3px;}
   table.glo-stack--pair td{border-top:0 !important;margin-top:0;padding-top:4px !important;}
 }
 /* Florida s. 456.062 notice for free or discounted services */
 .glo-footer-legal{max-width:1320px;margin:0 auto;padding:0 48px 28px;font-size:11px;line-height:1.6;letter-spacing:.02em;color:#9C8E77;}
 .glo-offer-legal{font-size:10.5px;line-height:1.55;color:#8A8377;margin:10px 0 0;text-align:left;}
 @media (max-width:600px){.glo-footer-legal{padding:0 20px 24px;}}
+
+/* ======================================================================
+   Clean layer (Nov 2026): calmer type, one accent per page, one button per
+   section, questions that open on tap, half-photo sections.
+   ====================================================================== */
+/* Type: Newsreader headings at a semibold display weight, Albert Sans for everything else */
+h1,h2{font-weight:500 !important;letter-spacing:-0.012em;}
+h3{letter-spacing:-0.005em;}
+body{font-family:'Albert Sans',sans-serif;}
+p{text-wrap:pretty;}
+
+/* The gold italic accent stays on the page's main heading (H1) only */
+h2 .glo-accent,h3 .glo-accent{font-style:inherit !important;color:inherit !important;}
+h2 span[style*="font-style:italic"],h3 span[style*="font-style:italic"]{font-style:inherit !important;color:inherit !important;}
+
+/* One button per section: secondary outline buttons become quiet text links (the link stays for SEO) */
+a.btn-outline,a.btn-outline-light{background:none !important;border:0 !important;border-radius:0 !important;padding:16px 2px !important;
+  color:#221F1B !important;text-decoration:underline;text-decoration-color:#B8894F;text-decoration-thickness:1px;text-underline-offset:7px;box-shadow:none !important;}
+a.btn-outline:hover,a.btn-outline-light:hover{color:#B8894F !important;background:none !important;}
+.glo-dark a.btn-outline,.glo-dark a.btn-outline-light{color:#FAF9F6 !important;text-decoration-color:#E8D3A8;}
+
+/* FAQs: each question opens on tap (answers stay in the page for Google; without JS everything shows) */
+html.glo-faq .faq-row{padding:0 !important;border-bottom:1px solid #E6E1D6;}
+html.glo-faq .faq-row > h3{margin:0 !important;}
+.faq-q{all:unset;box-sizing:border-box;display:flex;width:100%;align-items:center;justify-content:space-between;gap:20px;padding:22px 2px;cursor:pointer;
+  font:inherit;color:inherit;line-height:1.35;}
+.faq-q:focus-visible{outline:2px solid #B8894F;outline-offset:4px;}
+.faq-q::after{content:"";flex:none;width:11px;height:11px;border-right:1.5px solid #6B5435;border-bottom:1.5px solid #6B5435;transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s ease;}
+.faq-q[aria-expanded="true"]::after{transform:rotate(225deg) translate(-3px,-3px);}
+html.glo-faq .faq-row > :not(h3){display:none;}
+html.glo-faq .faq-row.is-open > :not(h3){display:block;margin:0 0 24px !important;max-width:68ch;}
+
+/* Half-photo section: a large photo fills half the width, the words sit in a calm panel beside it */
+.glo-half{display:grid;grid-template-columns:1fr 1fr;min-height:640px;width:100%;}
+.glo-half > figure{position:relative;margin:0;min-height:420px;overflow:hidden;background:#EFE9E1;}
+.glo-half > figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.glo-half-text{display:flex;flex-direction:column;justify-content:center;padding:96px 8vw 96px 7vw;}
+.glo-half-text p{font-size:18px;line-height:1.8;color:#5C574E;margin:0 0 18px;max-width:34em;}
+.glo-half-label{font-size:13px;letter-spacing:.28em;color:#B8894F;font-weight:600;text-transform:uppercase;margin-bottom:20px;}
+.glo-half--right > figure{order:2;}
+@media (max-width:900px){
+  .glo-half{grid-template-columns:1fr;min-height:0;}
+  .glo-half > figure{aspect-ratio:4/5;min-height:0;}
+  .glo-half--right > figure{order:0;}
+  .glo-half-text{padding:56px 24px 64px;}
+}
+
+/* Treatment pages: the real photo beside "How does it work?" takes half the row */
+.hiw-flex{gap:72px;}
+.hiw-figure{flex:0 0 46%;max-width:560px;}
+@media (max-width:900px){.hiw-figure{flex:none;max-width:none;}}

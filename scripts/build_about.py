@@ -53,10 +53,10 @@ body += f'''
   .tm-photo{{flex:none;width:160px;height:190px;border-radius:8px;overflow:hidden;background:#EFE9E1;}}
   .tm-photo img{{width:100%;height:100%;object-fit:cover;display:block;}}
   .tm-body h3{{font-size:26px;color:#221F1B;margin:0;}}
-  .tm-creds{{font-family:'Montserrat',sans-serif;font-size:14px;letter-spacing:.06em;color:#B8894F;font-weight:600;}}
+  .tm-creds{{font-family:'Albert Sans',sans-serif;font-size:14px;letter-spacing:.06em;color:#B8894F;font-weight:600;}}
   .tm-title{{font-size:15px;color:#221F1B;font-weight:500;margin-top:6px;}}
   .tm-loc{{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:10px 0 14px;padding:0;}}
-  .tm-loc a{{display:inline-flex;align-items:center;gap:6px;font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#FAF9F6;background:#6B5435;border-radius:999px;padding:5px 12px;}}
+  .tm-loc a{{display:inline-flex;align-items:center;gap:6px;font-family:'Albert Sans',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#FAF9F6;background:#6B5435;border-radius:999px;padding:5px 12px;}}
   .tm-loc a::before{{content:'';width:6px;height:6px;border-radius:50%;background:#E3C79B;}}
   .tm-books{{display:flex;flex-direction:column;gap:6px;}}
   .tm-body p{{font-size:15px;line-height:1.7;color:#5C574E;margin:0 0 10px;}}
@@ -70,8 +70,8 @@ body += f'''
   .fd-wrap{{display:flex;gap:64px;align-items:center;}}
   .fd-photo{{flex:0 0 400px;margin:0;}}
   .fd-photo img{{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}}
-  .fd-name{{display:block;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:28px;color:#221F1B;}}
-  .fd-role{{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}}
+  .fd-name{{display:block;font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:28px;color:#221F1B;}}
+  .fd-role{{display:block;font-family:'Albert Sans',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}}
   @media (max-width:900px){{.fd-wrap{{flex-direction:column;align-items:stretch;gap:32px;}}.fd-photo{{flex:none;max-width:420px;}}}}
   @media (max-width:1000px){{.tm-grid,.gv-grid{{grid-template-columns:1fr;}}}}
   @media (max-width:600px){{.tm-card{{flex-direction:column;align-items:flex-start;padding:22px;}}}}

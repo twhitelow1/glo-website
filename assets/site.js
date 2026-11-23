@@ -46,14 +46,14 @@
     styles: {
       primaryColor: '#B8894F',
       secondaryColor: '#B8894F10',
-      fontFamily: 'Montserrat',
-      headerFontFamily: 'Montserrat',
+      fontFamily: 'Albert Sans',
+      headerFontFamily: 'Albert Sans',
       floatingEstimator: {
         position: 'bottom-right',
         offset: { x: mobile ? '8px' : '16px', y: mobile ? '80px' : '16px' },
         zIndex: 9999,
-        ctaFontFamily: 'Montserrat',
-        bodyFontFamily: 'Montserrat',
+        ctaFontFamily: 'Albert Sans',
+        bodyFontFamily: 'Albert Sans',
         ctaColor: '#B8894F',
         ctaTextColor: '#FFFFFF'
       }
@@ -76,5 +76,29 @@
   }
   if (btn) btn.addEventListener('click', function () {
     if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); set(false); } else { v.pause(); set(true); }
+  });
+})();
+
+/* FAQs open on tap. Every answer stays in the HTML (Google reads it); without JS all answers show. */
+(function () {
+  var rows = document.querySelectorAll('.faq-row');
+  if (!rows.length) return;
+  document.documentElement.classList.add('glo-faq');
+  Array.prototype.forEach.call(rows, function (row, i) {
+    var h = row.querySelector('h3');
+    if (!h || h.querySelector('.faq-q')) return;
+    var id = 'faq-a-' + i, btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'faq-q';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', id);
+    while (h.firstChild) btn.appendChild(h.firstChild);
+    h.appendChild(btn);
+    var ans = h.nextElementSibling;
+    if (ans) ans.id = id;
+    btn.addEventListener('click', function () {
+      var open = row.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
   });
 })();

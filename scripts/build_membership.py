@@ -140,11 +140,11 @@ body += f'''<style id="glo-club-css">
   .gc-perks h3{{font-size:21px;color:#221F1B;margin:0 0 6px;}}
   .gc-perks p{{font-size:15px;line-height:1.65;color:#5C574E;margin:0;}}
   .gc-price{{position:sticky;top:150px;background:#6B5435;color:#F3F0EA;border-radius:12px;padding:34px 30px;text-align:center;box-shadow:0 24px 48px rgba(34,31,27,.16);}}
-  .gc-price-label{{font-family:'Montserrat',sans-serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#E8D3A8;font-weight:600;}}
-  .gc-price-amt{{font-family:'Playfair Display',Georgia,serif;font-size:58px;color:#FAF9F6;line-height:1.1;margin:12px 0 6px;}}
+  .gc-price-label{{font-family:'Albert Sans',sans-serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#E8D3A8;font-weight:600;}}
+  .gc-price-amt{{font-family:'Newsreader',Georgia,serif;font-size:58px;color:#FAF9F6;line-height:1.1;margin:12px 0 6px;}}
   .gc-price-amt span{{font-size:19px;color:#E8D3A8;}}
-  .gc-price p{{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:17px;color:#EADFCC;margin:0 0 22px;}}
-  .gc-btn{{display:block;background:#E8D3A8;color:#3A2D1E;padding:15px 18px;border-radius:2px;font-family:'Montserrat',sans-serif;font-size:12.5px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;}}
+  .gc-price p{{font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:17px;color:#EADFCC;margin:0 0 22px;}}
+  .gc-btn{{display:block;background:#E8D3A8;color:#3A2D1E;padding:15px 18px;border-radius:2px;font-family:'Albert Sans',sans-serif;font-size:12.5px;letter-spacing:.1em;font-weight:600;text-transform:uppercase;}}
   .gc-btn:hover{{background:#FAF9F6;}}
   .gc-link{{display:inline-block;margin-top:14px;font-size:14.5px;color:#E8D3A8;}}
   .gc-mods{{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;}}

@@ -134,7 +134,7 @@ CSS = '''<style id="glo-lt-css">
   .lt-card img{flex:none;width:112px;height:133px;object-fit:cover;border-radius:8px;background:#EFE9E1;}
   .lt-card h3{font-size:23px;color:#221F1B;margin:0;}
   .lt-card h3 a{color:inherit;}
-  .lt-creds{font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.06em;color:#B8894F;font-weight:600;}
+  .lt-creds{font-family:'Albert Sans',sans-serif;font-size:13px;letter-spacing:.06em;color:#B8894F;font-weight:600;}
   .lt-title{font-size:14.5px;color:#5C574E;margin-top:4px;}
   .lt-also{display:block;font-size:13.5px;color:#8A8377;margin-top:6px;}
   .lt-also a{color:#6B5435;text-decoration:underline;}

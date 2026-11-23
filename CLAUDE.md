@@ -56,12 +56,23 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
   `reviews_section()` in `glo_page.py`. Reviews only ever come from the live widget: never type reviews, ratings or counts.
 - `scripts/glo_page.py` holds the shared page shell, SEO head and schema helpers for new generated pages.
 - `python3 scripts/design_layer.py`: applies the shared design layer (`assets/site.css`, `assets/site.js`, shared footer,
-  mobile Book/Call bar, marquee, H2 accent words, card thumbnails, photo bands from `content/bands.json`). Run it after
+  mobile Book/Call bar, marquee, H2 accent spans (shown plain by site.css), card thumbnails, photo bands from `content/bands.json`). Run it after
   adding or regenerating a page; add the new page's H2s to its accent map.
 
 ## Brand
-Playfair Display headings, Inter body, Montserrat labels and buttons. Cream `#F3F0EA`, page `#FAF9F6`, gold `#B8894F`,
-bronze sections `#6B5435` (`glo-dark`). Prefer GLO's real photos (`assets/ocala/`, placed by `scripts/real_photos.py`) wherever they fit; use the brand characters in
-`docs/brand-characters.md` for lifestyle imagery. Never present AI images as real clients, results or before-and-afters; the fine-print photography line covers them.
-Every H2 gets one italic gold accent word (`.glo-accent`). Each treatment page has its own photo band; never reuse
-one photo set across pages. Copy is warm, inviting and accepting, and uses NEPQ-style questions that help the reader see themselves.
+Newsreader headings (semibold display weight), Albert Sans for body, labels, nav and buttons (closest free match to Domaine
+Display / Domaine Sans; swap in licensed Domaine files only if GLO buys a web license). Cream `#F3F0EA`, page `#FAF9F6`,
+gold `#B8894F`, bronze sections `#6B5435` (`glo-dark`). Prefer GLO's real photos (`assets/ocala/`, placed by
+`scripts/real_photos.py`) wherever they fit; use the brand characters in `docs/brand-characters.md` for lifestyle imagery.
+Never present AI images as real clients, results or before-and-afters; the fine-print photography line covers them.
+Real photo files get descriptive SEO names (`glo-ocala-med-spa-front-desk.webp`, `medical-weight-loss-lab-draw-ocala-fl.webp`).
+
+Clean, calm layout (Nov 2026):
+- A photo must match the words beside it (a front-desk photo goes with "check in", not with a section about how you feel).
+- Prefer half-photo sections (`.glo-half`): a large photo fills half the width, a short text panel sits beside it.
+- The gold italic accent appears in the page's H1 only; `site.css` neutralises accents in H2/H3 (`design_layer.py` may still add the span).
+- One filled booking button per section; secondary `btn-outline` links render as quiet text links (keep them for internal linking).
+- FAQs stay as `.faq-row` (H3 + answer) in the HTML for Google; `site.js` turns them into tap-to-open questions.
+- Keep intros short: one or two sentences under each H2, then the detail. The home hero video stays.
+Each treatment page has its own photo band; never reuse one photo set across pages. Copy is warm, inviting and accepting,
+and uses NEPQ-style questions that help the reader see themselves.
