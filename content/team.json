@@ -79,12 +79,12 @@
   "height": 992
  },
  "group_photo": {
-  "src": "/assets/team/glo-aesthetics-team-ocala-fl.webp",
-  "jpg": "/assets/team/glo-aesthetics-team-ocala-fl.jpg",
-  "width": 1024,
-  "height": 1536,
-  "alt": "The GLO Aesthetics + Wellness Lounge team in Ocala, FL: founder Renee Porter seated, with McKenzie McCalla, Sundee Bass and Baily Bellamy",
-  "note": "Real team photo from GLO (Nov 2026); replaces the AI composite."
+  "src": "/assets/team/glo-providers-ocala-fl.webp",
+  "jpg": "/assets/team/glo-providers-ocala-fl.jpg",
+  "width": 1000,
+  "height": 1531,
+  "alt": "GLO providers Baily Bellamy, Sundee Bass and McKenzie McCalla in Ocala, FL",
+  "note": "Real team photo from GLO (Nov 2026). Replaces the four-person chair photo, which GLO retired."
  },
  "staff": [
   {
@@ -97,12 +97,6 @@
   }
  ],
  "source_note_staff": "Front office team from GLO (Oct 30, 2026 website meeting): Mariah removed; Macin added as Spa Receptionist; Jared shown as Executive Assistant.",
- "providers_photo": {
-  "src": "/assets/team/glo-providers-ocala-fl.webp",
-  "width": 1000,
-  "height": 1531,
-  "alt": "GLO providers Baily Bellamy, Sundee Bass and McKenzie McCalla in Ocala, FL"
- },
  "injectors_photo": {
   "src": "/assets/team/glo-injectors-ocala-fl.webp",
   "width": 1000,

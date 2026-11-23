@@ -7,7 +7,6 @@ from glo_page import *  # noqa
 
 _t = json.load(open('content/team.json'))
 team, founder, group, staff = _t['team'], _t['founder'], _t['group_photo'], _t.get('staff', [])
-prov = _t['providers_photo']
 PATH, URL = '/about', SITE + '/about'
 IMG_HERO = SITE + json.load(open('content/team.json'))['group_photo']['jpg']
 HERO_SRC = '/assets/ocala/lounge.webp'
@@ -21,7 +20,7 @@ answer = ('GLO Aesthetics + Wellness Lounge is a medical aesthetics and wellness
 crumbs = [('Home', '/'), ('About', '/about')]
 body = split_hero(crumbs, 'ABOUT GLO', 'About GLO in <span style="font-style:italic;color:#B8894F;">Ocala</span>, FL', answer,
                   f'<a href="#team" {BTN}>Meet Our Team</a><a href="/#book" {BTN_OUT}>Book a Consultation</a>',
-                  group['src'], group['alt'], 'center 30%', size=(group['width'], group['height']))
+                  group['src'], group['alt'], 'center 6%', size=(group['width'], group['height']))
 body = body.replace('<div class="glo-split-hero">', '<div class="glo-split-hero glo-split-hero--group">', 1)
 
 
@@ -95,17 +94,13 @@ body += f'''
   </section>
 
   <!-- ===================== TEAM ===================== -->
-  <section id="team" class="glo-half" style="scroll-margin-top:130px;">
-    <figure><img src="{prov['src']}" alt="{prov['alt']}" width="{prov['width']}" height="{prov['height']}" loading="lazy" decoding="async" style="object-position:center 25%;"></figure>
-    <div class="glo-half-text" style="background:#F3F0EA;">
-      <div class="glo-half-label">Our team</div>
-      <h2 class="glo-h2" style="font-size:44px;line-height:1.15;color:#221F1B;margin:0 0 22px;">Who will I see at GLO?</h2>
-      <p>You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals, or let us match you at your consultation.</p>
-      <p>McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
-    </div>
-  </section>
-  <div id="providers" style="width:100%;background:#FAF9F6;">
+  <div id="team" style="width:100%;background:#FAF9F6;scroll-margin-top:130px;">
     <div class="glo-container" style="max-width:1240px;margin:0 auto;padding:90px 48px;">
+      <div style="max-width:760px;margin-bottom:40px;">
+        {eyebrow('OUR TEAM')}
+        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
+        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals, or let us match you at your consultation. McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
+      </div>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
       <h3 style="font-size:24px;color:#221F1B;margin:56px 0 18px;">Who will greet me at the front desk?</h3>
