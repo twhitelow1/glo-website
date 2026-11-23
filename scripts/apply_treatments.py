@@ -44,7 +44,7 @@ def build_iv(d):
     s = s.replace('target="_blank" rel="noopener" ', '')
     s = sub1(r'(<div class="glo-split-media" role="img" aria-label=")[^"]*(" style="background-image:url\(\')[^\']+', r'\1IV hydration therapy lounge at GLO Aesthetics + Wellness Lounge\2' + img, s)
     # stats
-    s = fill_seq(s, r'(<span style="font-family:\'Playfair Display\',Georgia,serif;font-size:28px;color:#B8894F;">)[^<]*(</span>\s*<span[^>]*>)[^<]*(</span>)',
+    s = fill_seq(s, r'(<span style="font-family:\'Newsreader\',Georgia,serif;font-size:28px;color:#B8894F;">)[^<]*(</span>\s*<span[^>]*>)[^<]*(</span>)',
                  d['stats'], lambda m, v: m.group(1) + esc(v[0]) + m.group(2) + esc(v[1]) + m.group(3))
     # drop the opt-in offer and pricing blocks
     s = sub1(r'  <!-- ===================== OPT-IN OFFER.*?(?=  <!-- ===================== WHAT IT TREATS)', '', s)

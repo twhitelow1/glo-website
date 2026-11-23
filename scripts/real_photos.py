@@ -121,13 +121,6 @@ def hero(slug, key, pos='center 45%'):
             open(f, 'w').write(n)
 
 
-def home_why(s):
-    src, alt, _ = P['reception-desk']
-    return re.sub(r'(<div id="about".*?<img src=")[^"]*(" alt=")[^"]*(" style="width:100%;height:100%;object-fit:cover;)(display:block;)',
-                  lambda m: m.group(1) + src + m.group(2) + alt + m.group(3) + 'object-position:72% center;' + m.group(4), s, count=1, flags=re.S) \
-        if src not in s else s
-
-
 if __name__ == '__main__':
     f = 'locations/index.html'
     s = locations_team(open(f).read())
@@ -148,6 +141,4 @@ if __name__ == '__main__':
         open(p, 'w').write(s)
     hero('functional-weight-loss', 'weight-loss-labs', 'center 45%')
     hero('peptide-therapy', 'peptide-labs', '40% 45%')
-    s = home_why(open('index.html').read())
-    open('index.html', 'w').write(s)
     print('done')
