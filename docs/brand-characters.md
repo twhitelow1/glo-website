@@ -69,3 +69,9 @@ right person appears with the right treatment: Baily (Xeomin, Dermal Filler, Liq
 Dissolve HA, CoolPeel, CO2 laser, Skin Tightening, Radiant Lift), Sundee (Motus, Custom Facials & Peels, Mini Facials,
 Daxxify Facial, home "Why GLO"). Clients are still the brand characters above. Alt text always starts
 "Representative image, AI-generated:" and names the provider. Microneedling keeps Sundee's real photo.
+
+### Pictures match the words (Nov 2026)
+Every image must show what its section talks about: a consultation step shows a provider listening, a payment page shows a
+payment conversation, a facial "how it works" shows that facial. Use real GLO staff and real devices (in generated scenes the
+providers are built from their own photos); no hand mirrors. The full list of swaps is `SWAPS` in `scripts/real_photos.py`.
+Room photos stay only where the text is about the space ("Where will I be treated?", location galleries).

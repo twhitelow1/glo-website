@@ -161,7 +161,8 @@ HEROES = {
     'daxxify': ('/assets/ai/glo-9e8b55f1-f5e7-4b87-94fb-2aabd3ceb8f0.webp', AI + 'McKenzie McCalla, APRN, giving a Daxxify injection at the crow\'s feet', 'center 25%', 1600, 2000),
     'dermal-filler': ('/assets/ai/glo-23dd3f42-a777-4f76-ac98-fb7fb4182a98.webp', AI + 'Baily Bellamy placing lip filler with a fine syringe', 'center 25%', 1600, 2000),
     'liquid-rhinoplasty': ('/assets/ai/glo-8ea145b7-9823-4267-905e-a13bcd4eb224.webp', AI + 'Baily Bellamy placing filler at the bridge of a client\'s nose', 'center 25%', 1600, 2000),
-    'dissolve-ha-dermal-filler': ('/assets/ai/glo-6cb2e948-ce05-4702-a5e8-9e6725623a31.webp', AI + 'McKenzie McCalla, APRN, talking a client through adjusting earlier lip filler', 'center 25%', 1600, 2000),
+    'dissolve-ha-dermal-filler': ('/assets/ai/glo-d4429368-9e19-446d-b8a4-08c27b3cd623.webp', AI + 'McKenzie McCalla, APRN, assessing a client\'s lips before dissolving earlier filler', 'center 25%', 1600, 2000),
+    'hormone-replacement-therapy': ('/assets/ai/glo-c83b37a7-97cf-4960-b81f-45dd7374aafb.webp', AI + 'McKenzie McCalla, APRN, listening to a client describe her symptoms', 'center 25%', 1600, 2000),
     'iv-hydration': ('/assets/ai/glo-f1458133-9d82-48fa-b2d6-061d87dbb739.webp', AI + 'a man relaxing in a lounge chair with an IV drip, reading a book', 'center 30%', 1600, 2000),
 }
 
@@ -189,6 +190,56 @@ def set_hero(slug, src, alt, pos, w, h):
             open(f, 'w').write(n)
 
 
+# Images that must match the words beside them (Nov 2026 audit): real staff doing what the section describes.
+# (file, src of the image to replace, nth match, new src, alt, object-position, width, height, is_hero)
+SWAPS = [
+    ('index.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-ca456cf2-393d-4434-87e6-4ce74fc951a1.webp', AI + 'McKenzie McCalla, APRN, listening to a client during her consultation', 'center 30%', 1600, 2000, False),
+    ('index.html', '/assets/ocala/hallway.webp', 0, '/assets/team/mckenzie-mccalla-treatment-plan-ocala-fl.webp', 'McKenzie McCalla, APRN, with her laptop, ready to walk you through your options and pricing', 'center 25%', 1200, 1500, False),
+    ('index.html', '/assets/ocala/laser-room.webp', 0, '/assets/ai/glo-1891efea-b54a-4bf1-bb8d-31cc993f5b4d.webp', AI + 'Baily Bellamy performing an Everesse treatment in a private room', 'center 30%', 1600, 2000, False),
+    ('financing.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-872b5a58-7e3d-423d-91ca-b6e05bae034a.webp', AI + 'Baily Bellamy walking a client through monthly payment options on a tablet', 'center 25%', 1600, 2000, True),
+    ('reviews.html', '/assets/ocala/lounge.webp', 0, '/assets/ai/glo-ee0111c8-4adc-4430-8583-629ceef7f1f6.webp', AI + 'Sundee Bass laughing with a happy client after her appointment', 'center 25%', 1600, 2000, True),
+    ('locations/palatka.html', '/assets/ai/glo-d9e4d660-1b3a-42f6-9dc6-df4028ebe8bf.webp', 0, '/assets/ai/glo-b644410c-5ac9-4a5c-a2c3-0e61a6b7ff0c.webp', AI + 'Baily Bellamy and Sundee Bass, who see clients at GLO in Palatka', 'center 20%', 1600, 2000, True),
+    ('membership-programs.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-52879d92-ee42-4642-9cb3-dd92c132cb5b.webp', AI + 'Sundee Bass beginning a client\'s monthly Signature Facial', 'center 25%', 1600, 2000, True),
+    ('membership-programs.html', '/assets/ocala/lounge-retail.webp', 0, '/assets/ai/glo-18aaa743-7f4e-4649-a4c1-ee8b9c4e4fa4.webp', AI + 'Sundee Bass performing gua sha sculpting massage during a Signature Facial', 'center 30%', 1600, 2000, False),
+    ('skin-services.html', '/assets/ai/glo-175e4678-0ae9-4464-8168-4d4a5e763ed7.webp', 0, '/assets/ai/glo-1f9b1f1d-d855-48ea-b9b0-17f8fb938f89.webp', AI + 'McKenzie McCalla and Sundee Bass with the Tetra Pro CO2 laser and Everesse system', 'center 25%', 1600, 2000, True),
+    ('wellness.html', '/assets/ai/glo-f2efb89a-4a81-4e8a-ac4e-4c29d2e70aba.webp', 0, '/assets/ai/glo-e9e0bfd9-305f-4cca-9144-b6d1a5f416a0.webp', AI + 'McKenzie McCalla, APRN, reviewing a client\'s lab results with him', 'center 25%', 1600, 2000, True),
+    ('treatments/index.html', '/assets/ai/glo-a0a683a6-c3f0-4e84-b5d5-d3d138eabaee.webp', 0, '/assets/ai/glo-59b1e871-1e92-4e71-851e-0b3a30a84ff6.webp', AI + 'GLO providers Baily Bellamy, Sundee Bass and McKenzie McCalla in a treatment room', 'center 20%', 1600, 2000, True),
+    ('treatments/custom-facials-peels.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-c53b7bad-65d9-4d91-84a6-ba421af71a82.webp', AI + 'Sundee Bass examining a client\'s skin under a magnifying lamp before her facial', 'center 30%', 1600, 2000, False),
+    ('treatments/mini-facials.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-0ba60a43-1e9e-484e-b405-aef2af4422bf.webp', AI + 'Sundee Bass brushing on a hydrating mask during a mini facial', 'center 30%', 1600, 2000, False),
+]
+CAPTIONS = {  # new figure captions where the old one described a room
+    ('treatments/custom-facials-peels.html', 'One of our private facial suites in Ocala.'): 'Every facial starts with a close look at your skin.',
+    ('treatments/mini-facials.html', 'One of our private facial suites in Ocala.'): 'A quick, hydrating refresh in a private suite.',
+    ('membership-programs.html', 'Our Ocala lounge, with the medical-grade skincare members save on.'): 'Gua sha and sculpting massage are two of the techniques your facial may include.',
+}
+
+
+def swap_images():
+    for f, old, nth, src, alt, pos, w, h, hero in SWAPS:
+        s = open(f).read()
+        tags = [m for m in re.finditer(r'<img [^>]*src="%s"[^>]*>' % re.escape(old), s)]
+        if len(tags) <= nth:
+            continue
+        m = tags[nth]
+        tag = m.group(0)
+        new = re.sub(r'src="[^"]*"', f'src="{src}"', tag, 1)
+        new = re.sub(r'alt="[^"]*"', 'alt="%s"' % alt.replace('"', '&quot;'), new, 1)
+        new = re.sub(r'width="\d+"', f'width="{w}"', new, 1)
+        new = re.sub(r'height="\d+"', f'height="{h}"', new, 1)
+        new = re.sub(r'object-position:[^;"]*', f'object-position:{pos}', new, 1) if 'object-position' in new else new
+        s = s[:m.start()] + new + s[m.end():]
+        if hero:
+            jpg = SITE + src.replace('.webp', '.jpg')
+            old_jpg = SITE + old.replace('.webp', '.jpg')
+            for prop in ('og:image', 'twitter:image'):
+                s = re.sub(r'(<meta (?:property|name)="%s" content=")[^"]*' % prop, lambda mm: mm.group(1) + jpg, s)
+            s = s.replace(f'"{old_jpg}"', f'"{jpg}"').replace(f'"{SITE}{old}"', f'"{jpg}"')
+        for (cf, a), b in CAPTIONS.items():
+            if cf == f:
+                s = s.replace(a, b)
+        open(f, 'w').write(s)
+
+
 if __name__ == '__main__':
     f = 'locations/index.html'
     s = locations_team(open(f).read())
@@ -212,4 +263,5 @@ if __name__ == '__main__':
     injectors()
     for slug, h in HEROES.items():
         set_hero(slug, *h)
+    swap_images()
     print('done')
