@@ -78,7 +78,7 @@
    "@id": "https://gloocala.com/about#renee-porter",
    "name": "Renee Porter",
    "jobTitle": "Founder",
-   "image": "https://gloocala.com/assets/team/renee-porter.jpg",
+   "image": "https://gloocala.com/assets/team/renee-porter-founder-glo-ocala-fl.jpg",
    "worksFor": {
     "@id": "https://gloocala.com/#business"
    }
@@ -529,17 +529,21 @@
   .gv-grid p{font-size:15px;line-height:1.7;color:#5C574E;margin:0;}
   .fd-wrap{display:flex;gap:64px;align-items:center;}
   .fd-photo{flex:0 0 400px;margin:0;}
-  .fd-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
+  .fd-photo img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(34,31,27,.12);}
   .fd-name{display:block;font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:28px;color:#221F1B;}
   .fd-role{display:block;font-family:'Albert Sans',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}
   @media (max-width:900px){.fd-wrap{flex-direction:column;align-items:stretch;gap:32px;}.fd-photo{flex:none;max-width:420px;}}
+  #founder.glo-half{grid-template-columns:5fr 6fr;}
+  #founder.glo-half > figure{aspect-ratio:3/4;min-height:0;}
+  #founder.glo-half > figure img{object-position:center 65%;}
+  @media (max-width:900px){#founder.glo-half{grid-template-columns:1fr;}#founder.glo-half > figure{aspect-ratio:2/3;}}
   @media (max-width:1000px){.tm-grid,.gv-grid{grid-template-columns:1fr;}}
   @media (max-width:600px){.tm-card{flex-direction:column;align-items:flex-start;padding:22px;}}
 </style>
 
   <!-- ===================== FOUNDER ===================== -->
   <section id="founder" class="glo-half">
-    <figure><img src="/assets/team/renee-porter.webp" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="800" height="992" loading="lazy" decoding="async" style="object-position:center 20%;"></figure>
+    <figure><img src="/assets/team/renee-porter-founder-glo-ocala-fl.webp" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in a cream armchair" width="1000" height="1500" loading="lazy" decoding="async"></figure>
     <div class="glo-half-text" style="background:#F3F0EA;">
       <div class="glo-half-label">Our founder</div>
       <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;margin:0 0 22px;">Who founded GLO?</h2>

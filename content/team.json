@@ -73,10 +73,10 @@
  "founder": {
   "name": "Renee Porter",
   "title": "Founder",
-  "photo": "/assets/team/renee-porter.webp",
-  "photo_jpg": "/assets/team/renee-porter.jpg",
-  "width": 800,
-  "height": 992
+  "photo": "/assets/team/renee-porter-founder-glo-ocala-fl.webp",
+  "photo_jpg": "/assets/team/renee-porter-founder-glo-ocala-fl.jpg",
+  "width": 1000,
+  "height": 1500
  },
  "group_photo": {
   "src": "/assets/team/glo-providers-ocala-fl.webp",
