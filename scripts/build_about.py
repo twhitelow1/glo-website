@@ -20,7 +20,7 @@ answer = ('GLO Aesthetics + Wellness Lounge is a medical aesthetics and wellness
 crumbs = [('Home', '/'), ('About', '/about')]
 body = split_hero(crumbs, 'ABOUT GLO', 'About GLO in <span style="font-style:italic;color:#B8894F;">Ocala</span>, FL', answer,
                   f'<a href="#team" {BTN}>Meet Our Team</a><a href="/#book" {BTN_OUT}>Book a Consultation</a>',
-                  group['src'], group['alt'], 'center 30%', size=(group['width'], group['height']))
+                  group['src'], group['alt'], 'center 6%', size=(group['width'], group['height']))
 body = body.replace('<div class="glo-split-hero">', '<div class="glo-split-hero glo-split-hero--group">', 1)
 
 
@@ -99,7 +99,7 @@ body += f'''
       <div style="max-width:760px;margin-bottom:40px;">
         {eyebrow('OUR TEAM')}
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
-        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
+        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals, or let us match you at your consultation. McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
       </div>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
@@ -158,7 +158,7 @@ body += faq_html('About GLO FAQs', FAQ)
 body += cta('Ready to meet us?', 'Tell us what you&rsquo;d like to feel again. We&rsquo;ll listen first, then walk you through your options &mdash; no pressure.') + '\n'
 
 people = [{'@type': 'Person', '@id': f'{URL}#{m["name"].lower().replace(" ", "-")}', 'name': m.get('full_name', m['name']),
-           'alternateName': m['name'], 'jobTitle': plain(m['title']), 'image': m['photo'],
+           'alternateName': m['name'], 'jobTitle': plain(m['title']), 'image': (SITE + m['photo'].replace('.webp', '.jpg')) if m['photo'].startswith('/') else m['photo'],
            'worksFor': {'@id': BUSINESS_ID}, 'workLocation': [{'@id': f'{SITE}/locations/{l.lower()}#location'} for l in m['locations']],
            **({'honorificSuffix': m['credentials']} if m['credentials'] else {}),
            'knowsAbout': [plain(f) for f in m['focus']]} for m in team]

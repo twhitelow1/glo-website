@@ -18,6 +18,7 @@ P = {
     'front-desk': ('/assets/ocala/glo-ocala-med-spa-front-desk.webp', 'Baily Bellamy at the front desk of GLO Aesthetics + Wellness Lounge in Ocala, FL, beside the skincare case and gold mirror', 'Our Ocala front desk'),
     'reception-desk': ('/assets/ocala/glo-ocala-med-spa-reception-desk.webp', 'Baily Bellamy checking in a client at the reception desk of GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Checking in at GLO Ocala'),
     'weight-loss-labs': ('/assets/ocala/medical-weight-loss-lab-draw-ocala-fl.webp', 'A GLO provider drawing blood for metabolic lab work before a medical weight loss plan at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Lab work at GLO Ocala'),
+    'peptide-vials': ('/assets/ocala/peptide-therapy-vials-ocala-fl.webp', 'Vials and syringes on a gold tray in the treatment room at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Peptide therapy at GLO'),
     'peptide-labs': ('/assets/ocala/peptide-therapy-lab-work-ocala-fl.webp', 'A GLO provider collecting a blood sample for lab work before peptide therapy at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Lab work before peptide therapy'),
     'lounge-retail': ('/assets/ocala/lounge-retail.webp', 'Lounge seating, coffee bar and medical-grade skincare shelves at GLO Ocala', 'Coffee, Wi-Fi &amp; medical-grade skincare'),
 }
@@ -121,6 +122,26 @@ def hero(slug, key, pos='center 45%'):
             open(f, 'w').write(n)
 
 
+def injectors():
+    """GLO's two injectors (real photo) on the /injectables hero and the home Injectables tile."""
+    ph = json.load(open('content/team.json'))['injectors_photo']
+    src, alt, jpg = ph['src'], ph['alt'], SITE + ph['src'].replace('.webp', '.jpg')
+    s = open('injectables.html').read()
+    m = re.search(r'<div class="glo-split-media"><img src="([^"]+)"[^>]*>', s)
+    if m.group(1) != src:
+        old = m.group(1)
+        s = s.replace(m.group(0), f'<div class="glo-split-media"><img src="{src}" alt="{alt}" width="{ph["width"]}" height="{ph["height"]}" fetchpriority="high" decoding="async" style="object-position:center 8%;">', 1)
+        for prop in ('og:image', 'twitter:image'):
+            s = re.sub(r'(<meta (?:property|name)="%s" content=")[^"]*' % prop, lambda mm: mm.group(1) + jpg, s)
+        s = s.replace(f'"{old}"', f'"{jpg}"')
+        open('injectables.html', 'w').write(s)
+    s = open('index.html').read()
+    n = re.sub(r'(<a href="/injectables" class="txs-photo"><img src=")[^"]*(" alt=")[^"]*("[^>]*style="object-position:)[^;"]*',
+               lambda mm: mm.group(1) + src + mm.group(2) + alt + mm.group(3) + 'center 8%', s)
+    if n != s:
+        open('index.html', 'w').write(n)
+
+
 if __name__ == '__main__':
     f = 'locations/index.html'
     s = locations_team(open(f).read())
@@ -140,5 +161,6 @@ if __name__ == '__main__':
         s = figure(open(p).read(), key, cap)
         open(p, 'w').write(s)
     hero('functional-weight-loss', 'weight-loss-labs', 'center 45%')
-    hero('peptide-therapy', 'peptide-labs', '40% 45%')
+    hero('peptide-therapy', 'peptide-vials', '40% 70%')
+    injectors()
     print('done')
