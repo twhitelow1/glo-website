@@ -79,12 +79,12 @@
   "height": 992
  },
  "group_photo": {
-  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/hf_20261002_073727_e8aa2e66-48f8-4465-a5a4-268f92ccc19b.png",
-  "width": 1792,
-  "height": 2240,
-  "alt": "The GLO Aesthetics + Wellness Lounge team",
-  "note": "AI-generated composite of the GLO team, made from their individual photos.",
-  "higgsfield_job": "e8aa2e66-48f8-4465-a5a4-268f92ccc19b"
+  "src": "/assets/team/glo-aesthetics-team-ocala-fl.webp",
+  "jpg": "/assets/team/glo-aesthetics-team-ocala-fl.jpg",
+  "width": 1024,
+  "height": 1536,
+  "alt": "The GLO Aesthetics + Wellness Lounge team with founder Renee Porter, seated in a white chair, in Ocala, FL",
+  "note": "Real team photo from GLO (Nov 2026); replaces the AI composite."
  },
  "staff": [
   {

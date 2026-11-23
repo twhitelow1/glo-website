@@ -8,7 +8,7 @@ from glo_page import *  # noqa
 _t = json.load(open('content/team.json'))
 team, founder, group, staff = _t['team'], _t['founder'], _t['group_photo'], _t.get('staff', [])
 PATH, URL = '/about', SITE + '/about'
-IMG_HERO = json.load(open('content/team.json'))['group_photo']['src']
+IMG_HERO = SITE + json.load(open('content/team.json'))['group_photo']['jpg']
 HERO_SRC = '/assets/ocala/lounge.webp'
 TITLE = 'About GLO Med Spa in Ocala, FL | Meet Our Team | GLO'
 META = 'Meet the licensed team at GLO Aesthetics + Wellness Lounge in Ocala and Palatka, FL: nurse practitioners, medical estheticians and aestheticians.'
