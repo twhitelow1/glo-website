@@ -40,7 +40,9 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
 - Any page advertising something free or discounted (free consults, offers, member discounts) must carry the Florida s. 456.062
   notice; the shared footer (`glo-footer-legal`) has it, and offer blocks repeat it (`glo-offer-legal`).
 - No statistics without a cited source. No absolute "safe for all", "painless" or similar claims: say "most people", "suits most".
-- GLP-1s: no brand names or "FDA-approved" claims until GLO confirms what it prescribes (brand vs compounded). Hormone therapy is
+- GLP-1s: no "FDA-approved" claims until GLO confirms what it prescribes (brand vs compounded). GLO approved showing the
+  product labels on its own vial photo (Nov 2026). If a GLO photo or request seems to conflict with a rule here, ask Todd first;
+  never blur, crop or alter GLO's photos on your own. Hormone therapy is
   "coming soon": no prices or free-consult claims until it launches.
 - AI images are never labelled as clients, results or "after" in alt text, and never stand in for GLO's real rooms or locations.
 - Placeholder text (`[TBD]`, `[Confirm …]`) is only allowed on `noindex` pages and never inside JSON-LD.
