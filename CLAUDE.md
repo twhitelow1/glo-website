@@ -44,7 +44,10 @@ disclaimer, and schema `MedicalWebPage` + `MedicalProcedure`/`MedicalTherapy`.
   product labels on its own vial photo (Nov 2026). If a GLO photo or request seems to conflict with a rule here, ask Todd first;
   never blur, crop or alter GLO's photos on your own. Hormone therapy is
   "coming soon": no prices or free-consult claims until it launches.
-- AI images are never labelled as clients, results or "after" in alt text, and never stand in for GLO's real rooms or locations.
+- AI images are never labelled as clients, results or "after" in alt text. Generated treatment scenes are set in GLO's real
+  rooms, built from the real room photos in `assets/ocala/` as references (facial suite, Tetra laser room, Motus room, lounge),
+  with GLO's real providers built from their own photos. Scenes are candid: the provider looks at the client, never at the
+  camera, and there are no hand mirrors. Real photos always beat generated ones.
 - Placeholder text (`[TBD]`, `[Confirm …]`) is only allowed on `noindex` pages and never inside JSON-LD.
 
 ## Tools (run from the repo root before every push)
