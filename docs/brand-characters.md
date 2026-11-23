@@ -75,3 +75,8 @@ Every image must show what its section talks about: a consultation step shows a 
 payment conversation, a facial "how it works" shows that facial. Use real GLO staff and real devices (in generated scenes the
 providers are built from their own photos); no hand mirrors. The full list of swaps is `SWAPS` in `scripts/real_photos.py`.
 Room photos stay only where the text is about the space ("Where will I be treated?", location galleries).
+
+## Candid, always (standing rule)
+Providers never look at the camera in generated scenes; their eyes are on the client or the treatment area. Every prompt
+ends with: "Candid documentary moment: nobody looks at the camera; the provider's eyes are on the client or the treatment
+area; natural, anatomically correct hands with five fingers; no mirrors." Check every result for gaze and hands before placing it.

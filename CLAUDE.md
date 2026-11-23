@@ -4,6 +4,14 @@ Static HTML site for GLO Aesthetics + Wellness Lounge (med spa, Ocala and Palatk
 Built by DubLow Digital. SEO (Google) and AEO/GEO (ChatGPT, Gemini, Perplexity, AI Overviews) are requirements,
 not extras: **no page ships unless it meets the page standard below**, and all copy is written for both search and people.
 
+## #1 image rule (Todd has asked many times: never break it)
+**Every generated scene with a provider is candid.** The provider and the client look at each other or at the work
+(the skin, the device, the tablet), **never at the camera**. Nobody poses or smiles at the lens. No hand mirrors.
+- Every image prompt ends with this exact line: "Candid documentary moment: nobody looks at the camera; the provider's
+  eyes are on the client or the treatment area; natural, anatomically correct hands with five fingers; no mirrors."
+- Before placing any generated image, look at it: if anyone's eyes meet the lens, or a hand looks wrong, regenerate it.
+  Never ship one and wait for Todd to spot it.
+
 ## URLs and files
 - A page's file path is its canonical URL: `treatments/xeomin.html` → `https://gloocala.com/treatments/xeomin`
   (Vercel `cleanUrls`). Hubs use `index.html` (`treatments/index.html` → `/treatments`).
