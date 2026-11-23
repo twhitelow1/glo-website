@@ -111,7 +111,7 @@ body += f'''
 '''
 from real_photos import gallery
 body += gallery('Where will I be <span class="glo-accent">treated</span>?',
-                'In a bright, calm space designed to feel like a retreat. These are real photos of our Ocala med spa &mdash; the lounge, our private treatment rooms and the Tetra Pro laser.', '#FFFFFF')
+                'In a bright, calm space designed to feel like a retreat. These are real photos of our Ocala med spa &mdash; the lounge, our private treatment rooms and the Tetra Pro laser.', '#FAF9F6')
 body += f'''
   <!-- ===================== VALUES ===================== -->
   <div style="width:100%;background:#F3F0EA;">
