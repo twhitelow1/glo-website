@@ -68,25 +68,6 @@
     "Ocala": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/16",
     "Palatka": "https://gloocala.janeapp.com/locations/palatka-location-glo-aesthetics-wellness-lounge/book#/staff_member/16"
    }
-  },
-  {
-   "name": "Mariah Young",
-   "credentials": "",
-   "title": "Aesthetician",
-   "locations": [
-    "Ocala"
-   ],
-   "focus": [
-    "Custom facials &amp; peels",
-    "Mini facials",
-    "Microneedling",
-    "Skin analysis"
-   ],
-   "bio": [],
-   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTUvMDAxNTQyLzk4OTA3NDBmLTcxYzgtNDg5MC04ZDI2LTE0ZDdmZDIzMjhmZi8yQTYwMzM1NC0xRTVELTQwNUYtQUJCQS02OTYxMUE3QkJDOUQucG5nIl0sWyJwIiwidGh1bWIiLCIxNjB4MTkwIyJdXQ?sha=80feb70250354539&for=gloocala.janeapp.com",
-   "book": {
-    "Ocala": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/8"
-   }
   }
  ],
  "founder": {
@@ -104,5 +85,16 @@
   "alt": "The GLO Aesthetics + Wellness Lounge team",
   "note": "AI-generated composite of the GLO team, made from their individual photos.",
   "higgsfield_job": "e8aa2e66-48f8-4465-a5a4-268f92ccc19b"
- }
+ },
+ "staff": [
+  {
+   "name": "Jared Schappert",
+   "title": "Executive Assistant"
+  },
+  {
+   "name": "Mason",
+   "title": "Spa Receptionist"
+  }
+ ],
+ "source_note_staff": "Front office team from GLO (Oct 30, 2026 website meeting): Mariah removed; Mason added as Spa Receptionist; Jared shown as Executive Assistant."
 }

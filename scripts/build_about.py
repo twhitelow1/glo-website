@@ -6,7 +6,7 @@ sys.path.insert(0, 'scripts')
 from glo_page import *  # noqa
 
 _t = json.load(open('content/team.json'))
-team, founder, group = _t['team'], _t['founder'], _t['group_photo']
+team, founder, group, staff = _t['team'], _t['founder'], _t['group_photo'], _t.get('staff', [])
 PATH, URL = '/about', SITE + '/about'
 IMG_HERO = json.load(open('content/team.json'))['group_photo']['src']
 HERO_SRC = '/assets/ocala/lounge.webp'
@@ -63,6 +63,10 @@ body += f'''
   .tm-focus{{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 16px;padding:0;}}
   .tm-focus li{{font-size:12.5px;color:#6B5435;background:#F3F0EA;border:1px solid #E6E1D6;border-radius:999px;padding:5px 12px;}}
   .tm-book{{font-size:14.5px;color:#B8894F;font-weight:600;}}
+  .fo-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;list-style:none;margin:0;padding:0;}}
+  .fo-grid li{{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:20px 24px;}}
+  .fo-name{{display:block;font-family:'Newsreader',Georgia,serif;font-size:22px;color:#221F1B;}}
+  .fo-title{{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}}
   .gv-grid{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}}
   .gv-grid > div{{background:#FAF9F6;border:1px solid #E6E1D6;border-radius:8px;padding:28px 26px;}}
   .gv-grid h3{{font-size:21px;color:#221F1B;margin:0 0 8px;}}
@@ -78,18 +82,16 @@ body += f'''
 </style>
 
   <!-- ===================== FOUNDER ===================== -->
-  <div id="founder" style="width:100%;background:#F3F0EA;">
-    <div class="glo-container fd-wrap" style="max-width:1140px;margin:0 auto;padding:90px 48px;">
-      <figure class="fd-photo"><img src="{founder['photo']}" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="{founder['width']}" height="{founder['height']}" loading="lazy" decoding="async"></figure>
-      <div class="fd-copy">
-        {eyebrow('OUR FOUNDER')}
-        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:16px;">Who <span class="glo-accent">founded</span> GLO?</h2>
-        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">GLO Aesthetics + Wellness Lounge was founded by Renee Porter. Her vision shapes everything you&rsquo;ll find here: a calm, beautiful space in Ocala, a licensed team that listens first, and care that never feels rushed or pressured.</p>
-        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 24px;">From the lounge to the treatment rooms, GLO was designed to feel less like a clinic and more like a place you look forward to coming back to.</p>
-        <div class="fd-sign"><span class="fd-name">Renee Porter</span><span class="fd-role">Founder</span></div>
-      </div>
+  <section id="founder" class="glo-half">
+    <figure><img src="{founder['photo']}" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="{founder['width']}" height="{founder['height']}" loading="lazy" decoding="async" style="object-position:center 20%;"></figure>
+    <div class="glo-half-text" style="background:#F3F0EA;">
+      <div class="glo-half-label">Our founder</div>
+      <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;margin:0 0 22px;">Who founded GLO?</h2>
+      <p>GLO Aesthetics + Wellness Lounge was founded by Renee Porter. Her vision shapes everything you&rsquo;ll find here: a calm, beautiful space in Ocala, a licensed team that listens first, and care that never feels rushed or pressured.</p>
+      <p>From the lounge to the treatment rooms, GLO was designed to feel less like a clinic and more like a place you look forward to coming back to.</p>
+      <div class="fd-sign"><span class="fd-name">Renee Porter</span><span class="fd-role">Founder</span></div>
     </div>
-  </div>
+  </section>
 
   <!-- ===================== TEAM ===================== -->
   <div id="team" style="width:100%;background:#FAF9F6;scroll-margin-top:130px;">
@@ -97,10 +99,12 @@ body += f'''
       <div style="max-width:760px;margin-bottom:40px;">
         {eyebrow('OUR TEAM')}
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I see at GLO?</h2>
-        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee, Baily and Mariah all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
+        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
       </div>
       <div class="tm-grid">{''.join(member(m) for m in team)}
       </div>
+      <h3 style="font-size:24px;color:#221F1B;margin:56px 0 18px;">Who will greet me at the front desk?</h3>
+      <ul class="fo-grid">{''.join(f'<li id="{x["name"].lower().replace(" ", "-")}"><span class="fo-name">{x["name"]}</span><span class="fo-title">{x["title"]}</span></li>' for x in staff)}</ul>
     </div>
   </div>
 
@@ -129,10 +133,22 @@ body += reviews_section('What do clients <span class="glo-accent">say</span> abo
                         'Here&rsquo;s how our clients describe their visits, in their own words. These reviews come straight from Google and update as new ones arrive.',
                         bg='#FAF9F6')
 
+
+def _names(ms):
+    n = [m['name'] for m in ms]
+    return n[0] if len(n) == 1 else ', '.join(n[:-1]) + ' and ' + n[-1]
+
+
+def providers_by_location():
+    oc = [m for m in team if 'Ocala' in m['locations']]
+    pa = [m for m in team if 'Palatka' in m['locations']]
+    return (f'{_names(oc)} {"see" if len(oc) > 1 else "sees"} clients at our Ocala location. {_names(pa)} also '
+            f'{"see" if len(pa) > 1 else "sees"} clients at our Palatka location. Each provider&rsquo;s profile above shows where to book with them.')
+
 FAQ = [
     ('Who founded GLO Aesthetics + Wellness Lounge?', 'GLO Aesthetics + Wellness Lounge was founded by Renee Porter. GLO has two Florida locations, in Ocala and Palatka, with a licensed team working under the direction of a Florida-licensed Medical Director.'),
     ('Who performs treatments at GLO?', 'Treatments are performed by GLO&rsquo;s licensed team &mdash; including a board-certified family nurse practitioner, medical estheticians and aestheticians &mdash; under the direction of our Florida-licensed Medical Director.'),
-    ('Which providers work at each GLO location?', 'McKenzie McCalla, Sundee Bass, Baily Bellamy and Mariah Young all see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. You can book any of them online for the location that suits you.'),
+    ('Which providers work at each GLO location?', providers_by_location()),
     ('Can I choose my provider?', 'Yes. You can book with a specific team member through our online booking, or book a consultation and we&rsquo;ll match you with the provider whose focus fits your goals.'),
     ('Do you have a Medical Director?', 'Yes. All aesthetic, injectable, laser, energy-based and medical wellness services at GLO are performed under the direction of a Florida-licensed Medical Director, in line with Florida Board of Medicine requirements for medical spas.'),
     ('Where are GLO&rsquo;s locations?', 'GLO has two Florida locations: 1925 SW 18th Ct, Unit 109, Ocala, FL 34471, and 210 St Johns Ave, Palatka, FL 32177. Call 352-559-8034 for either.'),
@@ -146,15 +162,18 @@ people = [{'@type': 'Person', '@id': f'{URL}#{m["name"].lower().replace(" ", "-"
            'worksFor': {'@id': BUSINESS_ID}, 'workLocation': [{'@id': f'{SITE}/locations/{l.lower()}#location'} for l in m['locations']],
            **({'honorificSuffix': m['credentials']} if m['credentials'] else {}),
            'knowsAbout': [plain(f) for f in m['focus']]} for m in team]
+office = [{'@type': 'Person', '@id': f'{URL}#{x["name"].lower().replace(" ", "-")}', 'name': x['name'], 'jobTitle': x['title'],
+           'worksFor': {'@id': BUSINESS_ID}} for x in staff]
 graph = [
     {'@type': 'AboutPage', '@id': URL + '#page', 'url': URL, 'name': TITLE, 'description': META, 'inLanguage': 'en-US',
      'dateModified': UPDATED[0], 'isPartOf': {'@id': SITE + '/#website'}, 'about': {'@id': BUSINESS_ID},
      'mainEntity': {'@id': BUSINESS_ID}, 'primaryImageOfPage': IMG_HERO, 'breadcrumb': {'@id': URL + '#breadcrumb'}},
     {'@type': ['MedicalBusiness', 'HealthAndBeautyBusiness'], '@id': BUSINESS_ID, 'name': 'GLO Aesthetics + Wellness Lounge',
-     'url': SITE + '/', 'employee': [{'@id': p['@id']} for p in people], 'founder': {'@id': URL + '#renee-porter'}},
+     'url': SITE + '/', 'employee': [{'@id': p['@id']} for p in people + office], 'founder': {'@id': URL + '#renee-porter'}},
     {'@type': 'Person', '@id': URL + '#renee-porter', 'name': founder['name'], 'jobTitle': 'Founder',
      'image': SITE + founder['photo_jpg'], 'worksFor': {'@id': BUSINESS_ID}},
     *people,
+    *office,
     dict(breadcrumbs(crumbs), **{'@id': URL + '#breadcrumb'}),
     faq_schema(FAQ),
 ]

@@ -63,7 +63,10 @@
      "@id": "https://gloocala.com/about#baily-bellamy"
     },
     {
-     "@id": "https://gloocala.com/about#mariah-young"
+     "@id": "https://gloocala.com/about#jared-schappert"
+    },
+    {
+     "@id": "https://gloocala.com/about#mason"
     }
    ],
    "founder": {
@@ -155,25 +158,21 @@
   },
   {
    "@type": "Person",
-   "@id": "https://gloocala.com/about#mariah-young",
-   "name": "Mariah Young",
-   "alternateName": "Mariah Young",
-   "jobTitle": "Aesthetician",
-   "image": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTUvMDAxNTQyLzk4OTA3NDBmLTcxYzgtNDg5MC04ZDI2LTE0ZDdmZDIzMjhmZi8yQTYwMzM1NC0xRTVELTQwNUYtQUJCQS02OTYxMUE3QkJDOUQucG5nIl0sWyJwIiwidGh1bWIiLCIxNjB4MTkwIyJdXQ?sha=80feb70250354539&for=gloocala.janeapp.com",
+   "@id": "https://gloocala.com/about#jared-schappert",
+   "name": "Jared Schappert",
+   "jobTitle": "Executive Assistant",
    "worksFor": {
     "@id": "https://gloocala.com/#business"
-   },
-   "workLocation": [
-    {
-     "@id": "https://gloocala.com/locations/ocala#location"
-    }
-   ],
-   "knowsAbout": [
-    "Custom facials & peels",
-    "Mini facials",
-    "Microneedling",
-    "Skin analysis"
-   ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://gloocala.com/about#mason",
+   "name": "Mason",
+   "jobTitle": "Spa Receptionist",
+   "worksFor": {
+    "@id": "https://gloocala.com/#business"
+   }
   },
   {
    "@type": "BreadcrumbList",
@@ -217,7 +216,7 @@
      "name": "Which providers work at each GLO location?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "McKenzie McCalla, Sundee Bass, Baily Bellamy and Mariah Young all see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. You can book any of them online for the location that suits you."
+      "text": "McKenzie McCalla, Sundee Bass and Baily Bellamy see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. Each provider’s profile above shows where to book with them."
      }
     },
     {
@@ -520,6 +519,10 @@
   .tm-focus{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 16px;padding:0;}
   .tm-focus li{font-size:12.5px;color:#6B5435;background:#F3F0EA;border:1px solid #E6E1D6;border-radius:999px;padding:5px 12px;}
   .tm-book{font-size:14.5px;color:#B8894F;font-weight:600;}
+  .fo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;list-style:none;margin:0;padding:0;}
+  .fo-grid li{background:#FFFFFF;border:1px solid #E6E1D6;border-radius:10px;padding:20px 24px;}
+  .fo-name{display:block;font-family:'Newsreader',Georgia,serif;font-size:22px;color:#221F1B;}
+  .fo-title{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#B8894F;font-weight:600;margin-top:4px;}
   .gv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
   .gv-grid > div{background:#FAF9F6;border:1px solid #E6E1D6;border-radius:8px;padding:28px 26px;}
   .gv-grid h3{font-size:21px;color:#221F1B;margin:0 0 8px;}
@@ -535,18 +538,16 @@
 </style>
 
   <!-- ===================== FOUNDER ===================== -->
-  <div id="founder" style="width:100%;background:#F3F0EA;">
-    <div class="glo-container fd-wrap" style="max-width:1140px;margin:0 auto;padding:90px 48px;">
-      <figure class="fd-photo"><img src="/assets/team/renee-porter.webp" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="800" height="992" loading="lazy" decoding="async"></figure>
-      <div class="fd-copy">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;"><div style="width:36px;height:1px;background:#B8894F;"></div><span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">OUR FOUNDER</span></div>
-        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:16px;">Who <span class="glo-accent">founded</span> GLO?</h2>
-        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 16px;">GLO Aesthetics + Wellness Lounge was founded by Renee Porter. Her vision shapes everything you&rsquo;ll find here: a calm, beautiful space in Ocala, a licensed team that listens first, and care that never feels rushed or pressured.</p>
-        <p style="font-size:17.5px;line-height:1.8;color:#5C574E;margin:0 0 24px;">From the lounge to the treatment rooms, GLO was designed to feel less like a clinic and more like a place you look forward to coming back to.</p>
-        <div class="fd-sign"><span class="fd-name">Renee Porter</span><span class="fd-role">Founder</span></div>
-      </div>
+  <section id="founder" class="glo-half">
+    <figure><img src="/assets/team/renee-porter.webp" alt="Renee Porter, founder of GLO Aesthetics + Wellness Lounge, seated in the Ocala lounge" width="800" height="992" loading="lazy" decoding="async" style="object-position:center 20%;"></figure>
+    <div class="glo-half-text" style="background:#F3F0EA;">
+      <div class="glo-half-label">Our founder</div>
+      <h2 class="glo-h2" style="font-size:42px;line-height:1.15;color:#221F1B;margin:0 0 22px;">Who founded GLO?</h2>
+      <p>GLO Aesthetics + Wellness Lounge was founded by Renee Porter. Her vision shapes everything you&rsquo;ll find here: a calm, beautiful space in Ocala, a licensed team that listens first, and care that never feels rushed or pressured.</p>
+      <p>From the lounge to the treatment rooms, GLO was designed to feel less like a clinic and more like a place you look forward to coming back to.</p>
+      <div class="fd-sign"><span class="fd-name">Renee Porter</span><span class="fd-role">Founder</span></div>
     </div>
-  </div>
+  </section>
 
   <!-- ===================== TEAM ===================== -->
   <div id="team" style="width:100%;background:#FAF9F6;scroll-margin-top:130px;">
@@ -554,7 +555,7 @@
       <div style="max-width:760px;margin-bottom:40px;">
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;"><div style="width:36px;height:1px;background:#B8894F;"></div><span style="font-size:14px;letter-spacing:0.28em;color:#B8894F;font-weight:600;">OUR TEAM</span></div>
         <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">Who will I <span class="glo-accent">see</span> at GLO?</h2>
-        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee, Baily and Mariah all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
+        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">You&rsquo;ll be cared for by licensed providers who take time to listen. Each has her own focus, so you can book with the person whose expertise fits your goals &mdash; or let us match you at your consultation. McKenzie, Sundee and Baily all see clients in <a href="/locations/ocala" style="color:#B8894F;">Ocala</a>; Sundee and Baily also see clients in <a href="/locations/palatka" style="color:#B8894F;">Palatka</a>.</p>
       </div>
       <div class="tm-grid">
         <article class="tm-card" id="mckenzie-mccalla">
@@ -590,18 +591,9 @@
             <div class="tm-books"><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/16" target="_blank" rel="noopener" class="tm-book">Book with Baily in Ocala &rarr;</a><a href="https://gloocala.janeapp.com/locations/palatka-location-glo-aesthetics-wellness-lounge/book#/staff_member/16" target="_blank" rel="noopener" class="tm-book">Book with Baily in Palatka &rarr;</a></div>
           </div>
         </article>
-        <article class="tm-card" id="mariah-young">
-          <div class="tm-photo"><img src="https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTUvMDAxNTQyLzk4OTA3NDBmLTcxYzgtNDg5MC04ZDI2LTE0ZDdmZDIzMjhmZi8yQTYwMzM1NC0xRTVELTQwNUYtQUJCQS02OTYxMUE3QkJDOUQucG5nIl0sWyJwIiwidGh1bWIiLCIxNjB4MTkwIyJdXQ?sha=80feb70250354539&for=gloocala.janeapp.com" alt="Mariah Young, Aesthetician at GLO Aesthetics + Wellness Lounge" width="160" height="190" loading="lazy" decoding="async"></div>
-          <div class="tm-body">
-            <h3>Mariah Young<span class="tm-creds"></span></h3>
-            <div class="tm-title">Aesthetician</div>
-            <ul class="tm-loc" aria-label="Locations"><li><a href="/locations/ocala">Ocala, FL</a></li></ul>
-            <p>Mariah sees clients at our Ocala location. Book a consultation to meet her and talk through your goals.</p>
-            <ul class="tm-focus" aria-label="Focus areas"><li>Custom facials &amp; peels</li><li>Mini facials</li><li>Microneedling</li><li>Skin analysis</li></ul>
-            <div class="tm-books"><a href="https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/8" target="_blank" rel="noopener" class="tm-book">Book with Mariah in Ocala &rarr;</a></div>
-          </div>
-        </article>
       </div>
+      <h3 style="font-size:24px;color:#221F1B;margin:56px 0 18px;">Who will greet me at the front desk?</h3>
+      <ul class="fo-grid"><li id="jared-schappert"><span class="fo-name">Jared Schappert</span><span class="fo-title">Executive Assistant</span></li><li id="mason"><span class="fo-name">Mason</span><span class="fo-title">Spa Receptionist</span></li></ul>
     </div>
   </div>
 
@@ -658,7 +650,7 @@
       </div>
       <div class="faq-row" style="padding:24px 0;">
         <h3 style="font-size:21px;color:#221F1B;margin:0 0 10px;">Which providers work at each GLO location?</h3>
-        <p style="font-size:16px;line-height:1.75;color:#5C574E;margin:0;">McKenzie McCalla, Sundee Bass, Baily Bellamy and Mariah Young all see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. You can book any of them online for the location that suits you.</p>
+        <p style="font-size:16px;line-height:1.75;color:#5C574E;margin:0;">McKenzie McCalla, Sundee Bass and Baily Bellamy see clients at our Ocala location. Sundee Bass and Baily Bellamy also see clients at our Palatka location. Each provider&rsquo;s profile above shows where to book with them.</p>
       </div>
       <div class="faq-row" style="padding:24px 0;">
         <h3 style="font-size:21px;color:#221F1B;margin:0 0 10px;">Can I choose my provider?</h3>
