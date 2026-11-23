@@ -147,7 +147,7 @@ def injectors():
 CF = 'https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/'
 AI = 'Representative image, AI-generated: '
 HEROES = {
-    'xeomin': ('/assets/ai/glo-0d65b188-75d3-41df-9f9d-6be56dcab860.webp', AI + 'Baily Bellamy giving a Xeomin injection between a client\'s brows', 'center 25%', 1600, 2000),
+    'xeomin': ('/assets/ocala/baily-bellamy-forehead-injection-ocala-fl.webp', 'Baily Bellamy giving a client a forehead injection at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'center 30%', 1069, 1600),
     'microneedling': ('/assets/team/sundee-bass-microneedling-pen-ocala-fl.webp', 'Sundee Bass, GLO medical esthetician and microneedling specialist, holding her microneedling pen in Ocala, FL', 'center 20%', 1200, 1500),
     'coolpeel': ('/assets/ai/glo-bd33ca89-99f6-44bb-929a-085ac3af08ea.webp', AI + 'McKenzie McCalla, APRN, performing CoolPeel with the Tetra Pro CO2 laser', 'center 25%', 1600, 2000),
     'laser-skin-revitalization': ('/assets/ai/glo-a8535d18-fd0d-4bae-be2c-1336b2597f96.webp', AI + 'McKenzie McCalla, APRN, performing CO2 laser resurfacing on the Tetra Pro laser', 'center 25%', 1600, 2000),
@@ -158,7 +158,7 @@ HEROES = {
     'custom-facials-peels': ('/assets/ai/glo-bb2e7956-fe2e-4aaf-82cf-9f7df265e26e.webp', AI + 'Sundee Bass brushing a chemical peel onto a client\'s cheek', 'center 25%', 1600, 2000),
     'mini-facials': ('/assets/ai/glo-ec78ddd6-8dc0-4003-b08c-765b5db5e25d.webp', AI + 'Sundee Bass applying serum during a mini facial', 'center 25%', 1600, 2000),
     'daxxify-facial-microneedling': ('/assets/ai/glo-29520b2c-26e3-4df1-8e47-452d3b80e276.webp', AI + 'Sundee Bass microneedling a client\'s cheek during a Daxxify facial', 'center 25%', 1600, 2000),
-    'daxxify': ('/assets/ai/glo-9e8b55f1-f5e7-4b87-94fb-2aabd3ceb8f0.webp', AI + 'McKenzie McCalla, APRN, giving a Daxxify injection at the crow\'s feet', 'center 25%', 1600, 2000),
+    'daxxify': ('/assets/ocala/neuromodulator-injection-close-up-ocala-fl.webp', 'Close-up of a GLO provider giving a neuromodulator injection at the brow in Ocala, FL', 'center 45%', 1600, 1069),
     'dermal-filler': ('/assets/ai/glo-23dd3f42-a777-4f76-ac98-fb7fb4182a98.webp', AI + 'Baily Bellamy placing lip filler with a fine syringe', 'center 25%', 1600, 2000),
     'liquid-rhinoplasty': ('/assets/ai/glo-8ea145b7-9823-4267-905e-a13bcd4eb224.webp', AI + 'Baily Bellamy placing filler at the bridge of a client\'s nose', 'center 25%', 1600, 2000),
     'dissolve-ha-dermal-filler': ('/assets/ai/glo-d4429368-9e19-446d-b8a4-08c27b3cd623.webp', AI + 'McKenzie McCalla, APRN, assessing a client\'s lips before dissolving earlier filler', 'center 25%', 1600, 2000),
@@ -206,6 +206,9 @@ SWAPS = [
     ('treatments/index.html', '/assets/ai/glo-a0a683a6-c3f0-4e84-b5d5-d3d138eabaee.webp', 0, '/assets/ai/glo-59b1e871-1e92-4e71-851e-0b3a30a84ff6.webp', AI + 'GLO providers Baily Bellamy, Sundee Bass and McKenzie McCalla in a treatment room', 'center 20%', 1600, 2000, True),
     ('treatments/custom-facials-peels.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-c53b7bad-65d9-4d91-84a6-ba421af71a82.webp', AI + 'Sundee Bass examining a client\'s skin under a magnifying lamp before her facial', 'center 30%', 1600, 2000, False),
     ('treatments/mini-facials.html', '/assets/ocala/facial-room.webp', 0, '/assets/ai/glo-0ba60a43-1e9e-484e-b405-aef2af4422bf.webp', AI + 'Sundee Bass brushing on a hydrating mask during a mini facial', 'center 30%', 1600, 2000, False),
+    ('index.html', '/assets/ocala/laser-treatment.webp', 0, '/assets/ocala/facial-treatment-glo-ocala-fl.webp', 'A GLO provider giving a client a relaxing facial in a private treatment room in Ocala, FL', 'center 35%', 1600, 1069, False),
+    ('index.html', '/assets/ai/glo-1891efea-b54a-4bf1-bb8d-31cc993f5b4d.webp', 0, '/assets/ocala/facial-suite-treatment-glo-ocala-fl.webp', 'A GLO provider performing a facial under the treatment lamp in a private facial suite in Ocala, FL', 'center 45%', 1069, 1600, False),
+    ('injectables.html', '/assets/team/glo-injectors-ocala-fl.webp', 0, '/assets/ocala/baily-bellamy-injectables-treatment-ocala-fl.webp', 'Baily Bellamy preparing a client for injectables in a treatment room at GLO in Ocala, FL', '35% center', 1600, 1069, True),
 ]
 CAPTIONS = {  # new figure captions where the old one described a room
     ('treatments/custom-facials-peels.html', 'One of our private facial suites in Ocala.'): 'Every facial starts with a close look at your skin.',
