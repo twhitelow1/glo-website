@@ -20,7 +20,7 @@ P = {
     'weight-loss-labs': ('/assets/ocala/medical-weight-loss-lab-draw-ocala-fl.webp', 'A GLO provider drawing blood for metabolic lab work before a medical weight loss plan at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Lab work at GLO Ocala'),
     'peptide-vials': ('/assets/ocala/peptide-therapy-vials-ocala-fl.webp', 'Vials and syringes on a gold tray in the treatment room at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Peptide therapy at GLO'),
     'peptide-labs': ('/assets/ocala/peptide-therapy-lab-work-ocala-fl.webp', 'A GLO provider collecting a blood sample for lab work before peptide therapy at GLO Aesthetics + Wellness Lounge in Ocala, FL', 'Lab work before peptide therapy'),
-    'lounge-retail': ('/assets/ocala/lounge-retail.webp', 'Lounge seating, coffee bar and medical-grade skincare shelves at GLO Ocala', 'Coffee, Wi-Fi &amp; medical-grade skincare'),
+    'lounge-retail': ('/assets/ocala/lounge-retail.webp', 'Lounge seating, coffee bar and medical-grade skincare shelves at GLO Ocala', 'Coffee bar &amp; skincare'),
 }
 ORDER = ['lounge', 'hallway', 'laser-room', 'facial-room', 'lounge-retail']
 
@@ -33,7 +33,7 @@ def gallery(h2, intro, bg='#F3F0EA'):
             f'      <div style="max-width:760px;margin-bottom:34px;">\n'
             f'        <h2 class="glo-h2" style="font-size:40px;line-height:1.2;color:#221F1B;margin-bottom:12px;">{h2}</h2>\n'
             f'        <p style="font-size:17px;line-height:1.7;color:#5C574E;margin:0;">{intro}</p>\n'
-            f'      </div>\n      <div class="glo-gallery">{figs}</div>\n    </div>\n  </section>\n\n')
+            f'      </div>\n      <div class="glo-gallery">{figs}</div>\n      <p class="glo-gallery-hint" aria-hidden="true">Swipe to see more &rarr;</p>\n    </div>\n  </section>\n\n')
 
 
 def ocala(s):
