@@ -147,22 +147,22 @@ def injectors():
 CF = 'https://d8j0ntlcm91z4.cloudfront.net/user_3JRDtqjRvBX48mQoPYnwuq2wzO6/'
 AI = 'Representative image, AI-generated: '
 HEROES = {
-    'xeomin': ('/assets/team/baily-bellamy-xeomin-injector-ocala-fl.webp', 'Baily Bellamy, a GLO injector, holding a syringe in Ocala, FL', 'center 20%', 1200, 1500),
+    'xeomin': ('/assets/ai/glo-0d65b188-75d3-41df-9f9d-6be56dcab860.webp', AI + 'Baily Bellamy giving a Xeomin injection between a client\'s brows', 'center 25%', 1600, 2000),
     'microneedling': ('/assets/team/sundee-bass-microneedling-pen-ocala-fl.webp', 'Sundee Bass, GLO medical esthetician and microneedling specialist, holding her microneedling pen in Ocala, FL', 'center 20%', 1200, 1500),
-    'coolpeel': (CF + 'hf_20261123_174932_df54e212-dd3c-43ef-9b53-f2547bdbac44.png', AI + 'a woman in laser goggles during a CoolPeel treatment with a Tetra Pro CO2 laser handpiece', 'center 30%', 1792, 2240),
-    'laser-skin-revitalization': (CF + 'hf_20261123_174930_2e395884-e877-4aa2-8b87-6386b7726da1.png', AI + 'a woman in laser goggles during CO2 laser resurfacing on a Tetra Pro laser', 'center 30%', 1792, 2240),
-    'motus-laser-facial': (CF + 'hf_20261123_174832_1e4c7598-67bc-4bcf-a542-2fa93d94f02e.png', AI + 'a woman in laser goggles during a Motus AY laser facial', 'center 30%', 1792, 2240),
-    'laser-hair-removal': (CF + 'hf_20261123_174831_8f0ddcbd-999c-49dc-b58b-5ae715e28e09.png', AI + 'a laser hair removal handpiece gliding along a lower leg', 'center 40%', 1792, 2240),
-    'skin-tightening': (CF + 'hf_20261123_174831_4d5111a7-e8a6-4f63-abd9-b0eca4af07c7.png', AI + 'an Everesse radiofrequency handpiece gliding along a woman\'s jawline', 'center 35%', 1792, 2240),
-    'radiant-lift': (CF + 'hf_20261123_174932_92c52bab-50d3-4c21-827f-b5f7c0fc93bf.png', AI + 'a woman relaxing in a treatment chair beside the Everesse radiofrequency system', 'center 30%', 1792, 2240),
-    'custom-facials-peels': (CF + 'hf_20261123_174830_9cdf821c-9dbb-4a37-8aeb-89dbd87ca592.png', AI + 'an esthetician brushing a chemical peel onto a woman\'s cheek', 'center 30%', 1792, 2240),
-    'mini-facials': (CF + 'hf_20261123_174832_fa32a497-2b7f-4289-8a86-d143a23b148a.png', AI + 'an esthetician applying serum during a mini facial', 'center 30%', 1792, 2240),
-    'daxxify-facial-microneedling': (CF + 'hf_20261123_174830_31aabe3b-97a6-43b5-b4ba-ea871445284f.png', AI + 'a microneedling pen gliding across a woman\'s cheek during a Daxxify facial', 'center 30%', 1792, 2240),
-    'daxxify': (CF + 'hf_20261123_174833_f793b6bf-5151-4c8b-9df7-99592297dc89.png', AI + 'a provider giving a small neuromodulator injection near a woman\'s brow', 'center 30%', 1792, 2240),
-    'dermal-filler': (CF + 'hf_20261123_174832_f99a448f-b9a3-4fed-a4aa-b2d9a5bfa265.png', AI + 'a provider placing lip filler with a fine syringe', 'center 30%', 1792, 2240),
-    'liquid-rhinoplasty': (CF + 'hf_20261123_174931_6087343e-e4b2-4fef-8b9e-9322fe51a2df.png', AI + 'a provider placing filler at the bridge of a man\'s nose', 'center 30%', 1792, 2240),
-    'dissolve-ha-dermal-filler': (CF + 'hf_20261123_174930_0f62e75d-5c5b-4147-ade2-ab46eed370e1.png', AI + 'a woman with a hand mirror talking with her provider about adjusting earlier lip filler', 'center 25%', 1792, 2240),
-    'iv-hydration': (CF + 'hf_20261123_174930_f1458133-9d82-48fa-b2d6-061d87dbb739.png', AI + 'a man relaxing in a lounge chair with an IV drip, reading a book', 'center 30%', 1792, 2240),
+    'coolpeel': ('/assets/ai/glo-bd33ca89-99f6-44bb-929a-085ac3af08ea.webp', AI + 'McKenzie McCalla, APRN, performing CoolPeel with the Tetra Pro CO2 laser', 'center 25%', 1600, 2000),
+    'laser-skin-revitalization': ('/assets/ai/glo-a8535d18-fd0d-4bae-be2c-1336b2597f96.webp', AI + 'McKenzie McCalla, APRN, performing CO2 laser resurfacing on the Tetra Pro laser', 'center 25%', 1600, 2000),
+    'motus-laser-facial': ('/assets/ai/glo-48fd7c71-78b2-4087-8a43-de70bc178e63.webp', AI + 'Sundee Bass performing a Motus AY laser facial', 'center 25%', 1600, 2000),
+    'laser-hair-removal': ('/assets/ai/glo-8f0ddcbd-999c-49dc-b58b-5ae715e28e09.webp', AI + 'a laser hair removal handpiece gliding along a lower leg', 'center 40%', 1600, 2000),
+    'skin-tightening': ('/assets/ai/glo-54cf79e1-d826-497d-8bc7-857cd8fb2300.webp', AI + 'McKenzie McCalla, APRN, gliding the Everesse handpiece along a client\'s jawline', 'center 25%', 1600, 2000),
+    'radiant-lift': ('/assets/ai/glo-a05f2566-5295-4f03-98ab-8fcfdae61641.webp', AI + 'McKenzie McCalla, APRN, beside the Everesse system with a Radiant Lift client', 'center 25%', 1600, 2000),
+    'custom-facials-peels': ('/assets/ai/glo-bb2e7956-fe2e-4aaf-82cf-9f7df265e26e.webp', AI + 'Sundee Bass brushing a chemical peel onto a client\'s cheek', 'center 25%', 1600, 2000),
+    'mini-facials': ('/assets/ai/glo-ec78ddd6-8dc0-4003-b08c-765b5db5e25d.webp', AI + 'Sundee Bass applying serum during a mini facial', 'center 25%', 1600, 2000),
+    'daxxify-facial-microneedling': ('/assets/ai/glo-29520b2c-26e3-4df1-8e47-452d3b80e276.webp', AI + 'Sundee Bass microneedling a client\'s cheek during a Daxxify facial', 'center 25%', 1600, 2000),
+    'daxxify': ('/assets/ai/glo-9e8b55f1-f5e7-4b87-94fb-2aabd3ceb8f0.webp', AI + 'McKenzie McCalla, APRN, giving a Daxxify injection at the crow\'s feet', 'center 25%', 1600, 2000),
+    'dermal-filler': ('/assets/ai/glo-23dd3f42-a777-4f76-ac98-fb7fb4182a98.webp', AI + 'Baily Bellamy placing lip filler with a fine syringe', 'center 25%', 1600, 2000),
+    'liquid-rhinoplasty': ('/assets/ai/glo-8ea145b7-9823-4267-905e-a13bcd4eb224.webp', AI + 'Baily Bellamy placing filler at the bridge of a client\'s nose', 'center 25%', 1600, 2000),
+    'dissolve-ha-dermal-filler': ('/assets/ai/glo-6cb2e948-ce05-4702-a5e8-9e6725623a31.webp', AI + 'McKenzie McCalla, APRN, talking a client through adjusting earlier lip filler', 'center 25%', 1600, 2000),
+    'iv-hydration': ('/assets/ai/glo-f1458133-9d82-48fa-b2d6-061d87dbb739.webp', AI + 'a man relaxing in a lounge chair with an IV drip, reading a book', 'center 30%', 1600, 2000),
 }
 
 
