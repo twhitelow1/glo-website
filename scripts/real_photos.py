@@ -121,6 +121,26 @@ def hero(slug, key, pos='center 45%'):
             open(f, 'w').write(n)
 
 
+def injectors():
+    """GLO's two injectors (real photo) on the /injectables hero and the home Injectables tile."""
+    ph = json.load(open('content/team.json'))['injectors_photo']
+    src, alt, jpg = ph['src'], ph['alt'], SITE + ph['src'].replace('.webp', '.jpg')
+    s = open('injectables.html').read()
+    m = re.search(r'<div class="glo-split-media"><img src="([^"]+)"[^>]*>', s)
+    if m.group(1) != src:
+        old = m.group(1)
+        s = s.replace(m.group(0), f'<div class="glo-split-media"><img src="{src}" alt="{alt}" width="{ph["width"]}" height="{ph["height"]}" fetchpriority="high" decoding="async" style="object-position:center 8%;">', 1)
+        for prop in ('og:image', 'twitter:image'):
+            s = re.sub(r'(<meta (?:property|name)="%s" content=")[^"]*' % prop, lambda mm: mm.group(1) + jpg, s)
+        s = s.replace(f'"{old}"', f'"{jpg}"')
+        open('injectables.html', 'w').write(s)
+    s = open('index.html').read()
+    n = re.sub(r'(<a href="/injectables" class="txs-photo"><img src=")[^"]*(" alt=")[^"]*("[^>]*style="object-position:)[^;"]*',
+               lambda mm: mm.group(1) + src + mm.group(2) + alt + mm.group(3) + 'center 8%', s)
+    if n != s:
+        open('index.html', 'w').write(n)
+
+
 if __name__ == '__main__':
     f = 'locations/index.html'
     s = locations_team(open(f).read())
@@ -141,4 +161,5 @@ if __name__ == '__main__':
         open(p, 'w').write(s)
     hero('functional-weight-loss', 'weight-loss-labs', 'center 45%')
     hero('peptide-therapy', 'peptide-labs', '40% 45%')
+    injectors()
     print('done')

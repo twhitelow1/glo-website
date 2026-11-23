@@ -1,5 +1,5 @@
 {
- "source": "GLO's Jane booking site (gloocala.janeapp.com), October 2026. Locations and booking links follow each practitioner's Jane location pages. Photos are Jane's 160x190 thumbnails; swap in full-size originals from GLO when available.",
+ "source": "GLO's Jane booking site (gloocala.janeapp.com), October 2026. Locations and booking links follow each practitioner's Jane location pages. Photos: GLO's Nov 2026 shoot for Baily and McKenzie (assets/team/); Sundee still uses her Jane thumbnail until GLO sends a solo portrait.",
  "team": [
   {
    "name": "McKenzie McCalla",
@@ -19,7 +19,7 @@
     "McKenzie McCalla, APRN, FNP-C, is a board-certified Family Nurse Practitioner who is passionate about helping people feel confident, healthy and comfortable in their own skin. She focuses on peptides, weight management and aesthetic laser treatments, with an emphasis on personalized care.",
     "Her approach centers on helping each patient reach their own goals in a safe, thoughtful way. She believes wellness and aesthetics go hand in hand, and that the best results come from understanding each person as a whole, not simply treating a concern."
    ],
-   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDktMTQvMTY0NjMxL2Q1OGU0MmUwLTc1YmMtNDJlMy05YzRmLTk0YmNmNWFjMjJkNi8zSThBNDA1NS1FZGl0LmpwZWciXSxbInAiLCJ0aHVtYiIsIjE2MHgxOTAjIl1d?sha=fa9da2735a832ec0&for=gloocala.janeapp.com",
+   "photo": "/assets/team/mckenzie-mccalla-aprn-ocala-fl.webp",
    "book": {
     "Ocala": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/19"
    }
@@ -63,7 +63,7 @@
     "Medical weight loss &amp; peptides"
    ],
    "bio": [],
-   "photo": "https://assets-jane-usw2-72.janeapp.net/pub/W1siZiIsImRyYWdvbmZseS85MzgyMS91c2VyL3Bob3RvLzIwMjYtMDctMDEvMTcwMzM0LzYzNzVjNTczLWI5NGMtNGM3Mi04ODI3LTczMDI5MTU3M2ViNS9CYWlseUhlYWRzaG90LmpwZyJdLFsicCIsInRodW1iIiwiMTYweDE5MCMiXV0?sha=b00b13fb18ab4ad9&for=gloocala.janeapp.com",
+   "photo": "/assets/team/baily-bellamy-injector-ocala-fl.webp",
    "book": {
     "Ocala": "https://gloocala.janeapp.com/locations/ocala-location-glo-aesthetics-wellness-lounge/book#/staff_member/16",
     "Palatka": "https://gloocala.janeapp.com/locations/palatka-location-glo-aesthetics-wellness-lounge/book#/staff_member/16"
@@ -96,5 +96,17 @@
    "title": "Spa Receptionist"
   }
  ],
- "source_note_staff": "Front office team from GLO (Oct 30, 2026 website meeting): Mariah removed; Macin added as Spa Receptionist; Jared shown as Executive Assistant."
+ "source_note_staff": "Front office team from GLO (Oct 30, 2026 website meeting): Mariah removed; Macin added as Spa Receptionist; Jared shown as Executive Assistant.",
+ "providers_photo": {
+  "src": "/assets/team/glo-providers-ocala-fl.webp",
+  "width": 1000,
+  "height": 1531,
+  "alt": "GLO providers Baily Bellamy, Sundee Bass and McKenzie McCalla in Ocala, FL"
+ },
+ "injectors_photo": {
+  "src": "/assets/team/glo-injectors-ocala-fl.webp",
+  "width": 1000,
+  "height": 1851,
+  "alt": "GLO injectors Baily Bellamy and McKenzie McCalla, who provide Xeomin, Daxxify and filler in Ocala, FL"
+ }
 }
